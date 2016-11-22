@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="regulation.css"?>
+
+<!--
+This document is a part of the supplementary material that comes with the PhD thesis entitled 
+“Creation of Usage of Digital Legislation” defended by Stevan Gostojić
+
+For more information, see http://informatika.ftn.uns.ac.rs/legal
+-->
+
+<regulation 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:metalex="http://www.metalex.eu/metalex/1.0"
+    xmlns:regulation="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/lax"
+    xmlns="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/lax"
+    xsi:schemaLocation="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/lax regulation-lax.xsd"
+    id="regulation" metalex:LocalNamingConventionMethod="individual" metalex:LocalNamingConventionScope="root"
+    metalex:type="container" metalex:subtype="root" 
+    xml:base="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-14;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik" 
+    metalex:naming="urn:metalex:sr" 
+    xml:lang="sr"
+    grddl:transformation="RDFa2RDFXML.xsl http://ns.inria.fr/grddl/rdfa/2008/09/03/RDFa2RDFXML.xsl" xmlns:grddl="http://www.w3.org/2003/g/data-view#">
+    
+    <!-- metalex:naming attribute (value: an IRI) must be used to signal conformance to a naming convention -->
+    <!-- xml:base attribute is an identifier of the manifestation of the legislation -->
+    <!-- xml:lang attribute is an identifier of the language of the legislation -->
+    
+    <metadata id="md" metalex:type="mcontainer">
+        <!-- all attribute names must be prefixed -->
+        
+        <!-- The RDF interpretation of a name MUST assign an IRI reference to the work, expression, and manifestation, and link these 
+            using the properties metalex-owl:embodies and metalex-owl:realizes p. 25 -->
+        
+        <!-- IRI format compatibile with urn:lex URN namespace
+            
+            Syntax:
+            urn:lex
+            :"<jurisdiction-code>[";"<jurisdiction-unit>]*"
+            :"<authority>":"<measure>":"<details>[":"<annex>]*
+            @<expression>::="@"<version>[":"<language>]?
+            $<format>[";"<specification>"]*":"<editor>[";"<specification>]*[":"<component>[";"<specification>]*]?
+            [":"<feature>[";"<specification>]*]?
+            
+            Examples:
+            urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik
+            urn:lex:rs:sluzbeni-glasnik:zakon:2008-10-27;2375@original:sr$text-xml;cen-metalex:sluzbeni-glasnik
+        -->
+        
+        <!-- Expression realizes Work -->
+        <meta id="m1" metalex:about="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-14;lex-1@original:sr"
+            metalex:rel="metalex-owl:realizes"
+            href="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1" metalex:type="meta"/>
+        
+        <!-- Manifestation emodies Expression -->
+        <meta id="m2"
+            metalex:about="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-14;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex-owl:embodies"
+            href="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-14;lex-1@original:sr" metalex:type="meta"/>
+        
+        <!-- Manifestation must be examplified by at least one Item -->
+        <meta id="m3"
+            metalex:about="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-14;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex-owl:exemplifiedBy" href="http://informatika.ftn.uns.ac.rs/legal/metalex/bylaw1.xml"
+            metalex:type="meta"/>
+        
+        <!-- FRBR Work Level Metadata -->
+        <!-- country -->
+        <meta id="m5"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw1Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#RS"
+            metalex:type="meta" />
+        
+        <meta id="m6"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#RS"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#countryCode"
+            metalex:content="rs"
+            metalex:type="meta" />
+        
+        <!-- document type -->
+        <meta id="m7"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw1Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Pravilnik"
+            metalex:type="meta" />
+        
+        <meta id="m8"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Pravilnik"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#workTypeID"
+            metalex:content="pravilnik"
+            metalex:type="meta" />
+        
+        <!-- creation date -->
+        <meta id="m9"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw1Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawWorkCreationDate"
+            metalex:type="meta" />
+        
+        <meta id="m10"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawWorkCreationDate"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#xsdDate"
+            metalex:content="2009-04-14"
+            metalex:datatype="date"
+            metalex:type="meta" />
+        
+        <!-- number / disambiguating feature -->
+        <meta id="m11"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw1Identifier"
+            metalex:rel=" http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Lex-1"
+            metalex:type="meta" />
+        
+        <meta id="m12"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Lex-1"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#issueID"
+            metalex:content="lex-1"
+            metalex:type="meta" />
+         
+        <!-- FRBR expression level metadata -->
+        <!-- languages -->
+        <meta id="m13"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw1Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#SR"
+            metalex:type="meta" />
+        
+        <meta id="m14"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#SR"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#languageCode"
+            metalex:content="sr"
+            metalex:type="meta" />
+
+        <!-- content-specification date -->
+        <meta id="m15"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw1Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawExpressionCreationDate"
+            metalex:type="meta" />
+        
+        <meta id="m16"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawExpressionCreationDate"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#xsdDate"
+            metalex:content="2009-04-21"
+            metalex:datatype="date"
+            metalex:type="meta" />   
+        
+        <!-- FRBR manifestation level metadata -->
+        <!-- format -->
+        <meta id="m17"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw1Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#CENMetaLex"
+            metalex:type="meta" />
+        
+        <meta id="m18"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#CENMetaLex"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#manifestationTypeID"
+            metalex:content="text-xml;cen-metalex"
+            metalex:type="meta" />
+    </metadata>
+
+    <!-- da li da reference bude na work ili expression -->
+    <preamble id="preamble">
+        <!-- Dodati stavove u preambulu ustava -->
+        <item id="preamble-it1">
+            <provision id="preamble-it1-p1">На основу <simple-citation id="sc1" href="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr#art50-it2">члана 50. став 2. Закона о заштити података о личности („Службени гласник РС“ број 97/08)</simple-citation>,</provision>
+        </item>
+        <item id="preamble-it1">
+            <provision id="preamble-it1-p1">Повереник за информације од јавног значаја и заштиту података о личности, доноси</provision>
+        </item>
+    </preamble>
+    
+    <title id="title">Правилник о начину претходне провере радњи обраде података о личности</title>
+    
+    <section id="section1">
+        <heading id="section1-h">Садржина правилника</heading>
+        
+        <article id="art1">
+            <index id="art1-i">Члан 1.</index>
+            <item id="art1-it1">
+                <provision id="art1-it1-p1">Овим Правилником се ближе уређује начин на који Повереник за информације од јавног значаја и заштиту података о личности (у даљем тексту: Повереник) врши претходну проверу радњи обраде података о личности које руковалац података намерава да предузме, у складу са <simple-citation id="sc2" href="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr">Законом о заштити података о личности (у даљем тексту: Закон)</simple-citation>.</provision>
+            </item>
+        </article>
+    </section>
+    
+    <section id="section2">
+        <heading id="section2-h">Поступак претходне провере</heading>
+        
+        <article id="art2">
+            <heading id="art2-h">Покретање поступка</heading>
+            <index id="art2-i">Члан 2.</index>
+            <item id="art2-it1">
+                <provision id="art2-it1-p1">Поступак претходне провере Повереник покреће по службеној дужности, а на основу обавештења руковаоца података да намерава да започне обраду података о личности, односно да успостави збирку података.</provision>
+            </item>
+        </article>
+        
+        <article id="art3">
+            <index id="art3-i">Члан 3.</index>
+            <item id="art3-it1">
+                <provision id="art3-it1-p">Обавештење о намери обраде података са подацима из <simple-citation id="sc3" href="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr#art48">члана 48. Закона</simple-citation>, руковалац података доставља Поверенику најкасније 15 дана пре започињања обраде, на <simple-citation id="sc4" href="#attachment1">обрасцу под називом: „Пријава обраде података“</simple-citation>, који је одштампан уз овај правилник и чини његов саставни део.</provision>
+            </item>
+        </article>
+        
+        <article id="art4">
+            <heading id="art4-i">Ток поступка</heading>
+            <index id="art4-h">Члан 4.</index>
+            <item id="art4-it1">
+                <provision id="art4-it1-p1">По пријему обавештења, Повереник ће најпре, на основу достављених података, оценити да ли би намеравана обрада података у значајној мери могла довести до повреде права лица на која се подаци односе. </provision>
+            </item>
+            <!-- Mislim da sam našao još jednu nekonzistentnost između tekstualne i XSD specifikacije standarda: po XSD spacifikacije href atribut ne sme da ima prefix -->
+            <item id="art4-it2">
+                <provision id="art4-it2-p1">Оцену из <simple-citation id="sc5" xlink:type="simple" xlink:show="replace" xlink:actuate="onRequest" xlink:title="Art 4, Item 1" xlink:href="#art4-it1" href="#art4-it1">става 1. овог члана</simple-citation>, Повереник доноси у зависности од тога да ли се намеравана обрада података врши у складу са <simple-citation id="sc6" href="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr">Законом</simple-citation> и да ли је руковалац података предузео прописане мере обезбеђења и заштите података.</provision>
+            </item>
+        </article>
+        
+        <article id="art5">
+            <index id="art5-i">Члан 5.</index>
+            <item id="art5-it1">
+                <provision id="art5-it1-p1">У случају када на основу достављених података Повереник оцени да не постоји опасност да ће се обрадом података у значајној мери повредити права лица на која се подаци односе, он ће о томе благовремено обавестити руковаоца података.</provision>
+            </item>
+            <item id="art5-it2">
+                <provision id="art5-it2-p1">У случају да намеравана обрада података у значајној мери може да доведе до повреде права лица на која се подаци односе, Повереник ће извршити проверу радњи обраде на лицу места, код руковаоца података, односно обрађивача.</provision>
+            </item>
+        </article>
+        
+        <article id="art6">
+            <heading id="art6-h">Радње провере</heading>
+            <index id="art6-i">Члан 6.</index>
+            <item id="art6-it1">
+                <provision id="art6-it1-p1">Претходну проверу радњи обраде података Повереник врши преко овлашћених лица, на основу увида у опште акте руковаоца, просторије и опрему којом се обрада података намерава вршити као и на основу одговарајуће документације руковаоца, односно обрађивача података.</provision>
+            </item>
+            <item id="art6-it2">
+                <provision id="art6-it2-p1">Провером на лицу места утврђује се:</provision>
+                <point id="art6-it2-pt1">
+                    <provision id="art6-it2-pt1-p1">1) да ли је обрада података заснована на закону и да ли се врши у складу са <simple-citation id="sc7" href="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr">Законом</simple-citation> и</provision>
+                </point>
+                <point id="art6-it2-pt2">
+                    <provision id="art6-it2-pt2-p1">2) да ли је руковалац података, односно обрађивач, предузео све потребне мере ради обезбеђења и заштите података.</provision>
+                </point>
+            </item>
+        </article>
+        
+        <article id="art7">
+            <heading id="art7-h">Провера законитости обраде</heading>
+            <index id="art7-i">Члан 7.</index>
+            <item id="art7-it1">
+                <provision id="art7-it1-p1">Претходна провера законитости обраде података, у смислу <simple-citation id="sc8" href="#art6-it1-pt1">члана 6. став 1. тачка 1) овог правилника</simple-citation>, подразумева проверу:</provision>
+                <point id="art7-it1-pt1">
+                    <provision id="art7-it1-pt1-p1">1) законског основа по коме се обрада врши,</provision>
+                </point>
+                <point id="art7-it1-pt2">
+                    <provision id="art7-it1-pt2-p1">2) сврхе  намераване обраде,</provision>
+                </point>
+                <point id="art7-it1-pt3">
+                    <provision id="art7-it1-pt3-p1">3) врсте података о личности који ће се обрађивати,</provision>
+                </point>
+                <point id="art7-it1-pt4">
+                    <provision id="art7-it1-pt4-p1">4) извора података, од кога су прикупљени,</provision>
+                </point>
+                <point id="art7-it1-pt5">
+                    <provision id="art7-it1-pt5-p1">5) врсте радњи обраде,</provision>
+                </point>
+                <point id="art7-it1-pt6">
+                    <provision id="art7-it1-pt6-p1">6) назива и врсте збирки у којима се подаци налазе,</provision>
+                </point>
+                <point id="art7-it1-pt7">
+                    <provision id="art7-it1-pt7-p1">7) коришћења података: ко ће бити корисници података, којих података, у које сврхе и по ком правном основу,</provision>
+                </point>
+                <point id="art7-it1-pt8">
+                    <provision id="art7-it1-pt8-p1">8) преноса података: коме ће се подаци преносити, који подаци, у које сврхе и по ком правном основу,</provision>
+                </point>
+                <point id="art7-it1-pt9">
+                    <provision id="art7-it-pt9-p1">9) дужине трајања обраде података, односно времена за које ће подаци бити архивирани уз претходну анонимизацију, односно уништени.</provision>
+                </point>
+            </item>
+        </article>
+        
+        <article id="art8">
+            <heading id="art8-h">Провера примене мера обезбеђења и заштите података</heading>
+            <index id="art8-i">Члан 8.</index>
+            <item id="art8-it1">
+                <!-- XLink ne radi u Firefox-u i Chrome-u. Jedno od resenja ovog problema je transformisanje u XHTML pomocu XSLT-a. Mada, onda mogu transformisati i href atribut. -->
+                <provision id="art8-it1-p">Претходном провером примене мера обезбеђења и заштите података, у смислу <simple-citation id="sc9" xlink:type="simple" xlink:href="#art6-it1-pt2" href="#art6-it1-pt2">члана 6. став 1. тачка 2) овог правилника</simple-citation>, утврђује се да ли су руковалац и обрађивач података предузели одговарајуће организационе, кадровске и техничке мере ради заштите података од могућих злоупотреба, уништења, губитка, недопуштеног приступа, неовлашћених промена, објављивања и сваке друге злоупотребе података, као и мере у погледу утврђивања обавеза чувања тајности података од стране лица која су запослена на обради.</provision>
+                <point id="art8-it1-pt1">
+                    <provision id="art8-it1-pt1-p1">прикључења и смештаја рачунара са базама података и друге рачунарске опреме, </provision>
+                </point>
+                <point id="art8-it1-pt2">
+                    <provision id="art8-it1-pt2-p1">обезбеђења уређаја за непрекидно напајање електричном енергијом,</provision>
+                </point>
+                <point id="art8-it1-pt3">
+                    <provision id="art8-it1-pt3-p1">заштите модемских прикључака (и бројева) од неовлашћеног локалног и даљинског приступа,</provision>
+                </point>
+                <point id="art8-it1-pt4">
+                    <provision id="art8-it1-pt4-p1">обезбеђења рачунарских програма и опреме за сигурносно пријављивање и евидентирање приступа за рад на рачунару, за спречавање неовлашћеног износа и уноса података употребом преносних информатичких медија, комуникационих прикључака и прикључака за испис података, за заштиту од рачунарских вируса и других штетних програма, као и обезбеђења опреме криптолошког осигурања посебних категорија личних података на преносним информатичким медијима за чување и у току преноса тих података информатичким и телекомуникационим средствима,</provision>
+                </point>
+                <point id="art8-it1-pt5">
+                    <provision id="art8-it1-pt5-p1">примене мера обавезног обавештавања руковаоца података од стране обрађивача података, администратора мрежног система, администратора збирке података о сваком покушају неовлашћеног приступа подацима,</provision>
+                </point>
+                <point id="art8-it1-pt6">
+                    <provision id="art8-it1-pt6-p1">обезбеђења просторија у којима је смештена рачунарска и телекомуникациона опрема, у погледу контроле улаза, односно забране приступа неовлашћеним лицима,</provision>
+                </point>
+                <point id="art8-it1-pt7">
+                    <provision id="art8-it1-pt7-p1">примене мера заштите од: пожара, електричног и магнетног поља,  јонизућег зрачења и електрицитета, влаге, хладноће и топлоте, опасних материја експлозивних и лако запаљујућих средстава, прашине, потреса и других елементарних непогода, у погледу просторија, уређаја и опреме, </provision>
+                </point>
+                <point id="art8-it1-pt8">
+                    <provision id="art8-it1-pt8-p1">обезбеђења приступа збиркама података, употребе корисничких имена, и одговарајућих пропусница,</provision>
+                </point>
+                <point id="art8-it1-pt9">
+                    <provision id="art8-it1-pt9-p1">обезбеђења дневног, недељног, месечног и годишњег похрањивања података на друге преносиве информатичке медије (сигурносне копије збирки) уз примену мера сигурности и тајности података, за случај уништења активних база података, и обезбеђења евиденције тих преносивих медија, као и занављање записа на копијама услед протека рока.</provision>
+                </point>
+            </item>
+        </article>
+        
+        <article id="art10">
+            <heading id="art10-h">Нарочито осетљиви подаци</heading>
+            <index id="art10-i">Члан 10.</index>
+            <item id="art10-it1">
+                <provision id="art10-it1-p1">У погледу нарочито осетљивих података, провером ће се утврдити да ли су предузете и посебне мере заштите података које је Влада, у складу са <simple-citation id="sc10" href="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr">Законом</simple-citation>, прописала за ову врсту података.</provision>
+            </item>
+        </article>
+        
+        <article id="art11">
+            <heading id="art11-h">Мере Повереника</heading>
+            <index id="art11-i">Члан 11.</index>
+            <item id="art11-it1">
+                <provision id="art11-it1-p1">У случају да овлашћено лице утврди да не постоји правни основ за обраду података или да законом нису уређена најважнија питања за њихову обраду, као што су: сврха обраде, врста података који се обрађују, корисници података и дужина трајања обраде, Повереник ће донети решење којим ће привремено забранити такву обраду података док се не отклоне разлози који су проузроковали забрану.</provision>
+            </item>
+            <item id="art11-it2">
+                <provision id="art11-it2-p1">Повереник ће привремено забранити обраду података и у случају да нису примењене одговарајуће организационе, кадровске и техничке мере ради заштите података од могућих злоупотреба, уништења, губитка, недопуштеног приступа, неовлашћених промена, објављивања и сваке друге злоупотребе података, као и мере у погледу утврђивања обавеза чувања тајности података од стране лица која су запослена на обради, све док руковалац збирке података не достави доказ да је предузео одговарајуће мере обезбеђења и заштите података.</provision>
+            </item>
+            <item id="art11-it3">
+                <provision id="art11-it3-p1">У случају да се у вези са обрадом података утврди да постоје мањи пропусти који неће битно угрозити њихову безбедност, Повереник ће наложити предузимање одговарајућих мера уз остављање  примереног рока да се недостаци отклоне.</provision>
+            </item>
+            <item id="art11-it4">
+                <provision id="art11-it4-p1">У случају да руковалац података не отклони утврђене недостатке у остављеном року, Повереник ће забранити обраду података.</provision>
+            </item>
+        </article>
+        
+        <article id="art12">
+            <heading id="art12-h">Упис у Централни регистар</heading>
+            <index id="art12-i">Члан 12.</index>
+            <item id="art12-it1">
+                <provision id="art12-it1-p1">Обавештење руковаоца података из <simple-citation id="sc11" xlink:type="simple" xlink:href="#art3" href="#art3">члана 3. овог правилника</simple-citation>, Повереник уписује у Централни регистар.</provision>
+            </item>
+        </article>
+        
+        <article id="art13">
+            <heading id="art13-h">Ступање на снагу Правилника</heading>
+            <index id="art13-i">Члан 13.</index>
+            <item id="art13-it1">
+                <provision id="art13-it1-p1">Овај правилник ступа на снагу у року од 8 дана од дана објављивања у «Службеном гласнику Републике Србије».</provision>
+            </item>
+        </article>
+    </section>
+    
+    <!-- 
+        Број: 110-00-6/2009-01            
+        У Београду,
+        14.04.2009.године
+        
+        ПОВЕРЕНИК
+        
+        Родољуб Шабић,с.р.
+    -->
+
+    <attachments id="attachments">
+        <attachment id="attachment1" src="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#attachment1">Прилог 1: Образац : "Пријава обраде података"</attachment>
+    </attachments>
+    
+</regulation>

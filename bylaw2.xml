@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="regulation.css"?>
+
+<!--
+This document is a part of the supplementary material that comes with the PhD thesis entitled 
+“Creation of Usage of Digital Legislation” defended by Stevan Gostojić
+
+For more information, see http://informatika.ftn.uns.ac.rs/legal
+-->
+
+<regulation 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:metalex="http://www.metalex.eu/metalex/1.0"
+    xmlns:regulation="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/lax"
+    xmlns="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/lax"
+    xsi:schemaLocation="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/lax regulation-lax.xsd"
+    id="regulation" metalex:LocalNamingConventionMethod="individual" metalex:LocalNamingConventionScope="root"
+    metalex:type="container" metalex:subtype="root" 
+    xml:base="urn:lex:rs:narodna-skuurn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik" 
+    metalex:naming="urn:metalex:sr" 
+    xml:lang="sr"
+    grddl:transformation="RDFa2RDFXML.xsl http://ns.inria.fr/grddl/rdfa/2008/09/03/RDFa2RDFXML.xsl" xmlns:grddl="http://www.w3.org/2003/g/data-view#">
+    
+    <!-- metalex:naming attribute (value: an IRI) must be used to signal conformance to a naming convention -->
+    <!-- xml:base attribute is an identifier of the manifestation of the legislation -->
+    <!-- xml:lang attribute is an identifier of the language of the legislation -->
+    
+    <metadata id="md" metalex:type="mcontainer">
+        <!-- all attribute names must be prefixed -->
+        
+        <!-- The RDF interpretation of a name MUST assign an IRI reference to the work, expression, and manifestation, and link these 
+            using the properties metalex-owl:embodies and metalex-owl:realizes p. 25 -->
+        
+        <!-- IRI format compatibile with urn:lex URN namespace
+            
+            Syntax:
+            urn:lex
+            :"<jurisdiction-code>[";"<jurisdiction-unit>]*"
+            :"<authority>":"<measure>":"<details>[":"<annex>]*
+            @<expression>::="@"<version>[":"<language>]?
+            $<format>[";"<specification>"]*":"<editor>[";"<specification>]*[":"<component>[";"<specification>]*]?
+            [":"<feature>[";"<specification>]*]?
+            
+            Examples:
+            urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik
+            urn:lex:rs:sluzbeni-glasnik:zakon:2008-10-27;2375@original:sr$text-xml;cen-metalex:sluzbeni-glasnik
+        -->
+        
+        <!-- Expression realizes Work -->
+        <meta id="m1" metalex:about="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr"
+            metalex:rel="metalex-owl:realizes"
+            href="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21" metalex:type="meta"/>
+        
+        <!-- Manifestation emodies Expression -->
+        <meta id="m2"
+            metalex:about="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex-owl:embodies"
+            href="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr$text-xml" metalex:type="meta"/>
+        
+        <!-- Manifestation must be examplified by at least one Item -->
+        <meta id="m3"
+            metalex:about="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex-owl:exemplifiedBy" href="http://informatika.ftn.uns.ac.rs/legal/metalex/bylaw2.xml"
+            metalex:type="meta"/>
+        
+        <!-- FRBR Work Level Metadata -->
+        <!-- country -->
+        <meta id="m5"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#RS"
+            metalex:type="meta" />
+        
+        <meta id="m6"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#RS"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#countryCode"
+            metalex:content="rs"
+            metalex:type="meta" />
+        
+        <!-- document type -->
+        <meta id="m7"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Pravilnik"
+            metalex:type="meta" />
+        
+        <meta id="m8"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Pravilnik"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#workTypeID"
+            metalex:content="pravilnik"
+            metalex:type="meta" />
+        
+        <!-- creation date -->
+        <meta id="m9"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawWorkCreationDate"
+            metalex:type="meta" />
+        
+        <meta id="m10"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawWorkCreationDate"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#xsdDate"
+            metalex:content="2009-04-21"
+            metalex:datatype="date"
+            metalex:type="meta" />
+        
+        <!-- number / disambiguating feature -->
+        <meta id="m11"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel=" http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Lex-1"
+            metalex:type="meta" />
+        
+        <meta id="m12"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Lex-1"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#issueID"
+            metalex:content="lex-1"
+            metalex:type="meta" />
+         
+        <!-- FRBR expression level metadata -->
+        <!-- languages -->
+        <meta id="m13"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#SR"
+            metalex:type="meta" />
+        
+        <meta id="m14"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#SR"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#languageCode"
+            metalex:content="sr"
+            metalex:type="meta" />
+        
+        <!-- content-specification date -->
+        <meta id="m15"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawExpressionCreationDate"
+            metalex:type="meta" />
+        
+        <meta id="m16"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawExpressionCreationDate"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#xsdDate"
+            metalex:content="2009-04-21"
+            metalex:datatype="date"
+            metalex:type="meta" />   
+        
+        <!-- FRBR manifestation level metadata -->
+        <!-- format -->
+        <meta id="m17"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#CENMetaLex"
+            metalex:type="meta" />
+        
+        <meta id="m18"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#CENMetaLex"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#manifestationTypeID"
+            metalex:content="text-xml;cen-metalex"
+            metalex:type="meta" />
+    </metadata>
+
+    <preamble id="preamble">
+        <item id="preamble-it1">
+            <provision id="preamble-it1-p1">На основу <simple-citation id="sc1" href="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr#art54-it5">члана 54. став 5. Закона о заштити података о личности („Службени гласник РС“ број 97/08)</simple-citation>,</provision>
+        </item>
+        <item id="preamble-it2">
+            <provision id="preamble-it2-p1">Повереник за информације од јавног значаја и заштиту података о личности, доноси</provision>
+        </item>
+    </preamble>
+    
+    <title id="title">Правилник о обрасцу легитимације овлашћеног лица за вршење надзора по Закону о заштити података о личности</title>
+    
+    <subsection id="subsection1">
+        <index id="art-i">1.</index>
+        <heading id="subsection1-h">Уводна одредба</heading>
+        
+        <article id="art1">
+            <heading id="art-h">Члан 1.</heading>
+            <item id="art1-it1">
+                <provision id="art1-it1-p1">Овим правилником ближе се прописује образац и садржина легитимације овлашћеног лица за вршење надзора над спровођењем и извршавањем <simple-citation id="sc3" href="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr">Закона о заштити података о личности (у даљем тексту: овлашћено лице) и начин вођења евиденције о издатим легитимацијама овлашћених лица.</simple-citation></provision>
+            </item>
+        </article>
+    </subsection>
+    
+    <subsection id="subsection2">
+        <index id="art-i">2.</index>
+        <heading id="subsection2-h">Образац и садржина легитимације овлашћеног лица</heading>
+        
+        <article id="art2">
+            <heading id="art2-h">Члан 2.</heading>
+            <item id="art2-it1">
+                <provision id="art2-it1-p1">Легитимација овлашћеног лица садржи штампани део легитимације и службену значку (у даљем тексту: легитимација овлашћеног лица).</provision>
+            </item>
+            <item id="art2-it2">
+                <provision id="art2-it2-p1">Легитимација овлашћеног лица састоји се од кожне футроле у којој је на десном делу футроле причвршћена значка, а на левом делу, у простору у облику џепа, смештен је штампани део легитимације.</provision>
+            </item>
+        </article>
+        
+        <article id="art3">
+            <heading id="art3-h">Члан 3.</heading>
+            <item id="art3-it1">
+                <provision id="art3-it1-p1">Штампани део легитимације овлашћеног лица се израђује на хартији са заштитом 120 г/м2.</provision>
+            </item>
+            <item id="art3-it3">
+                <provision id="art3-it3-p1">Хартија из <simple-citation id="sc4" href="#art3-it1">става 1. овог члана</simple-citation> је без избељивача са воденим знаком, влаканца су видљива под УВ светлом.</provision>
+            </item>
+            <item id="art3-it4">
+                <provision id="art3-it4-p1">Штампани део легитимације је заштићен холограмом, на коме је аплициран грб Републике Србије, а упакован је у ПВЦ провидни омот.</provision>
+            </item>
+        </article>
+        
+        <article id="art4">
+            <heading id="art4-h">Члан 4.</heading>
+            <item id="art4-it1">
+                <provision id="art4-it1-p1">Предња страна штампаног дела легитимације овлашћеног лица, садржи:</provision>
+                <point id="art4-it1-pt1">
+                    <provision id="art4-it1-pt1-p1">1) у горњем делу, у средини - грб Републике Србије;</provision>
+                </point>
+                <point id="art4-it1-pt2">
+                    <provision id="art4-it1-pt2-p1">2) испод грба, на средини текст:</provision>
+                    <provision id="art4-it1-pt2-p2">
+                        "Република Србија
+                        Повереник за информације
+                        од јавног значаја
+                        и заштиту података о личности
+                        ОВЛАШЋЕНО ЛИЦЕ"</provision>
+                </point>
+                <point id="art4-it1-pt3">
+                    <provision id="art4-it1-pt3-p1">3) испод текста: "ОВЛАШЋЕНО ЛИЦЕ", са десне стране, налази се место за фотографију овлашћеног лица, димензија 28 x 32 мм, преко које се у доњем левом углу утискује печат Повереника за информације од јавног значаја и заштиту података о личности;</provision>
+                </point>
+                <point id="art4-it1-pt4">
+                    <provision id="art4-it1-pt4-p1">4) са леве стране фотографије је холограм са грбом Републике Србије;</provision>
+                </point>
+                <point id="art4-it1-pt5">
+                    <provision id="art4-it1-pt5-p1">5) испод холограма и фотографије исписана је реч: "ИМЕ", са означеним местом за уписивање имена овлашћеног лица;</provision>
+                </point>
+                <point id="art4-it1-pt6">
+                    <provision id="art4-it1-pt6-p1">6) испод речи: "ИМЕ", исписана је реч: "ПРЕЗИМЕ" са означеним местом за уписивање презимена овлашћеног лица;</provision>
+                </point>
+                <point id="art4-it1-pt7">
+                    <provision id="art4-it1-pt7-p1">7) испод речи: "ПРЕЗИМЕ", исписана је  реч: "ЈМБГ" са означеним местом за уписивање јединственог матичног броја овлашћеног лица;</provision>
+                </point>
+                <point id="art4-it1-pt8">
+                    <provision id="art4-it1-pt8-p1">8) испод речи: "ЈМБГ", на средини, је регистарски број легитимације.</provision>
+                </point>
+            </item>
+            <item id="art4-it2">
+                <provision id="art4-it2-p1">Полеђина штампаног дела легитимације овлашћеног лица садржи:</provision>
+                <point id="art4-it2-pt1">
+                    <provision id="art4-it2-pt1-p1">1) у горњем делу, у средини текст: "ОВЛАШЋЕЊА";</provision>
+                </point>
+                <point id="art4-it2-pt2">
+                    <provision id="art4-it2-pt2-p1">2) испод текста: "ОВЛАШЋЕЊА" одштампан је текст следеће садржине: "Надзор над спровођењем и извршавањем Закона о заштити података о личности („Службени гласник РС“ број 97/08) врши Повереник, преко овлашћених лица (чл. 54. ст. 1. и 2. Закона).
+                        У вршењу надзора овлашћено лице дужно је да покаже легитимацију (чл. 54. ст. 5. Закона). 
+                        Лица којима су овим законом утврђене обавезе у вези са заштитом података, дужна су да овлашћеном лицу омогуће несметано вршење надзора и ставе му на увид и располагање потребну документацију (чл. 55. Закона);</provision>
+                </point>
+                <point id="art4-it2-pt3">
+                    <provision id="art4-it2-pt3-p1">3) на левој страни, испод текста о правима и дужностима овлашћеног лица, у загради су речи: "датум издавања", изнад којих је означено место за уписивање датума издавања легитимације;</provision>
+                </point>
+                <point id="art4-it2-pt4">
+                    <provision id="art4-it2-pt4-p1">4) на средини обрасца налази се место означено за печат ("М.П"), а десно се налази место означено за потпис Повереника, испод кога је реч: "Повереник";</provision>
+                </point>
+                <point id="art4-it2-pt5">
+                    <provision id="art4-it2-pt5-p1">5) у доњем делу, лево налази се место означено за својеручни потпис овлашћеног лица испод кога су, у загради, наведене речи: "Својеручни потпис".</provision>
+                </point>
+            </item>
+        </article>
+        
+        <article id="art5">
+            <heading id="art5-h">Члан 5.</heading>
+            <item id="art5-it1">
+                <provision id="art5-it1-p1">Службена значка је саставни део легитимације овлашћеног лица, и састоји се из два одвојена дела.</provision>
+            </item>
+            <item id="art5-it2">
+                <provision id="art5-it2-p1">Први део службене значке је израђен као значка од метала, технологијом ливења, у облику стилизованог барокног штита, хромираних површина, димензија 66 x 54 мм, и фиксиран је на десној страни кожне футроле, у горњем делу.</provision>
+            </item>
+            <item id="art5-it3">
+                <provision id="art5-it3-p1">Значка из <simple-citation id="sc5" href="#art5-it2">става 2. овог члана</simple-citation> садржи:</provision>
+                <point id="art5-it3-pt1">
+                    <provision id="art5-it3-pt1-p1">1) у горњем делу представљен је стилизовани зрак, висине 9 мм и ширине 50 мм, изнад националне српске тробојке, која је хоризонтална, двостепено подавијена и пружа се својим слободним крајевима, симетрично постављеним до обода знака, дужине 53 мм и ширине 7 мм. Ова трака је испуњена емајл бојом-црвеном, плавом и белом.</provision>
+                </point>
+                <point id="art5-it3-pt2">
+                    <provision id="art5-it3-pt2-p1">2) у средишњем делу представљен је мали грб Србије, који својом круном покрива, у делу плаве и беле емајл боје, националну тробојку.</provision>
+                </point>
+                <point id="art5-it3-pt3">
+                    <provision id="art5-it3-pt3-p1">3) око штита са грбом је, тегет емајлом офарбано поље ширине 12 мм и санс серифни ћирилични текст у два реда, лучно позициониран, тако да:</provision>
+                    <line id="art5-it3-pt3-ln1"><provision id="art5-it3-pt3-ln1-p1">- први ред садржи текст: „ПОВЕРЕНИК ЗА ИНФОРМАЦИЈЕ“, а</provision></line>
+                    <line id="art5-it3-pt3-ln2"><provision id="art5-it3-pt3-ln2-p1">- други ред садржи текст: „ОД ЈАВНОГ ЗНАЧАЈА И ЗАШТИТУ ПОДАТАКА О ЛИЧНОСТИ“. </provision></line>  
+                </point>
+                <item id="art5-it4">
+                    <provision id="art5-it4-p1">Обод у овом лучном делу око тегет поља је ширине 4 мм, са каналуром, целом дужином граверски обрађеном (цизелираном), ширине 1 мм.</provision>
+                 </item>
+            </item>
+            <item id="art5-it4">
+                <provision id="art5-it4-p1">Други део службене значке је израђен као метална хромирана трака димензија 69 х 10 мм, на којој је у два реда исписан ћирилични текст:</provision>
+                <line id="art5-it4-ln1"><provision id="art5-it4-ln1-p1">-први ред садржи текст: „ОВЛАШЋЕНО ЛИЦЕ“,</provision></line> 
+                <line id="art5-it4-ln2"><provision id="art5-it4-ln2-p1">-други ред садржи текст: „ЗА ИНСПЕКЦИЈСКИ НАДЗОР“.</provision></line>
+            </item>
+        </article>
+        
+        <article id="art6">
+            <heading id="art6-h">Члан 6.</heading>
+            <item id="art6-it1">
+                <provision id="art6-it1-p1">Кожна футрола легитимације овлашћеног лица, израђена је од природне коже црне боје, у склопљеном стању величине 85 x 110 мм.</provision>
+            </item>
+        </article>
+            
+        <article id="art7">
+            <heading id="art7-h">Члан 7.</heading>
+            <item id="art7-it1">
+                <provision id="art7-it1-p1">Легитимацију овлашћеног лица издаје Повереник за информације од јавног значаја и заштиту података о личности (у даљем тексту: Повереник).</provision>
+            </item>
+            <item id="art7-it2">
+                <provision id="art7-it2-p1">Ако Повереник опозове овлашћење на основу кога је издата легитимација или легитимација буде изгубљена, оштећена или овлашћено лице на други начин остане без легитимације, иста ће се огласити неважећом у "Службеном гласнику Републике Србије".</provision>
+            </item>
+            <item id="art7-it3">
+                <provision id="art7-it3-p1">Поред легитимације из <simple-citation id="sc6" href="#art7-it1">става 1. овог члана</simple-citation>, запослени у служби Повереника имају и идентификационе легитимације, ради идентификације приликом обављања службених послова, чију садржину одређује Повереник.</provision>
+            </item>
+        </article>
+    </subsection>
+    
+    <subsection id="subsection3">
+        <index id="art-i">3.</index>
+        <heading id="subsection3-h">Евиденција о издатим легитимацијама овлашћених лица</heading>
+        
+        <article id="art8">
+            <heading id="art8-h">Члан 8.</heading>
+            <item id="art8-it1">
+                <provision id="art8-it1-p1">Евиденцију о издатим легитимацијама овлашћених лица води Повереник.</provision>
+            </item>
+            <item id="art8-it2">
+                <provision id="art8-it2-p1">Евиденција о издатим легитимацијама овлашћених лица садржи:</provision>
+                <point id="art8-it2-pt1">
+                    <provision id="art8-it2-pt2-p1">1) име и презиме лица коме је легитимација издата (у даљем тексту: овлашћено лице);</provision>
+                </point>
+                <point id="art8-it2-pt2">
+                    <provision id="art8-it2-pt2-p1">2) регистарски број легитимације;</provision>
+                </point>
+                <point id="art8-it2-pt3">
+                    <provision id="art8-it2-pt3-p1">3) датум издавања;</provision>
+                </point>
+                <point id="art8-it2-pt4">
+                    <provision id="art8-it2-pt4-p1">4) напомену.</provision>
+                </point>
+            </item>
+        </article>
+        
+        <article id="art9">
+            <heading id="art9-h">Члан 9.</heading>
+            <item id="art9-it1">
+                <provision id="art9-it1-p1">Графички приказ штампаног дела легитимације и службене значке, дати су на обрасцима <simple-citation id="sc7" href="#attachment1">1</simple-citation> и <simple-citation id="sc8" href="#attachment2">2</simple-citation>, у прилогу овог правилника и чине његов саставни део.</provision>
+            </item>
+        </article>
+        
+        <article id="art10">
+            <heading id="art10-h">Члан 10.</heading>
+            <item id="art10-it1">
+                <provision id="art10-it1-p1">Овај правилник ступа на снагу осмог дана од дана објављивања у "Службеном гласнику Републике Србије".</provision>
+            </item>
+        </article>
+    </subsection>
+    
+    <!--
+        
+        Број: 110-00-00007/2009-01            
+        У Београду, 21.04.2009. године
+        
+        ПОВЕРЕНИК
+        
+        Родољуб Шабић, с.р. 
+    -->
+    
+    <attachments id="attachments">
+        <attachment id="attachment1" src="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#attachment1">Прилог 1: Образац 1</attachment>
+        <attachment id="attachment2" src="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik#attachment2">Прилог 2: Образац 2</attachment>
+    </attachments>
+</regulation>

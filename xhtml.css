@@ -1,0 +1,217 @@
+/*
+This stylesheet is a part of the supplementary material that comes with the PhD thesis entitled 
+“Creation of Usage of Digital Legislation” defended by Stevan Gostojić
+
+For more information, see http://informatika.ftn.uns.ac.rs/legal
+*/
+
+html {
+    counter-reset: part;
+    counter-reset: chapter;
+    counter-reset: section;
+    counter-reset: subsection;
+    counter-reset:article;
+    counter-reset: point;
+    counter-reset: subpoint;
+    
+    display: block;
+    
+    margin-left: 1in;
+    margin-right: 1in;
+
+}
+
+metadata {
+    display: none;  
+}
+
+meta {
+    display: none;
+}
+
+preamble {
+    display: block;
+    
+    white-space: normal;
+    
+    margin-bottom: 11pt;
+    
+    text-align: justify;
+    /*text-indent: 1in;   */
+    
+}
+
+h1 {
+    display: block;
+    
+    text-align: center;
+    text-transform: uppercase;
+    
+    font-family: "Arial", sans-serif;
+    font-size: 13pt; 
+    font-weight: bold;
+    
+    margin-top: 22pt;
+    margin-right: 1in;
+    margin-bottom: 22pt;
+    margin-left: 1in;
+}
+
+h2 {
+    display: block;
+    
+    margin-bottom: 11pt;
+   
+    text-align: center;
+    text-transform: uppercase;
+    
+    font-family: "Arial", sans-serif;
+    font-size: 12pt; 
+    font-weight: bold;
+}
+
+.part {
+   counter-reset: chapter;
+   counter-reset: section;
+   counter-reset: subsection;
+   
+   display: block;
+   
+   margin-bottom: 11pt;
+   
+   page-break-after: always; 
+}
+
+h3 {
+    display: block;
+    
+    margin-bottom: 11pt;
+   
+    text-align: center;
+    text-transform: uppercase;
+    
+    font-family: "Arial", sans-serif;
+    font-size: 12pt; 
+    font-weight: bold;
+}
+
+.chapter {
+    counter-reset: section;
+    counter-reset: subsection;
+    
+    display: block;
+    
+    margin-bottom: 11pt;
+}
+
+h4 {
+    display: block;
+    
+    margin-bottom: 11pt;
+   
+    text-align: center;
+    
+    font-family: "Arial", sans-serif;
+    font-size: 12pt; 
+    font-weight: bold;
+}
+
+.section {
+    counter-reset: subsection;
+    
+    display: block;
+
+    margin-bottom: 11pt;
+}
+
+h5 {
+    display: block;
+    
+    margin-bottom: 11pt;
+   
+    text-align: center;
+    
+    font-family: "Arial", sans-serif;
+    font-size: 11pt;
+    font-weight: bold;
+}
+
+.subsection {
+    display: block;
+    
+    margin-bottom: 11pt;
+}
+
+h6 {
+    display: block;
+    
+    margin-bottom: 11pt;
+   
+    text-align: center;
+    /*text-indent: 0in;*/   
+    
+    font-family: "Arial", sans-serif;
+    font-size: 11pt; 
+    font-style: normal;
+    font-weight: bold;
+}
+
+.article {
+    counter-reset: point;
+    counter-reset: subpoint;
+    
+    display: block;
+    
+    margin-bottom: 11pt;
+    
+    text-align: justify;
+    /*text-indent: 1in;*/   
+}
+
+.item {
+    display: block;
+    
+    margin-bottom: 11pt;
+}
+
+.point {
+    display: block;
+    
+    counter-reset: subpoint;
+    
+    margin-bottom: 11pt;
+}
+
+.subpoint {
+    display: block;
+    
+    margin-bottom: 11pt;
+}
+
+.line {
+    display: block;
+    
+    margin-bottom: 11pt;
+}
+
+p {
+    display: inline;
+    
+    /*text-indent: 0in;*/
+    
+    font-family: "Arial", sans-serif;
+    font-size: 11pt; 
+    font-style: normal;
+    font-weight: normal;
+}
+
+a {
+    display: inline;
+    color: blue;
+    cursor: crosshair;
+}
+
+.date {
+    display: inline;
+    font-style: italic;
+}

@@ -1,0 +1,437 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="regulation.css"?>
+
+<!--
+This document is a part of the supplementary material that comes with the PhD thesis entitled 
+“Creation of Usage of Digital Legislation” defended by Stevan Gostojić
+
+For more information, see http://informatika.ftn.uns.ac.rs/legal
+-->
+
+<!-- 
+    назив: Закон о заштити података о личности ("Службени гласник РС", бр. 97/08)
+    донет: 2008-10-23
+проглашен: 2008-10-27
+ објављен: 2008-10-27
+-->
+
+<regulation xmlns="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/lax"
+    xmlns:regulation="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0"
+    xmlns:metalex="http://www.metalex.eu/metalex/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/lax regulation-lax.xsd"
+    metalex:type="container" metalex:subtype="root" 
+    metalex:naming="urn:metalex:sr" metalex:LocalNamingConventionMethod="individual" metalex:LocalNamingConventionScope="root"
+    id="regulation" xml:base="urn:lex:rs:narodna-skupstina:ustav:2006-11-08;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik" 
+    xml:lang="sr"
+    grddl:transformation="RDFa2RDFXML.xsl http://ns.inria.fr/grddl/rdfa/2008/09/03/RDFa2RDFXML.xsl" xmlns:grddl="http://www.w3.org/2003/g/data-view#">
+    
+    <!-- metalex:naming attribute (value: an IRI) must be used to signal conformance to a naming convention -->
+    <!-- xml:base attribute is an identifier of the manifestation of the legislation -->
+    <!-- xml:lang attribute is an identifier of the language of the legislation -->
+    
+    <!-- 
+    <title>З А К О Н О ЗАШТИТИ ПОДАТАКА О ЛИЧНОСТИ</title>
+    -->
+    
+    <!-- Metadate in RDFa format will not "validate" against OWL schema because it is not complete. Use metadata in Protege instead. -->
+    <metadata id="md" metalex:type="mcontainer">
+        <!-- all attribute names must be prefixed -->
+        
+        <!-- The RDF interpretation of a name MUST assign an IRI reference to the work, expression, and manifestation, and link these 
+            using the properties metalex-owl:embodies and metalex-owl:realizes p. 25 -->
+        
+        <!-- 
+            IRI format compatibile with urn:lex URN namespace [TODO: Write textual specification of the format]
+            
+            "urn:lex
+            :"<jurisdiction-code>[";"<jurisdiction-unit>]*"
+            :"<authority>":"<measure>":"<details>[":"<annex>]*
+            @<expression>::="@"<version>[":"<language>]?
+            $<format>[";"<specification>"]*":"<editor>[";"<specification>]*[":"<component>[";"<specification>]*]?
+            [":"<feature>[";"<specification>]*]?
+            
+            urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik
+            urn:lex:rs:sluzbeni-glasnik:zakon:2008-10-27;2375@original:sr$text-xml;cen-metalex:sluzbeni-glasnik
+            
+            "
+        -->
+        
+        <!-- Expression realizes Work -->
+        <meta id="m1" metalex:about="urn:lex:rs:narodna-skupstina:ustav:2006-11-08;lex-1@original:sr"
+            metalex:rel="metalex-owl:realizes"
+            href="urn:lex:rs:narodna-skupstina:ustav:2006-11-08;lex-1" metalex:type="meta"/>
+        
+        <!-- Manifestation emodies Expression -->
+        <meta id="m2"
+            metalex:about="urn:lex:rs:narodna-skupstina:ustav:2006-11-08;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex-owl:embodies"
+            href="urn:lex:rs:narodna-skupstina:ustav:2006-11-08;lex-1@original:sr" metalex:type="meta"/>
+        
+        <!-- Manifestation must be examplified by at least one Item -->
+        <meta id="m3"
+            metalex:about="urn:lex:rs:narodna-skupstina:ustav:2006-11-08;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex-owl:exemplifiedBy" href="http://informatika.ftn.uns.ac.rs/legal/metalex/constitution.xml"
+            metalex:type="meta"/>
+        
+        <!-- FRBR Work Level Metadata -->
+        
+        <!-- country -->
+        <meta id="m5"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#ConstitutionInentifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#RS"
+            metalex:type="meta" />
+        
+        <meta id="m6"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#RS"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#countryCode"
+            metalex:content="rs"
+            metalex:type="meta" />
+        
+        <!-- document type -->
+        <meta id="m7"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#ConstitutionInentifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Ustav"
+            metalex:type="meta" />
+        
+        <meta id="m8"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Ustav"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#workTypeID"
+            metalex:content="ustav"
+            metalex:type="meta" />
+        
+        <!-- document subtype -->
+        <!-- emanating actor [obligatory, TODO] 
+             Work resultOf LegislativeDelivery agent
+             Work resultOf LegislativeDelivery legislativeCompetence -->
+        <!-- promulgating actor -->
+        
+        <!-- creation date -->
+        <meta id="m9"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#ConstitutionInentifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawWorkCreationDate"
+            metalex:type="meta" />
+        
+        <meta id="m10"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawWorkCreationDate"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#xsdDate"
+            metalex:content="2006-11-08"
+            metalex:datatype="date"
+            metalex:type="meta" />
+        
+        <!-- number / disambiguating feature -->
+        <meta id="m11"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#ConstitutionInentifier"
+            metalex:rel=" http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Lex-1"
+            metalex:type="meta" />
+        
+        <meta id="m12"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Lex-1"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#issueID"
+            metalex:content="lex-1"
+            metalex:type="meta" />
+         
+        <!-- FRBR expression level metadata -->
+        
+        <!-- languages -->
+        <meta id="m13"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#ConstitutionInentifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#SR"
+            metalex:type="meta" />
+        
+        <meta id="m14"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#SR"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#languageCode"
+            metalex:content="sr"
+            metalex:type="meta" />
+        
+        <!-- validity dates -->
+        <!-- authoring information 
+             Expression resultOf LegislativeModification agent
+        -->
+        
+        <!-- content-specification date -->
+        <meta id="m15"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#ConstitutionInentifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawExpressionCreationDate"
+            metalex:type="meta" />
+        
+        <meta id="m16"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawExpressionCreationDate"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#xsdDate"
+            metalex:content="2006-11-08"
+            metalex:datatype="date"
+            metalex:type="meta" />   
+        
+        <!-- FRBR manifestation level metadata -->
+        
+        <!-- format -->
+        <meta id="m17"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#ConstitutionInentifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#CENMetaLex"
+            metalex:type="meta" />
+        
+        <meta id="m18"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#CENMetaLex"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#manifestationTypeID"
+            metalex:content="text-xml;cen-metalex"
+            metalex:type="meta" />
+        
+        <!-- markup authoring information [obligatory, TODO] 
+             Manifestation resultOf LegislativePublication agent -->
+        <!-- markup specific date 
+            Manifestation resultOf LegislativePublication date -->
+        <!-- markup-related information (multiple versions, etc.) -->    
+    </metadata>
+    
+    <title id="title">Директива Европског Парламента и Савета 95/46/ЕЗ од 24.10.1995. о заштити грађана у вези са обрадом података о личности и о слободном кретању таквих података</title>
+    
+    <chapter id="chapter1">
+        <heading id="part1-h"></heading>
+        
+        <article id="art">
+            <heading id="art-h"></heading>
+            <item id="art-it">
+                <provision id="art-it-p"></provision>
+            </item>
+        </article>
+        
+        <article id="art">
+            <heading id="art-h"></heading>
+            <item id="art-it">
+                <provision id="art-it-p"></provision>
+            </item>
+        </article>
+        
+        <article id="art">
+            <heading id="art-h"></heading>
+            <item id="art-it">
+                <provision id="art-it-p"></provision>
+            </item>
+        </article>
+        
+        <article id="art">
+            <heading id="art-h"></heading>
+            <item id="art-it">
+                <provision id="art-it-p"></provision>
+            </item>
+        </article>
+    </chapter>
+    
+    <chapter id="chapter2">
+        <heading id="chapter2-h"></heading>
+        
+        <section id="section">
+            <heading id="section-h"></heading>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+        </section>
+        
+        <section id="section">
+            <heading id="section-h"></heading>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+            
+        </section>
+        
+        <section id="section">
+            <heading id="section-h"></heading>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+        </section>
+        
+        <section id="section">
+            <heading id="section-h"></heading>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+        </section>
+        
+        <section id="section">
+            <heading id="section-h"></heading>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+            
+        </section>
+        
+        <section id="section">
+            <heading id="section-h"></heading>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+            
+        </section>
+        
+        <section id="section">
+            <heading id="section-h"></heading>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+            
+        </section>
+        
+        <section id="section">
+            <heading id="section-h"></heading>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+        </section>
+        
+        <section id="section">
+            <heading id="section-h"></heading>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+            
+            <article id="art">
+                <heading id="art-h"></heading>
+                <item id="art-it">
+                    <provision id="art-it-p"></provision>
+                </item>
+            </article>
+            
+        </section>
+    </chapter>
+    
+    <chapter id="chapter3">
+        <heading id="chapter3-h"></heading>
+        
+        <article id="art">
+            <heading id="art-h"></heading>
+            <item id="art-it">
+                <provision id="art-it-p"></provision>
+            </item>
+        </article>
+        
+        <article id="art">
+            <heading id="art-h"></heading>
+            <item id="art-it">
+                <provision id="art-it-p"></provision>
+            </item>
+        </article>
+        
+        <article id="art">
+            <heading id="art-h"></heading>
+            <item id="art-it">
+                <provision id="art-it-p"></provision>
+            </item>
+        </article>
+        
+    </chapter>
+    
+    <chapter id="chapter4">
+        <heading id="chapter4-h"></heading>
+        
+    </chapter>
+    
+    <chapter id="chapter5">
+        <heading id="chapter5-h"></heading>
+        
+    </chapter>
+    
+    <chapter id="chapter6">
+        <heading id="chapter6-h"></heading>
+        
+    </chapter>
+    
+    <chapter id="chapter7">
+        <heading id="chapter7-h"></heading>
+        
+    </chapter>
+</regulation>

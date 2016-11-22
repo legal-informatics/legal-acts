@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="regulation.css"?>
+
+<!--
+This document is a part of the supplementary material that comes with the PhD thesis entitled 
+“Creation of Usage of Digital Legislation” defended by Stevan Gostojić
+
+For more information, see http://informatika.ftn.uns.ac.rs/legal
+-->
+
+<!-- 
+   Naslov: ZAKON O SANITARNOM NADZORU ("Sl. glasnik RS", br. 125/2004)
+   Glasilo: Službeni glasnik RS, broj 125/2004 od 22/11/2004
+   Propis na snazi: 30/11/2004 - 
+   Verzija na snazi: 30/11/2004 - 
+   Komentar urednika: Do donošenja podzakonskih akata po ovom zakonu primenjivaće se podzakonski akti doneti na osnovu Zakona o sanitarnom nadzoru ("Sl. glasnik RS", br. 34/94 i 25/96), ako nisu u suprotnosti sa ovim zakonom.
+-->
+
+<regulation
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:metalex="http://www.metalex.eu/metalex/1.0"
+    xmlns:regulation="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/strict"
+    xmlns="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/strict"
+    xsi:schemaLocation="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/strict regulation-strict.xsd"
+    id="regulation" metalex:LocalNamingConventionMethod="individual" metalex:LocalNamingConventionScope="root"
+    metalex:type="container" metalex:subtype="root" 
+    xml:base="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik" 
+    metalex:naming="urn:metalex:sr" 
+    xml:lang="sr"
+    grddl:transformation="RDFa2RDFXML.xsl http://ns.inria.fr/grddl/rdfa/2008/09/03/RDFa2RDFXML.xsl" xmlns:grddl="http://www.w3.org/2003/g/data-view#">
+
+    <title id="title">Zakon o sanitarnom nadzoru</title>
+    <!-- Metadate in RDFa format will not "validate" against OWL schema because it is not complete. Use metadata in Protege instead. -->
+    <metadata id="md" metalex:type="mcontainer">
+        <!-- Expression realizes Work -->
+        <meta id="m1" metalex:about="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1@original:sr"
+            metalex:rel="metalex-owl:realizes"
+            href="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1" metalex:type="meta"/>
+        
+        <!-- Manifestation emodies Expression -->
+        <meta id="m2"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex-owl:embodies"
+            href="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1@original:sr" metalex:type="meta"/>
+        
+        <!-- Manifestation must be examplified by at least one Item -->
+        <meta id="m3"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex-owl:exemplifiedBy" href="http://informatika.ftn.uns.ac.rs/legal/metalex/health.xml"
+            metalex:type="meta"/>
+        
+        <!-- If one wants to conform to a naming convention that depends on serialization of IRI but also want to embed another 
+             identifier, this is trivially achieved with a RDF statement of that impact, for instance: -->
+        <meta id="m4"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/health.xml"
+            metalex:rel="owl:sameAs" href="http://foo.bar" metalex:type="meta"/>       
+        
+        <!-- FRBR Work Level Metadata -->
+        <meta 
+            id="m5"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="Serbia" />     
+        <meta
+            id="m6"
+            metalex:about="Serbia"
+            metalex:property="metalex:countryCode"
+            metalex:content="RS" 
+            rdf:typeof="metalex:Country"/>   
+        <meta
+            id="m7"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="Law" />
+        <meta
+            id="m8"
+            metalex:about="Law"
+            metalex:property="metalex:workTypeID"
+            metalex:content="LAW"
+            rdf:typeof="metalex:WorkType" />
+        <meta
+            id="m9"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="WorkCreationDate" />   
+        <meta
+            id="m10"
+            metalex:about="WorkCreationDate"
+            metalex:property="metalex:xsdDate"
+            metalex:content="2004-11-15"
+            metalex:datatype="date"
+            rdf:typeof="metalex:Date" />
+        <meta
+            id="m11"
+            metalex:about="LegislativeDeliveryEvent"
+            metalex:property="metalex:dateOf"
+            metalex:content="WorkCreationDate"
+            rdf:typeof="metalex:LegislativeDelivery" />
+        <meta
+            id="m12"
+            metalex:about="LegislativeDeliveryEvent"
+            metalex:property="metalex:agent"
+            metalex:content="NationalAssembly"
+            rdf:typeof="metalex:LegislativeDelivery" />
+        <meta
+            id="m13"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="1stIssue" />
+        <meta
+            id="m14"
+            metalex:about="1stIssue"
+            metalex:property="metalex:issueID"
+            metalex:content="1"
+            rdf:typeof="metalex:Issue" />
+        
+        <!-- FRBR expression level metadata -->
+        <meta
+            id="m15"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1@original:sr"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="Serbian" />  
+        <meta 
+            id="m16"
+            metalex:about="Serbian"
+            metalex:property="metalex:languageCode"
+            metalex:content="SR"
+            rdf:typeof="metalex:Language" />
+        <meta
+            id="m17"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1@original:sr"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="ExpressionCreationDate" />   
+        <meta
+            id="m18"
+            metalex:about="ExpressionCreationDate"
+            metalex:property="metalex:xsdDate"
+            metalex:content="2004-11-15"
+            metalex:datatype="date"
+            rdf:typeof="metalex:Date" />
+         
+        <!-- FRBR manifestation level metadata -->
+        <meta
+            id="m19"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="CENMetaLex" />
+        <meta
+            id="m20"
+            metalex:about="CENMetaLex"
+            metalex:property="metalex:manifestationTypeID"
+            metalex:content="CEN MetaLex"
+            rdf:typeof="metalex:ManifestationType" />      
+        <meta
+            id="m21"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2004-11-15;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:property="metalex:resultOf"
+            metalex:content="LegislativePublicationEvent" />
+        <meta
+            id="m22"
+            metalex:about="LegislativePublicationEvent"
+            metalex:property="metalex:agent"
+            metalex:content="OfficialGazette"
+            rdf:typeof="metalex:LegislativePublication" />
+        <meta
+            id="m23"
+            metalex:about="LegislativePublicationEvent"
+            metalex:property="metalex:date"
+            metalex:content="ManifestationCreationDate"
+            rdf:typeof="metalex:LegislativePublication" />
+        <meta
+            id="m24"
+            metalex:about="ManifestationCreationDate"
+            metalex:property="metalex:xsdDate"
+            metalex:content="2004-11-22"
+            metalex:datatype="date"
+            rdf:typeof="metalex:Date" />
+    </metadata>
+    
+    <chapter id="chp1" metalex:type="hcontainer">
+        <index id="chp1-ind" type="block">I</index><heading id="chp1-hdn" type="block">OSNOVNE ODREDBE</heading> 
+        <article id="art1" type="hcontainer">
+            <heading id="art1-hdn" type="block">Predmet uređivanja</heading>
+            <index id="art-ind" type="block">Član 1</index>
+            <item id="art1-itm1" type="container"><provision id="art1-itm1-prv1" type="block">Ovim zakonom uređuju se poslovi sanitarnog nadzora, način i postupak vršenja sanitarnog nadzora, određuju se oblasti i objekti koji podležu sanitarnom nadzoru i sanitarni uslovi koje ti objekti moraju ispunjavati, kao i ovlašćenja, prava i dužnosti sanitarnih inspektora u postupku sanitarnog nadzora.</provision></item>
+        </article>
+        <article id="art2" type="hcontainer">
+            <heading id="art2-hdn" type="block">Poslovi sanitarnog nadzora</heading>
+            <index id="art2-ind" type="block">Član 2</index>
+            <item id="art2-itm1" type="container"><provision id="art2-itm1-prv1" type="block">Sanitarni nadzor je inspekcijski nadzor nad primenom zakona, drugih propisa i opštih akata i nad sprovođenjem propisanih mera, u oblastima koje podležu sanitarnom nadzoru, uključujući i kontrolu ispunjenosti propisanih sanitarno-tehničkih i higijenskih uslova (u daljem tekstu: sanitarni uslovi) koje moraju da ispune objekti, prostorije, postrojenja, uređaji, nameštaj, oprema i pribor, namenska prevozna sredstva i lica koja podležu sanitarnom nadzoru, sa ciljem zaštite zdravlja stanovništva.</provision></item>
+            <item id="art2-itm2" type="container"><provision id="art2-itm2-prv1" type="block">Sanitarni nadzor iz <simple-citation id="sc1" href="#art2-itm1" type="inline" subtype="citationSimple">stava 1. ovog člana</simple-citation> je i zdravstveni nadzor nad životnim namirnicama i predmetima opšte upotrebe u proizvodnji i prometu, u skladu sa zakonom.</provision></item>
+            <item id="art2-itm3" type="container"><provision id="art2-itm3-prv1" type="block">Sanitarni nadzor je i zdravstveni nadzor na granici i drugim mestima u kojima se vrši carinjenje nad životnim namirnicama i predmetima opšte upotrebe koji se uvoze, kao i sanitarni nadzor na granici nad putnicima, njihovim stvarima i saobraćajnim sredstvima u međunarodnom saobraćaju, u skladu sa posebnim zakonima, potvrđenim međunarodnim ugovorima i međunarodnim sanitarnim konvencijama.</provision></item>
+        </article>
+        <article id="art3" type="hcontainer">
+            <index id="art3-ind" type="block">Član 3</index>
+            <item id="art3-itm1" type="container"><provision id="art3-itm1-prv1" type="block">Sanitarni nadzor iz <simple-citation id="sc2" href="#art2" type="inline" subtype="citationSimple">člana 2. ovog zakona</simple-citation> vrši ministarstvo nadležno za poslove zdravlja (u daljem tekstu: Ministarstvo), preko sanitarnih inspektora, u okviru delokruga utvrđenog zakonom.</provision></item>
+            <item id="art3-itm2" type="container"> <provision id="art3-itm2-prv1" type="block">Sanitarni nadzor iz <citation-range id="cr1" href="art2-itm1" upTo="art2-itm2" type="inline" subtype="citationRange">člana 2. st. 1. i 2. ovog zakona</citation-range> na teritoriji autonomne pokrajine, kao povereni posao, vrši pokrajinski organ uprave nadležan za poslove zdravlja preko sanitarnih inspektora.</provision></item>
+        </article>
+        <article id="art4" type="hcontainer">
+            <index id="art4-ind" type="block">Član 4</index>
+            <item id="art4-itm1" type="container"> <provision id="art4-itm1-prv1" type="block">Sanitarni inspektori obavljaju poslove sanitarnog nadzora samostalno, na osnovu ovlašćenja utvrđenih ovim zakonom.</provision></item>
+            <item id="art4-itm2" type="container"> <provision id="art4-itm2-prv1" type="block">U obavljanju poslova iz <simple-citation id="sc3" href="#art4-itm1" type="inline" subtype="citationSimple">stava 1. ovog člana</simple-citation> sanitarni inspektori mogu preduzimati i druge mere i radnje u okviru prava i dužnosti utvrđenih posebnim zakonima.</provision></item>
+        </article>
+        <article id="art5" type="hcontainer">
+            <index id="art5-ind" type="block">Član 5</index>
+            <item id="art5-itm1" type="container"> <provision id="art5-itm1-prv1" type="block">Poslovi sanitarnog nadzora su poslovi od opšteg interesa za Republiku.</provision></item>
+        </article>
+    </chapter>
+    
+    <chapter id="chp2" metalex:type="hcontainer">
+        <index id="chp2-ind" type="block">II</index><heading id="chp2-hdn" type="block">OBLASTI KOJE PODLEŽU SANITARNOM NADZORU</heading>
+        <article id="art6" type="hcontainer">
+            <index id="art6-ind" type="block">Član 6</index>
+            <item id="art6-itm1" type="container"><provision id="art6-itm1-prv1" type="block">Oblasti koje podležu sanitarnom nadzoru, u smislu ovog zakona jesu:</provision>
+                <point id="art6-itm1-pnt1" type="container"> <provision id="art6-itm1-pnt1-prv1" type="block">1) oblast zaštite stanovništva od zaraznih bolesti;</provision></point>
+                <point id="art6-itm1-pnt2" type="container"> <provision id="art6-itm1-pnt2-prv1" type="block">2) oblast zdravstvene ispravnosti životnih namirnica i predmeta opšte upotrebe u proizvodnji, prometu i uvozu;</provision></point>
+                <point id="art6-itm1-pnt3" type="container"> <provision id="art6-itm1-pnt3-prv1" type="block">3) oblast javnog snabdevanja stanovništva vodom za piće.</provision></point></item>
+        </article>
+        <article id="art7" type="hcontainer">
+            <index id="art7-ind" type="block">Član 7</index>
+            <item id="art7-itm1" type="container"> <provision id="art7-itm1-prv1" type="block">Sanitarni nadzor, u oblastima koje podležu sanitarnom nadzoru, obuhvata inspekcijski nadzor:</provision>
+                <point id="art7-itm1-pnt1" type="container"> <provision id="art7-itm1-pnt1-prv1" type="block"> 1) objekta i njegovog neposrednog okruženja;</provision></point>
+                <point id="art7-itm1-pnt2" type="container"> <provision id="art7-itm1-pnt2-prv1" type="block"> 2) unutrašnjeg prostora i prostorija u pogledu njihove građevinske celine, međusobne funkcionalne povezanosti i higijenskog stanja;</provision></point>
+                <point id="art7-itm1-pnt3" type="container"> <provision id="art7-itm1-pnt3-prv1" type="block"> 3) postrojenja, uređaja, nameštaja, opreme i pribora;</provision></point>
+                <point id="art7-itm1-pnt4" type="container"> <provision id="art7-itm1-pnt4-prv1" type="block"> 4) sirovina, poluproizvoda i gotovih proizvoda životnih namirnica i predmeta opšte upotrebe u proizvodnji i prometu, kao i sirovina, poluproizvoda i gotovih proizvoda životnih namirnica i predmeta opšte upotrebe koji se uvoze radi stavljanja u promet na domaćem tržištu ili koji se privremeno uvoze ili izvoze radi prerade, dorade i obrade;</provision></point>
+                <point id="art7-itm1-pnt5" type="container"> <provision id="art7-itm1-pnt5-prv1" type="block"> 5) lica zaposlenih na određenim poslovima u objektima koji podležu sanitarnom nadzoru (u daljem tekstu: zaposlena lica) i drugih lica koja u skladu sa zakonom kojim se uređuje oblast zaštite stanovništva od zaraznih bolesti, podležu sanitarnom nadzoru i obaveznim zdravstvenim pregledima na propisan način;</provision></point>
+                <point id="art7-itm1-pnt6" type="container"> <provision id="art7-itm1-pnt6-prv1" type="block"> 6) namenskih prevoznih sredstava i njihove opreme, u skladu sa zakonom.</provision></point></item>
+            <item id="art7-itm2" type="container"> <provision id="art-itm-prv" type="block">Pod namenskim prevoznim sredstvima, utvrđenim u <simple-citation id="sc4" href="#art7-itm1-pnt6" type="inline" subtype="citationSimple">stavu 1. tačka 6) ovog člana</simple-citation>, podrazumevaju se:</provision>
+                <point id="art7-itm2-pnt1" type="container"> <provision id="art7-itm2-pnt1-prv1" type="block">(1) sredstva za prevoz životnih namirnica i predmeta opšte upotrebe;</provision></point>
+                <point id="art7-itm2-pnt2" type="container"> <provision id="art7-itm2-pnt2-prv1" type="block">(2) sredstva za prevoz putnika u javnom saobraćaju;</provision></point>
+                <point id="art7-itm2-pnt3" type="container"> <provision id="art7-itm2-pnt3-prv1" type="block">(3) sanitetska prevozna sredstva, i</provision></point>
+                <point id="art7-itm2-pnt4" type="container"> <provision id="art7-itm2-pnt4-prv1" type="block">(4) prevozna sredstva registrovana za prenos umrlih lica.</provision></point></item>
+        </article>
+        <article id="art8" type="hcontainer">
+            <heading id="art8-hdn" type="block">Objekti koji podležu sanitarnom nadzoru</heading>
+            <index id="art8-ind" type="block">Član 8</index>
+            <item id="art8-itm1" type="container"><provision id="art8-itm1-prv1" type="block">Objekti koji podležu sanitarnom nadzoru, u smislu <simple-citation id="sc5" href="#art7-itm1-pnt1" type="inline" subtype="citationSimple">člana 7. stav 1. tačka 1) ovog zakona</simple-citation> jesu objekti u kojima se obavlja:</provision>
+                <point id="art8-itm1-pnt1" type="container"> <provision id="art8-itm1-pnt1-prv1" type="block">1) zdravstvena delatnost;</provision></point>
+                <point id="art8-itm1-pnt2" type="container"> <provision id="art8-itm1-pnt2-prv1" type="block">2) delatnost proizvodnje i prometa životnih namirnica i predmeta opšte upotrebe;</provision></point>
+                <point id="art8-itm1-pnt3" type="container"> <provision id="art8-itm1-pnt3-prv1" type="block">3) delatnost javnog snabdevanja stanovništva vodom za piće;</provision></point>
+                <point id="art8-itm1-pnt4" type="container"> <provision id="art8-itm1-pnt4-prv1" type="block">4) ugostiteljska delatnost;</provision></point>
+                <point id="art8-itm1-pnt5" type="container"> <provision id="art8-itm1-pnt5-prv1" type="block">5) delatnost pružanja usluga održavanja higijene, nege i ulepšavanja lica i tela i nemedicinskih estetskih intervencija kojima se narušava integritet kože;</provision></point>
+                <point id="art8-itm1-pnt6" type="container"> <provision id="art8-itm1-pnt6-prv1" type="block">6) delatnost socijalne zaštite;</provision></point>
+                <point id="art8-itm1-pnt7" type="container"> <provision id="art8-itm1-pnt7-prv1" type="block">7) vaspitno-obrazovna delatnost;</provision></point>
+                <point id="art8-itm1-pnt8" type="container"> <provision id="art8-itm1-pnt8-prv1" type="block">8) delatnost kulture, fizičke kulture, sporta i rekreacije;</provision></point>
+                <point id="art8-itm1-pnt9" type="container"> <provision id="art8-itm1-pnt9-prv1" type="block"> 9) delatnost javnog saobraćaja, i</provision></point>
+                <point id="art8-itm1-pnt10" type="container"> <provision id="art8-itm1-prv1" type="block"> 10) drugi objekti određeni zakonom.</provision></point>
+            </item>
+        </article>          
+        <article id="art9" type="hcontainer">
+            <index id="art9-ind" type="block">Član 9</index>
+            <item id="art9-itm1" type="container"><provision id="art9-itm1-prv1" type="block">Pravna lica, organizacije i preduzetnici koji obavljaju delatnost u objektima koji podležu sanitarnom nadzoru, dužni su da pre početka obavljanja delatnosti u tim objektima, obezbede propisane opšte, odnosno opšte i posebne sanitarne uslove.</provision></item>
+            <item id="art9-itm2" type="container"> <provision id="art9-itm2-prv1" type="block">Ministar nadležan za poslove zdravlja propisuje opšte sanitarne uslove koje moraju da ispune svi objekti koji podležu sanitarnom nadzoru, kao i posebne sanitarne uslove koje moraju da ispune objekti utvrđeni u <citation-range id="cr2" href="#art8-itm1-pnt1" upTo="art8-itm1-pnt5" type="inline" subtype="citationSimple">članu 8. tač. 1) do 5) ovog zakona</citation-range>.</provision></item>
+        </article>      
+        <article id="art10" type="hcontainer">
+            <index id="art10-ind" type="block">Član 10</index>
+            <item id="art10-itm1" type="container"><provision id="art10-itm1-prv1" type="block">Pravna lica, organizacije i preduzetnici koji obavljaju delatnost u objektima koji podležu sanitarnom nadzoru, dužni su da pre početka obavljanja delatnosti, pored uslova utvrđenih u <simple-citation id="sc6" href="#art9-itm1" type="inline" subtype="citationSimple">članu 9. stav 1. ovog zakona</simple-citation>, obezbede i higijenske uslove koji se odnose na zaposlena lica.</provision></item>
+            <item id="art10-itm2" type="container"><provision id="art10-itm2-prv1" type="block"> Ministar nadležan za poslove zdravlja propisuje higijenske uslove iz <simple-citation id="sc6" href="#art10-itm1" type="inline" subtype="citationSimple">stava 1. ovog člana</simple-citation>.</provision></item>
+        </article>          
+        <article id="art11" type="hcontainer">
+            <index id="art11-ind" type="block">Član 11</index>
+            <item id="art11-itm1" type="container"> <provision id="art11-itm1-prv1" type="block">Pravna lica, organizacije, preduzetnici i fizička lica koja obavljaju delatnost u objektima koji podležu sanitarnom nadzoru, dužni su da u pogledu higijenskog stanja objekta, u toku korišćenja tog objekta, održavaju higijenu u objektu i njegovom neposrednom okruženju, održavaju higijenu prostorija, postrojenja, uređaja, nameštaja, opreme, pribora, namenskih prevoznih sredstava, higijenu radne odeće i obuće zaposlenih lica i preduzimaju druge higijenske mere u cilju zaštite zdravlja stanovništva, u skladu sa zakonom.</provision></item>
+            <item id="art11-itm2" type="container"> <provision id="art11-itm2-prv1" type="block">Radna odeća i obuća iz <simple-citation id="sc7" href="#art11-itm1" type="inline" subtype="citationSimple">stava 1. ovog člana</simple-citation> ne može se koristiti van radnog mesta.</provision></item>
+        </article>              
+        <article id="art12" type="hcontainer">
+            <index id="art12-ind" type="block">Član 12</index>
+            <item id="art12-itm1" type="container"><provision id="art12-itm1-prv1" type="block">Pravna lica, organizacije i preduzetnici mogu da obavljaju delatnosti utvrđene u <citation-range id="cr2" href="art8-itm1-pnt1" upTo="art8-itm1-pnt10"  type="inline" subtype="citationRange">članu 8. tač. 1) do 10) ovog zakona</citation-range>, samo u objektu koji ispunjava propisane opšte, odnosno opšte i posebne sanitarne uslove i u kojem su obezbeđeni higijenski uslovi koji se odnose na zaposlena lica.</provision></item>
+            <item id="art12-itm2" type="container"><provision id="art12-itm2-prv1" type="block">Lica koja obavljaju delatnosti utvrđene u <citation-range id="cr3" href="art8-itm1-pnt1" upTo="art8-itm1-pnt5"  type="inline" subtype="citationRange">članu 8. stav 1. tač. 1) do 5) ovog zakona</citation-range> moraju ispunjavati higijenske uslove u pogledu radne odeće i obuće i lične higijene zaposlenih.</provision></item>
+            <item id="art12-itm3" type="container"><provision id="art12-itm3-prv1" type="block">>Ministar nadležan za poslove zdravlja propisuje bliže uslove iz <simple-citation id="sc8" href="#art12-itm2" type="inline" subtype="citationSimple">stava 2. ovog člana</simple-citation>.</provision></item>
+            <item id="art12-itm4" type="container"> <provision id="art12-itm4-prv1" type="block">Kontrolu ispunjenosti uslova utvrđenih u <citation-range id="cr4" href="art12-itm1" upTo="art12-itm2" type="inline" subtype="citationRange">st. 1. i 2. ovog člana</citation-range>, kao i kontrolu higijenskog stanja objekata koji podležu sanitarnom nadzoru, sanitarni inspektor vrši u postupku redovnog sanitarnog nadzora.</provision></item>
+        </article>
+    </chapter>
+    
+    <chapter id="chp3" metalex:type="hcontainer">
+        <index id="chp3-ind" type="block">III</index><heading id="chp3-hdn" type="block">OVLAŠĆENJA, PRAVA I DUŽNOSTI SANITARNOG INSPEKTORA</heading>
+        <article id="art13" type="hcontainer">
+            <index id="art13-ind" type="block">Član 13</index>
+            <item id="art13-itm1" type="container"><provision id="art13-itm1-prv1" type="block">U vršenju sanitarnog nadzora u objektima koji podležu sanitarnom nadzoru, sanitarni inspektor u propisanom postupku, može uzeti uzorke životnih namirnica, predmeta opšte upotrebe i vode za piće radi laboratorijskog ispitivanja njihove zdravstvene ispravnosti; briseve sa ruku zaposlenih lica, postrojenja, uređaja, nameštaja, opreme i pribora za obavljanje delatnosti koja podleže sanitarnom nadzoru radi laboratorijskog ispitivanja njihove higijenske ispravnosti, kao i uzorke sterilisanog materijala i sterilisanih instrumenata radi utvrđivanja njihove sterilnosti.</provision></item>
+            <item id="art13-itm2" type="container"><provision id="art13-itm2-prv1" type="block"> Uslove higijenske ispravnosti ruku zaposlenih lica, postrojenja, uređaja, nameštaja, opreme i pribora za obavljanje delatnosti koja podleže sanitarnom nadzoru, postupak i način uzimanja briseva radi laboratorijskog ispitivanja njihove higijenske ispravnosti i uzoraka sterilisanog materijala i sterilisanih instrumenata radi utvrđivanja njihove sterilnosti, kao i vrste laboratorijskih ispitivanja radi utvrđivanja higijenske ispravnosti iz stava 1. ovog člana, propisuje ministar nadležan za poslove zdravlja.</provision></item>
+            <item id="art13-itm3" type="container"><provision id="art13-itm3-prv1" type="block">Troškove laboratorijskih ispitivanja nastale u postupku utvrđivanja higijenske ispravnosti ruku zaposlenih lica, postrojenja, uređaja, nameštaja, opreme i pribora za obavljanje delatnosti koja podleže sanitarnom nadzoru, kao i u postupku utvrđivanja sterilnosti sterilisanog materijala i sterilisanih instrumenata, snosi pravno lice, organizacija ili preduzetnik koji obavlja delatnost u objektu u kojem su uzeti brisevi, odnosno uzorci.</provision></item>
+            <item id="art13-itm4" type="container"><provision id="art13-itm4-prv1" type="block"> Laboratorijska ispitivanja u postupcima iz <simple-citation id="sc9" href="#art13-itm3" type="inline" subtype="citationSimple">stava 3. ovog člana</simple-citation> vrše zdravstvene ustanove i drugi oblici obavljanja zdravstvene delatnosti koji ispunjavaju propisane uslove za vršenje laboratorijskih ispitivanja u oblasti mikrobiologije, u skladu sa zakonom.</provision></item>
+        </article>
+        <article id="art14" type="hcontainer">
+            <index id="art14-ind" type="block">Član 14</index>
+            <item id="art14-itm1" type="container"><provision id="art14-itm1-prv1" type="block">U oblasti zaštite stanovništva od zaraznih bolesti sanitarni inspektor ovlašćen je da vrši nadzor nad sprovođenjem propisanih mera radi sprečavanja pojave, suzbijanja, eliminacije i iskorenjivanja zaraznih bolesti, kao i da preduzima druge mere i radnje određene posebnim zakonom kojim se uređuje ta oblast.</provision></item>
+        </article>
+        <article id="art15" type="hcontainer">
+            <index id="art15-ind" type="block">Član 15</index>
+            <item id="art15-itm1" type="container"><provision id="art15-itm1-prv1" type="block"> Sanitarni inspektor ovlašćen je da po zahtevu stranke izda akt potreban za sprovođenje postupka iskopavanja, prevoza i prenošenja umrlih lica, na način i pod uslovima utvrđenim posebnim zakonom.</provision></item>
+        </article>
+        <article id="art16" type="hcontainer">
+            <index id="art16-ind" type="block">Član 16</index>
+            <item id="art16-itm1" type="container"> <provision id="art16-itm1-prv1" type="block">U postupku izrade urbanističkih planova, sanitarni inspektor na zahtev nadležnog organa uprave, dostavlja opšte i posebne sanitarne uslove koji se odnose na objekte koji podležu sanitarnom nadzoru i koji su sa aspekta zaštite zdravlja stanovništva od značaja za izgradnju objekata i uređenje prostora za koji se plan priprema, kao i opšte, odnosno opšte i posebne sanitarne uslove potrebne za izdavanje akta o urbanističkim uslovima u skladu sa posebnim zakonom.</provision></item>
+        </article>
+        <article id="art17" type="hcontainer">
+            <index id="art17-ind" type="block">Član 17</index>
+            <item id="art17-itm1" type="container"><provision id="art17-itm1-prv1" type="block"> U vršenju sanitarnog nadzora nad objektima koji podležu sanitarnom nadzoru, u postupcima izgradnje, odnosno rekonstrukcije tih objekata, sanitarni inspektor utvrđuje da li je idejni projekat usklađen sa izvodom iz urbanističkog plana, odnosno sa aktom o urbanističkim uslovima kojima su utvrđeni opšti, odnosno opšti i posebni sanitarni uslovi, i daje sanitarnu saglasnost na idejni projekat za:</provision>
+                <point id="art17-itm1-pnt1" type="container"> <provision id="art17-itm1-pnt1-prv1" type="block"> 1) objekte u kojima se obavlja zdravstvena delatnost;</provision></point>
+                <point id="art17-itm1-pnt2" type="container"> <provision id="art17-itm1-pnt2-prv1" type="block">2) objekte za javno snabdevanje stanovništva vodom za piće;</provision></point>
+                <point id="art17-itm1-pnt3" type="container"> <provision id="art17-itm1-pnt3-prv1" type="block">3) objekte za proizvodnju životnih namirnica putem industrijskih postrojenja i uređaja.</provision></point></item>
+            <item id="art17-itm2" type="container"><provision id="art17-itm2-prv1" type="block"> Sanitarni inspektor utvrđuje da li su objekti iz <citation-range id="cr5" href="art17-itm1-pnt1" upTo="art17-itm1-pnt3" type="inline" subtype="citationRange">stava 1. tač. 1) do 3) ovog člana</citation-range> izgrađeni, odnosno rekonstruisani u skladu sa sanitarnim uslovima utvrđenim u idejnom projektu na koji je data sanitarna saglasnost i daje sanitarnu saglasnost za korišćenje objekta.</provision></item>
+        </article>
+        <article id="art18" type="hcontainer">
+            <index id="art18-ind" type="block">Član 18</index>
+            <item id="art18-itm1" type="container"> <provision id="art18-itm1-prv1" type="block">Pravna lica, organizacije i preduzetnici koji će delatnost obavljati u novoizgrađenim, odnosno rekonstruisanim objektima utvrđenim u <citation-range id="cr6" href="art17-itm1-pnt1" upTo="art17-itm1-pnt3" type="inline" subtype="citationRange">članu 17. stav 1. tač. 1) do 3) ovog zakona</citation-range>, dužni su da, pre početka obavljanja te delatnosti, pribave sanitarnu saglasnost na idejni projekat i sanitarnu saglasnost za korišćenje objekta radi obavljanja određene delatnosti.</provision></item>
+            <item id="art18-itm2" type="container"> <provision id="art18-itm2-prv1" type="block">U postupku sanitarnog nadzora nad objektima utvrđenim u <citation-range id="cr7" href="art17-itm1-pnt1" upTo="art17-itm1-pnt3" type="inline" subtype="citationRange">članu 17. stav 1. tač. 1) do 3) ovog zakona</citation-range>, sanitarni inspektor ovlašćen je da izvrši i kontrolu pribavljenih sanitarnih saglasnosti iz stava 1. ovog člana i preduzme mere u skladu sa ovim i drugim posebnim zakonom.</provision></item>
+            <item id="art18-itm3" type="container"> <provision id="art18-itm3-prv1" type="block">Sanitarna saglasnost za korišćenje objekta predstavlja jedan od dokaza o ispunjenosti propisanih uslova, na osnovu kojih nadležni organ izdaje upotrebnu dozvolu.</provision></item>
+        </article>
+        <article id="art19" type="hcontainer">
+            <index id="art19-ind" type="block">Član 19</index>
+            <item id="art19-itm1" type="container"><provision id="art19-itm1-prv1" type="block"> Sanitarne saglasnosti iz <simple-citation id="sc9" href="#art17" type="inline" subtype="citationSimple">člana 17. ovog zakona</simple-citation> sanitarni inspektor izdaje na zahtev stranke.</provision></item>
+            <item id="art19-itm2" type="container"><provision id="art19-itm2-prv1" type="block"> Ministar nadležan za poslove zdravlja propisuje koji se dokazi prilažu uz zahtev stranke za izdavanje sanitarne saglasnosti na idejni projekat, odnosno sanitarne saglasnosti za korišćenje objekta.</provision></item>
+        </article>
+        <article id="art201" type="hcontainer">
+            <index id="art20-ind" type="block">Član 20</index>
+            <item id="art20-itm1" type="container"><provision id="art20-itm1-prv1" type="block">Troškove nastale u postupku sanitarnog nadzora na zahtev stranke snosi podnosilac zahteva.</provision></item>
+            <item id="art20-itm2" type="container"><provision id="art20-itm2-prv1" type="block">Ministar nadležan za poslove zdravlja propisuje način utvrđivanja i visinu troškova iz <simple-citation id="sc10" href="#art20-itm1" type="inline" subtype="citationSimple">stava 1. ovog člana</simple-citation>.</provision></item>
+        </article>
+        <article id="art21" type="hcontainer">
+            <index id="art21-ind" type="block">Član 21</index>
+            <item id="art21-itm1" type="container"><provision id="art21-itm1-prv1" type="block">Poslove sanitarnog nadzora utvrđene u <citation-range id="cr8" href="art13" upTo="art18" type="inline" subtype="citationRange">čl. 13. do 18. ovog zakona</citation-range>, na teritoriji autonomne pokrajine, kao poverene poslove, vrši pokrajinski organ uprave nadležan za poslove zdravlja preko sanitarnih inspektora.</provision></item>
+        </article>
+        <article id="art22" type="hcontainer">
+            <index id="art22-ind" type="block">Član 22</index>
+            <item id="art22-itm1" type="container"><provision id="art22-itm1-prv1" type="block">Državni organi, pravna lica i druge organizacije dužni su da sanitarnom inspektoru pružaju stručnu pomoć, da sarađuju u vršenju sanitarnog nadzora i da stavljaju na raspolaganje sve podatke potrebne za vršenje tog nadzora.</provision></item>
+        </article>
+        <article id="art23" type="hcontainer">
+            <index id="art23-ind" type="block">Član 23</index>
+            <item id="art23-itm1" type="container"><provision id="art23-itm1-prv1" type="block">Pravna lica, organizacije, preduzetnici i fizička lica čija delatnost, objekti, namenska prevozna sredstva, zaposlena lica, proizvodi, postrojenja, uređaji, nameštaj, oprema i pribor podležu sanitarnom nadzoru, dužni su da sanitarnom inspektoru omoguće pristup u poslovne prostorije, nesmetano obavljanje sanitarnog nadzora i uzimanje potrebnih uzoraka, odnosno briseva koji podležu propisanim laboratorijskim ispitivanjima, kao i da na zahtev sanitarnog inspektora, pruže sva obaveštenja i podatke potrebne za vršenje sanitarnog nadzora.</provision></item>
+        </article>
+        <article id="art24" type="hcontainer">
+            <index id="art24-ind" type="block">Član 24</index>
+            <item id="art24-itm1" type="container"><provision id="art24-itm1-prv1" type="block">Poslove sanitarnog inspektora može da obavlja: doktor medicine sa specijalizacijom iz epidemiologije ili higijene, doktor medicine, diplomirani inženjer tehnologije (prehrambenog odseka), diplomirani inženjer arhitekture, diplomirani građevinski inženjer (odsek za planiranje i građenje naselja i odsek za hidrotehniku) i diplomirani prostorni planer.</provision></item>
+            <item id="art24-itm2" type="container"><provision id="art24-itm2-prv1" type="block">Pojedine manje složene poslove sanitarnog inspektora može da obavlja i viši sanitarni tehničar.</provision></item>
+            <item id="art24-itm3" type="container"><provision id="art24-itm3-prv1" type="block"> Lica iz <citation-range id="cr9" href="art24-itm1" upTo="art24-itm2" type="inline" subtype="citationRange">st. 1. i 2. ovog člana</citation-range> mogu da obavljaju poslove sanitarnog inspektora pod uslovom da imaju najmanje tri godine radnog iskustva u struci, položen stručni ispit za rad u organima uprave i da ispunjavaju i druge uslove propisane zakonom.</provision></item>
+            <item id="art24-itm4" type="container"> <provision id="art24-itm4-prv1" type="block">Ministar nadležan za poslove zdravlja, u zavisnosti od složenosti i obima pojedinih poslova sanitarnog nadzora, posebnim aktom kojim se uređuje organizacija i sistematizacija radnih mesta u Ministarstvu, utvrđuje poslove sanitarnog inspektora koje mogu da obavljaju lica iz <citation-range id="cr10" href="art24-itm1" upTo="art24-itm2" type="inline" subtype="citationRange">st. 1. i 2. ovog člana</citation-range>.</provision></item>
+        </article>
+        <article id="art25" type="hcontainer">
+            <index id="art25-ind" type="block">Član 25</index>
+            <item id="art25-itm1" type="container"><provision id="art25-itm1-prv1" type="block">Poslove sanitarnog inspektora, u skladu sa ovim zakonom, mogu da obavljaju i lica sa visokom školskom spremom drugog obrazovnog profila stečenom do dana stupanja na snagu ovog zakona, ako na dan stupanja na snagu ovog zakona obavljaju poslove sanitarnog inspektora.</provision></item>
+        </article>
+        <article id="art26" type="hcontainer">
+            <index id="art26-ind" type="block">Član 26</index>
+            <item id="art26-itm1" type="container"> <provision id="art26-itm1-prv1" type="block">U obavljanju poslova sanitarnog nadzora, sanitarni inspektor mora imati legitimaciju kojom se dokazuje svojstvo inspektora.</provision></item>
+            <item id="art26-itm2" type="container"> <provision id="art26-itm2-prv1" type="block">Za vreme obavljanja poslova sanitarnog i zdravstvenog nadzora na granici ili u drugim mestima u kojima se vrši carinjenje, sanitarni inspektor pored legitimacije utvrđene u <simple-citation id="sc11" href="#art26-itm1" type="inline" subtype="citationSimple">stavu 1. ovog člana</simple-citation>, mora imati i znak kojim se dokazuje svojstvo sanitarnog inspektora na granici.</provision></item>
+            <item id="art26-itm3" type="container"> <provision id="art26-itm3-prv1" type="block">Sanitarni inspektor obavlja poslove sanitarnog nadzora u propisanom službenom odelu.</provision></item>
+            <item id="art26-itm4" type="container"> <provision id="art26-itm4-prv1" type="block">Ministar nadležan za poslove zdravlja propisuje obrazac i sadržinu legitimacije i izgled znaka i službenog odela sanitarnog inspektora, način njihovog izdavanja, kao i način vođenja evidencije o izdatim legitimacijama i znacima sanitarnih inspektora.</provision></item>
+        </article>
+        <article id="art27" type="hcontainer">
+            <heading id="art27-hdn" type="block">Prava i dužnosti sanitarnog inspektora</heading>
+            <index id="art27-ind" type="block">Član 27</index>
+            <item id="art27-itm1" type="container"><provision id="art27-itm1-prv1" type="block">U vršenju sanitarnog nadzora sanitarni inspektor ima pravo i dužnost da:</provision>
+                <point id="art27-itm1-pnt1" type="container"> <provision id="art27-itm1-pnt1-prv1" type="block">1) zabrani korišćenje objekta ili dela objekta u kojem se obavlja delatnost koja podleže sanitarnom nadzoru, ako pre početka obavljanja te delatnosti u objektu nisu obezbeđeni opšti i posebni sanitarni uslovi, dok se ti uslovi ne obezbede;</provision></point>
+                <point id="art27-itm1-pnt2" type="container"> <provision id="art27-itm1-pnt2-prv1" type="block"> 2) zabrani korišćenje objekta ili dela objekta koji podleže sanitarnom nadzoru, prostorija, postrojenja, uređaja, nameštaja, opreme i pribora, namenskih prevoznih sredstava, ako postoje higijenski nedostaci koji bitno ugrožavaju zdravlje ljudi, dok se ne otklone utvrđeni nedostaci;</provision></point>
+                <point id="art27-itm1-pnt3" type="container"> <provision id="art27-itm1-pnt3-prv1" type="block"> 3) zabrani korišćenje objekta ili dela objekta u kojem se obavlja zdravstvena delatnost, delatnost javnog snabdevanja stanovništva vodom za piće ili delatnost proizvodnje životnih namirnica putem industrijskih postrojenja i uređaja, ako pre početka obavljanja te delatnosti nije pribavljena sanitarna saglasnost na idejni projekat i sanitarna saglasnost za korišćenje objekta; </provision></point>
+                <point id="art27-itm1-pnt4" type="container"> <provision id="art27-itm1-pnt4-prv1" type="block"> 4) naredi otklanjanje nedostataka zbog kojih postoji opasnost po zdravlje ljudi, a koji se odnose na propisane opšte i posebne sanitarne uslove, higijensko stanje u objektu i njegovom neposrednom okruženju, unutrašnji prostor, prostorije i njihovu građevinsku celinu i međusobnu funkcionalnu povezanost, unutrašnje uređenje, postrojenja, uređaje, nameštaj, opremu i pribor, namenska prevozna sredstva, u ostavljenom roku;</provision></point>
+                <point id="art27-itm1-pnt5" type="container"> <provision id="art27-itm1-pnt5-prv1" type="block"> 5) zabrani korišćenje objekta ili dela objekta, prostorija, postrojenja, uređaja, nameštaja, opreme i pribora, namenskih prevoznih sredstava, ako utvrđeni nedostaci nisu otklonjeni u ostavljenom roku, do otklanjanja nedostataka;</provision></point>
+                <point id="art27-itm1-pnt6" type="container"> <provision id="art27-itm1-pnt6-prv1" type="block"> 6) naredi otklanjanje nedostataka koji se odnose na higijenske uslove koje moraju da ispune lica zaposlena u objektima koji podležu sanitarnom nadzoru;</provision></point>
+                <point id="art27-itm1-pnt7" type="container"> <provision id="art27-itm1-pnt7-prv1" type="block">7) naredi druge mere i preduzme druge radnje, u skladu sa zakonom;</provision></point>
+                <point id="art27-itm1-pnt8" type="container"> <provision id="art27-itm1-pnt8-prv1" type="block">8) obavesti drugi organ ako postoje razlozi za preduzimanje mera za koje je taj organ nadležan, kao i da podnese prijavu nadležnom organu za učinjeno krivično delo ili privredni prestup, odnosno da podnese zahtev za pokretanje prekršajnog postupka.</provision></point></item>
+            <item id="art27-itm2" type="container"><provision id="art27-itm2-prv" type="block">Mere iz <citation-range id="cr11" href="art27-itm1-pnt1" upTo="art27-itm1-pnt7" type="inline" subtype="citationRange">stava 1. tač. 1) do 7) ovog člana</citation-range>, prema pravnim licima, organizacijama, preduzetnicima i fizičkim licima nalažu se rešenjem sanitarnog inspektora u upravnom postupku.</provision></item>
+        </article>
+        <article id="art28" type="hcontainer">
+            <index id="art28-ind" type="block">Član 28</index>
+            <item id="art28-itm1" type="container"><provision id="art28-itm1-prv1" type="block">Pravna lica, organizacije, preduzetnici i fizička lica dužni su da postupe po rešenju sanitarnog inspektora u roku određenom tim rešenjem.</provision></item>
+            <item id="art28-itm2" type="container"><provision id="art28-itm2-prv1" type="block">Preduzimanje izuzetno hitnih mera radi otklanjanja neposredne opasnosti po život i zdravlje ljudi, sanitarni inspektor može narediti i usmenim rešenjem, u skladu sa zakonom.</provision></item>
+            <item id="art28-itm3" type="container"><provision id="art28-itm3-prv1" type="block">Rešenje iz <simple-citation id="sc12" href="#art28-itm2" type="inline" subtype="citationSimple">stava 2. ovog člana</simple-citation> mora se uneti u zapisnik o izvršenom sanitarnom nadzoru.</provision></item>
+        </article>
+        <article id="art29" type="hcontainer">
+            <index id="art29-ind" type="block">Član 29</index>
+            <item id="art29-itm1" type="container"><provision id="art29-itm1-prv1" type="block">Protiv rešenja sanitarnog inspektora može se izjaviti žalba u roku od osam dana od dana dostavljanja rešenja.</provision></item>
+            <item id="art29-itm2" type="container"><provision id="art29-itm2-prv1" type="block"> Žalba ne odlaže izvršenje rešenja.</provision></item>
+            <item id="art29-itm3" type="container"><provision id="art29-itm3-prv1" type="block"> Po žalbi protiv prvostepenog rešenja sanitarnog inspektora rešava ministar nadležan za poslove zdravlja.</provision></item>
+            <item id="art29-itm4" type="container"><provision id="art29-itm4-prv1" type="block"> Rešenje iz <simple-citation id="sc13" href="#art13-itm3" type="inline" subtype="citationSimple">stava 3. ovog člana</simple-citation> konačno je.</provision></item>
+        </article>
+        <article id="art30" type="hcontainer">
+            <index id="art30-ind" type="block">Član 30</index>
+            <item id="art30-itm1" type="container"><provision id="art30-itm1-prv1" type="block">Pravno lice, organizacija i preduzetnik mogu ponovo obavljati delatnost u objektu ili delu objekta koji podleže sanitarnom nadzoru, za koji je izrečena mera zabrane korišćenja, ako su u objektu ili delu objekta otklonjeni utvrđeni nedostaci.</provision></item>
+        </article>
+        <article id="art31" type="hcontainer">
+            <index id="art31-ind" type="block">Član 31</index>
+            <item id="art31-itm1" type="container"><provision id="art31-itm1-prv1" type="block">Ako je u postupku sanitarnog nadzora, sanitarni inspektor naredio meru utvrđenu u <citation-group id="cg1"><citation-range id="cr12" href="art27-itm1-pnt1" upTo="art27-itm1-pnt3" type="inline" subtype="citationRange">članu 27. stav 1. tač. 1) do 3)</citation-range> i <simple-citation id="sc14" href="#art27-itm1-pnt5" type="inline" subtype="citationSimple">tački 5)</simple-citation></citation-group>, obezbeđivanje naređene mere vrši se stavljanjem vidne oznake "zatvoreno po rešenju sanitarnog inspektora", ili stavljanjem službenog pečata za otisak u vosku na vrata glavnog ulaza u objekat.</provision></item>
+            <item id="art31-itm2" type="container"><provision id="art31-itm2-prv1" type="block">Oznaka ili službeni pečat iz <simple-citation id="sc15" href="#art31-itm1" type="inline" subtype="citationSimple">stava 1. ovog člana</simple-citation> može se ukloniti sa objekta tek kad sanitarni inspektor zapisnikom konstatuje da su prethodno otklonjeni nedostaci zbog kojih je naređena mera zabrane korišćenja objekta.</provision></item>
+        </article>
+        <article id="art32" type="hcontainer">
+            <index id="art32-ind" type="block">Član 32</index>
+            <item id="art32-itm1" type="container"><provision id="art32-itm1-prv1" type="block">Sanitarni inspektori dužni su da vode evidencije o svom radu, broju i stanju objekata koji podležu sanitarnom nadzoru i da o tome Ministarstvu podnose propisane periodične izveštaje.</provision></item>
+            <item id="art32-itm2" type="container"><provision id="art32-itm2-prv1" type="block">Ministar nadležan za poslove zdravlja propisuje način vođenja evidencija i izveštaja iz <simple-citation id="sc16" href="#art32-itm1" type="inline" subtype="citationSimple">stava 1. ovog člana</simple-citation>, kao i način njihovog podnošenja.</provision></item>
+        </article>
+        <article id="art33" type="hcontainer">
+            <index id="art33-ind" type="block">Član 33</index>
+            <item id="art33-itm1" type="container"><provision id="art33-itm1-prv1" type="block">Ministarstvo se stara o organizaciji i unapređivanju rada sanitarnih inspektora, kao i o stručnom usavršavanju sanitarnih inspektora.</provision></item>
+            <item id="art33-itm2" type="container"><provision id="art3-itm2-prv1" type="block"> Poslove iz <simple-citation id="sc17" href="#art33-itm1" type="inline" subtype="citationSimple">stava 1. ovog člana</simple-citation> na teritoriji autonomne pokrajine vrši pokrajinski organ uprave nadležan za poslove zdravlja.</provision></item>
+        </article>
+    </chapter>
+    
+    <chapter id="chp4" metalex:type="hcontainer">
+        <index id="chp4-ind" type="block">IV</index>
+        <heading id="chp4-hdn" type="block">KAZNENE ODREDBE</heading> 
+     <article id="art34" type="hcontainer">
+            <heading id="art34-hdn" type="block">Prekršaji</heading>
+            <index id="art34-ind" type="block">Član 34</index>
+            <item id="art34-itm1" type="container"> <provision id="art34-itm1-prv1" type="block">Novčanom kaznom od 400.000 do 1.000.000 dinara kazniće se za prekršaj pravno lice i organizacija ako:</provision>
+                <point id="art34-itm1-pnt1" type="container"> <provision id="art34-itm1-pnt1-prv1" type="block"> 1) pre početka obavljanja delatnosti, u objektu koji podleže sanitarnom nadzoru, ne obezbedi propisane opšte, odnosno opšte i posebne sanitarne uslove (<simple-citation id="sc18" href="#art9-itm1" type="inline" subtype="citationSimple">član 9. stav 1</simple-citation>);</provision></point>
+                <point id="art34-itm1-pnt2" type="container"> <provision id="art34-itm1-pnt2-prv1" type="block"> 2) za novoizgrađeni, odnosno rekonstruisani objekat u kojem se obavlja zdravstvena delatnost, delatnost javnog snabdevanja stanovništva vodom za piće i delatnost proizvodnje životnih namirnica putem industrijskih postrojenja i uređaja, pre početka obavljanja te delatnosti ne pribavi sanitarnu saglasnost na idejni projekat i sanitarnu saglasnost za korišćenje objekta (<simple-citation id="sc19" href="#art18-itm1" type="inline" subtype="citationSimple">član 18. stav 1</simple-citation>).</provision></point></item>
+         <item id="art34-itm2" type="container"> <provision id="art34-itm2-prv" type="block">Za prekršaj iz <simple-citation id="sc20" href="#art34-itm1" type="inline" subtype="citationSimple">stava 1. ovog člana</simple-citation> kazniće se i odgovorno lice u pravnom licu, novčanom kaznom od 20.000 do 50.000 dinara.</provision></item>
+         <item id="art34-itm3" type="container"> <provision id="art34-itm3-prv" type="block">Za prekršaj iz <simple-citation id="sc21" href="#art34-itm1" type="inline" subtype="citationSimple">iz stava 1. ovog člana</simple-citation> kazniće se i preduzetnik, novčanom kaznom od 200.000 do 500.000 dinara.</provision></item>
+     </article>
+        <article id="art35" type="hcontainer">
+            <index id="art35-ind" type="block">Član 35</index>
+            <item id="art35-itm1" type="container"><provision id="art35-itm1-prv1" type="block"> Novčanom kaznom od 250.000 do 500.000 dinara kazniće se za prekršaj pravno lice i organizacija ako:</provision>
+                <point id="art35-itm1-pnt1" type="container"> <provision id="art35-itm1-pnt1-prv1" type="block">1) obavlja delatnost u objektu koji podleže sanitarnom nadzoru, a koji ne ispunjava propisane opšte, odnosno opšte i posebne sanitarne uslove i u kojem nisu obezbeđeni higijenski uslovi koji se odnose na zaposlena lica (<simple-citation id="sc21" href="#art12-itm1" type="inline" subtype="citationSimple">član 12. stav 1</simple-citation>);</provision></point>
+                <point id="art35-itm1-pnt2" type="container"> <provision id="art35-itm1-pnt2-prv1" type="block">2) ne omogući sanitarnom inspektoru pristup u poslovne prostorije, nesmetano obavljanje sanitarnog nadzora i uzimanje potrebnih uzoraka, odnosno briseva koji podležu laboratorijskim ispitivanjima, kao i ako na zahtev sanitarnog inspektora ne pruži sva obaveštenja i podatke potrebne za vršenje sanitarnog nadzora (<simple-citation id="sc22" href="#art23" type="inline" subtype="citationSimple">član 23</simple-citation>);</provision></point>
+                <point id="art35-itm1-pnt3" type="container"> <provision id="art35-itm1-pnt3-prv1" type="block">3) ne postupi po rešenju sanitarnog inspektora kojim se nalaže neka od mera utvrđenih u <citation-range id="cr13" href="art27-itm1-pnt1" upTo="art27-imt1-pnt7">članu 27. stav 1. tač. 1) do 7)</citation-range>, na način i u roku utvrđenim tim rešenjem (<simple-citation id="sc23" href="#art28-itm1" type="inline" subtype="citationSimple">član 28. stav 1</simple-citation>);</provision></point>
+                <point id="art35-itm1-pnt4" type="container"> <provision id="art35-itm1-pnt4-prv1" type="block">4) otpočne obavljanje delatnosti u objektu ili delu objekta koji podleže sanitarnom nadzoru za koji je izrečena mera zabrane korišćenja objekta ili dela objekta, a ne otkloni nedostatke utvrđene rešenjem sanitarnog inspektora (<simple-citation id="sc24" href="#art30" type="inline" subtype="citationSimple">član 30</simple-citation>);</provision></point>
+                <point id="art35-itm1-pnt5" type="container"> <provision id="art35-itm1-pnt5-prv1" type="block">5) sa obeleženog objekta, neovlašćeno ukloni oznaku ili službeni pečat za otisak u vosku kojima se obezbeđuje mera zabrane korišćenja objekta ili dela objekta (<simple-citation id="sc25" href="#art31" type="inline" subtype="citationSimple">član 31</simple-citation>).</provision></point></item>
+            <item id="art35-itm2" type="container"> <provision id="art35-itm2-prv1" type="block">Za prekršaj iz <simple-citation id="sc26" href="#art35-itm1" type="inline" subtype="citationSimple">stava 1. ovog člana</simple-citation> kazniće se i odgovorno lice u pravnom licu, novčanom kaznom od 15.000 do 30.000 dinara.</provision></item>
+            <item id="art35-itm3" type="container"> <provision id="art35-itm3-prv1" type="block">Za prekršaj iz <simple-citation id="sc27" href="#art35-itm1" type="inline" subtype="citationSimple">stava 1. ovog člana</simple-citation> kazniće se i preduzetnik, novčanom kaznom od 100.000 do 300.000 dinara.</provision></item>
+            <item id="art35-itm4" type="container"><provision id="art35-itm4-prv1" type="block"> Za prekršaj iz <citation-group id="cg2"><simple-citation id="sc26" href="#art35-itm1-pnt2" type="inline" subtype="citationSimple">stava 1. tač. 2)</simple-citation>, <simple-citation id="sc27" href="#art35-itm1-pnt3" type="inline" subtype="citationSimple">3)</simple-citation> i <simple-citation id="sc28" href="#art35-itm1-pnt5" type="inline" subtype="citationSimple">5) ovog člana</simple-citation></citation-group> kazniće se i fizičko lice, novčanom kaznom od 10.000 do 20.000 dinara.</provision></item>
+        </article>
+        <article id="art36" type="hcontainer">
+            <index id="art36-ind" type="block">Član 36</index>
+            <item id="art36-itm1" type="container"><provision id="art36-itm1-prv1" type="block"> Novčanom kaznom od 150.000 do 300.000 dinara kazniće se za prekršaj pravno lice i organizacija ako:</provision>
+                <point id="art36-itm1-pnt1" type="container"> <provision id="art36-itm1-pnt1-prv1" type="block"> 1) pre početka obavljanja delatnosti ne obezbedi higijenske uslove koji se odnose na zaposlena lica (<simple-citation id="sc29" href="#art10-itm1" type="inline" subtype="citationSimple">član 10. stav 1)</simple-citation>;</provision></point>
+                <point id="art36-itm1-pnt2" type="container"> <provision id="art36-itm1-pnt2-prv1" type="block">2) u pogledu higijenskog stanja objekta, u toku korišćenja objekta ne održava higijenu u objektu i njegovom neposrednom okruženju, ne održava higijenu prostorija, postrojenja, uređaja, nameštaja, opreme, pribora, namenskih prevoznih sredstava, higijenu radne odeće i obuće zaposlenih lica i ako ne preduzima druge higijenske mere u cilju zaštite zdravlja stanovništva, u skladu sa zakonom (<simple-citation id="sc30" href="#art11" type="inline" subtype="citationSimple">član 11</simple-citation>).</provision></point></item>
+            <item id="art36-itm2" type="container"><provision id="art36-itm2-prv1" type="block">Za prekršaj iz <simple-citation id="sc31" href="#art36-itm1" type="inline" subtype="citationSimple">stava 1. ovog člana</simple-citation> kazniće se i odgovorno lice u pravnom licu, novčanom kaznom od 10.000 do 30.000 dinara.</provision></item>
+            <item id="art36-itm3" type="container"><provision id="art36-itm3-prv1" type="block">Za prekršaj iz <simple-citation id="sc32" href="#art36-itm1" type="inline" subtype="citationSimple">stava 1. ovog člana</simple-citation> kazniće se i preduzetnik, novčanom kaznom od 50.000 do 150.000 dinara.</provision></item>
+        </article>
+        <article id="art37" type="hcontainer">
+            <index id="art37-ind" type="block">Član 37</index>
+            <item id="art37-itm1" type="container"><provision id="art37-itm1-prv1" type="block">Novčanom kaznom u iznosu od 5.000 dinara na licu mesta kazniće se za prekršaj fizičko lice zaposleno u pravnom licu, organizaciji i radnji ako:</provision>
+                <point id="art37-itm1-pnt1" type="container"> <provision id="art37-itm1-pnt1-prv1" type="block">1) ne održava higijenu objekta i njegovog neposrednog okruženja, higijenu prostorija, postrojenja, uređaja, nameštaja, opreme, pribora, namenskih prevoznih sredstava, higijenu radne odeće i obuće zaposlenih lica i ako ne preduzima druge higijenske mere u cilju zaštite zdravlja stanovništva, u skladu sa zakonom (<simple-citation id="sc33" href="#art11-itm1" type="inline" subtype="citationSimple">član 11. stav 1)</simple-citation>;</provision></point>
+                <point id="art37-itm1-pnt2" type="container"> <provision id="art37-itm1-pnt2-prv1" type="block">2) radnu odeću i obuću koristi van radnog mesta (<simple-citation id="sc34" href="#art11-itm2" type="inline" subtype="citationSimple">član 11. stav 2</simple-citation>);</provision></point>
+                <point id="art37-itm1-pnt3" type="container"> <provision id="art37-itm1-pnt3-prv1" type="block">3) ne ispunjava higijenske uslove u pogledu radne odeće i obuće i lične higijene zaposlenih (<simple-citation id="sc35" href="#art12-itm2" type="inline" subtype="citationSimple">član 12. stav 2</simple-citation>).</provision></point></item>
+        </article>
+    </chapter>
+
+    <chapter id="chp5" metalex:type="hcontainer">
+        <index id="chp5-ind" type="block">V</index><heading id="chp5-hdn" type="block">PRELAZNE I ZAVRŠNE ODREDBE</heading>
+        <article id="art38" type="hcontainer">
+            <index id="art38-ind" type="block">Član 38</index>
+            <item id="art38-itm1" type="container"><provision id="art38-itm1-prv1" type="block">Podzakonske akte iz <simple-citation id="sc36" href="#art9-itm2" type="inline" subtype="citationSimple">člana 9. stav 2</simple-citation>, <simple-citation id="sc37" href="#art10-itm2" type="inline" subtype="citationSimple">člana 10. stav 2</simple-citation>, <simple-citation id="sc38" href="#art12-itm3" type="inline" subtype="citationSimple">člana 12. stav 3</simple-citation>, <simple-citation id="sc39" href="#art13-itm2" type="inline" subtype="citationSimple">člana 13. stav 2</simple-citation>, <simple-citation id="sc40" href="#art19-itm2" type="inline" subtype="citationSimple">člana 19. stav 2</simple-citation>, <simple-citation id="sc41" href="#art20-itm2" type="inline" subtype="citationSimple">člana 20. stav 2</simple-citation>, <simple-citation id="sc42" href="#art26-itm4" type="inline" subtype="citationSimple">člana 26. stav 4.</simple-citation> i <simple-citation id="sc43" href="#art32-itm2" type="inline" subtype="citationSimple">člana 32. stav 2</simple-citation>, ministar nadležan za poslove zdravlja doneće u roku od šest meseci od dana stupanja na snagu ovog zakona.</provision></item>
+            <item id="art38-itm2" type="container"><provision id="art38-itm2-prv1" type="block">Do donošenja podzakonskih akata iz stava 1. vog člana primenjivaće se podzakonski akti doneti na osnovu <simple-citation id="sc44" href="URL" type="inline" subtype="citationSimple">Zakona o sanitarnom nadzoru ("Službeni glasnik RS", br. 34/94 i 25/96)</simple-citation>, ako nisu u suprotnosti sa ovim zakonom.</provision></item>
+        </article>
+        <article id="art39" type="hcontainer">
+            <index id="art39-ind" type="block">Član 39</index>
+            <item id="art39-itm1" type="container"><provision id="art39-itm1-prv1" type="block">Rešavanje u predmetima po zahtevu stranaka za izdavanje sanitarnih saglasnosti podnetih do dana stupanja na snagu ovog zakona, nastaviće se po propisima koji su važili do dana stupanja na snagu ovog zakona.</provision></item>
+        </article>
+        <article id="art40" type="hcontainer">
+            <index id="art40-ind" type="block">Član 40</index>
+            <item id="art40-itm1" type="container"><provision id="art40-itm1-prv1" type="block">Danom stupanja na snagu ovog zakona prestaje da važi <simple-citation id="sc45" href="URL" type="inline" subtype="citationSimple">Zakon o sanitarnom nadzoru ("Službeni glasnik RS", br. 34/94 i 25/96)</simple-citation>.</provision></item>
+        </article> 
+        <article id="art41" type="hcontainer">
+            <index id="art41-ind" type="block">Član 41</index>
+            <item id="art41-itm1" type="container"><provision id="art41-itm1-prv1" type="block">Ovaj zakon stupa na snagu osmog dana od dana objavljivanja u "Službenom glasniku Republike Srbije".</provision></item>
+        </article>
+    </chapter>
+
+</regulation>

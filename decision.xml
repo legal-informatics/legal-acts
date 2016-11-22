@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="regulation.css"?>
+
+<!--
+This document is a part of the supplementary material that comes with the PhD thesis entitled 
+“Creation of Usage of Digital Legislation” defended by Stevan Gostojić
+
+For more information, see http://informatika.ftn.uns.ac.rs/legal
+-->
+
+<regulation xmlns="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/lax"
+    xmlns:regulation="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0"
+    xmlns:metalex="http://www.metalex.eu/metalex/1.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/lax regulation-lax.xsd"
+    metalex:type="container" metalex:subtype="root" 
+    metalex:naming="urn:metalex:sr" metalex:LocalNamingConventionMethod="individual" metalex:LocalNamingConventionScope="root"
+    id="regulation" xml:base="urn:lex:rs:narodna-skuurn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnikpstina:ustav:2006-11-08;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik" 
+    xml:lang="sr"
+    grddl:transformation="RDFa2RDFXML.xsl http://ns.inria.fr/grddl/rdfa/2008/09/03/RDFa2RDFXML.xsl" xmlns:grddl="http://www.w3.org/2003/g/data-view#">
+    
+    <!-- metalex:naming attribute (value: an IRI) must be used to signal conformance to a naming convention -->
+    <!-- xml:base attribute is an identifier of the manifestation of the legislation -->
+    <!-- xml:lang attribute is an identifier of the language of the legislation -->
+    
+    <!-- 
+    <title>З А К О Н О ЗАШТИТИ ПОДАТАКА О ЛИЧНОСТИ</title>
+    -->
+    
+    <!-- Metadate in RDFa format will not "validate" against OWL schema because it is not complete. Use metadata in Protege instead. -->
+    <metadata id="md" metalex:type="mcontainer">
+        <!-- all attribute names must be prefixed -->
+        
+        <!-- The RDF interpretation of a name MUST assign an IRI reference to the work, expression, and manifestation, and link these 
+            using the properties metalex-owl:embodies and metalex-owl:realizes p. 25 -->
+        
+        <!-- 
+            IRI format compatibile with urn:lex URN namespace [TODO: Write textual specification of the format]
+            
+            "urn:lex
+            :"<jurisdiction-code>[";"<jurisdiction-unit>]*"
+            :"<authority>":"<measure>":"<details>[":"<annex>]*
+            @<expression>::="@"<version>[":"<language>]?
+            $<format>[";"<specification>"]*":"<editor>[";"<specification>]*[":"<component>[";"<specification>]*]?
+            [":"<feature>[";"<specification>]*]?
+            
+            urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik
+            urn:lex:rs:sluzbeni-glasnik:zakon:2008-10-27;2375@original:sr$text-xml;cen-metalex:sluzbeni-glasnik
+            
+            "
+        -->
+        
+        <!-- Expression realizes Work -->
+        <meta id="m1" metalex:about="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr"
+            metalex:rel="metalex-owl:realizes"
+            href="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21" metalex:type="meta"/>
+        
+        <!-- Manifestation emodies Expression -->
+        <meta id="m2"
+            metalex:about="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex-owl:embodies"
+            href="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr$text-xml" metalex:type="meta"/>
+        
+        <!-- Manifestation must be examplified by at least one Item -->
+        <meta id="m3"
+            metalex:about="urn:lex:rs:poverenik-informacije-javnog-znacaja-zastitu-podataka-licnosti:pravilnik:2009-04-21;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex-owl:exemplifiedBy" href="http://informatika.ftn.uns.ac.rs/legal/metalex/bylaw2.xml"
+            metalex:type="meta"/>
+        
+        <!-- FRBR Work Level Metadata -->
+        
+        <!-- country -->
+        <meta id="m5"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#RS"
+            metalex:type="meta" />
+        
+        <meta id="m6"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#RS"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#countryCode"
+            metalex:content="rs"
+            metalex:type="meta" />
+        
+        <!-- document type -->
+        <meta id="m7"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Pravilnik"
+            metalex:type="meta" />
+        
+        <meta id="m8"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Pravilnik"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#workTypeID"
+            metalex:content="pravilnik"
+            metalex:type="meta" />
+        
+        <!-- document subtype -->
+        <!-- emanating actor [obligatory, TODO] 
+             Work resultOf LegislativeDelivery agent
+             Work resultOf LegislativeDelivery legislativeCompetence -->
+        <!-- promulgating actor -->
+        
+        <!-- creation date -->
+        <meta id="m9"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawWorkCreationDate"
+            metalex:type="meta" />
+        
+        <meta id="m10"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawWorkCreationDate"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#xsdDate"
+            metalex:content="2009-04-21"
+            metalex:datatype="date"
+            metalex:type="meta" />
+        
+        <!-- number / disambiguating feature -->
+        <meta id="m11"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel=" http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Lex-1"
+            metalex:type="meta" />
+        
+        <meta id="m12"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Lex-1"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#issueID"
+            metalex:content="lex-1"
+            metalex:type="meta" />
+         
+        <!-- FRBR expression level metadata -->
+        
+        <!-- languages -->
+        <meta id="m13"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#SR"
+            metalex:type="meta" />
+        
+        <meta id="m14"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#SR"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#languageCode"
+            metalex:content="sr"
+            metalex:type="meta" />
+        
+        <!-- validity dates -->
+        <!-- authoring information 
+             Expression resultOf LegislativeModification agent
+        -->
+        
+        <!-- content-specification date -->
+        <meta id="m15"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawExpressionCreationDate"
+            metalex:type="meta" />
+        
+        <meta id="m16"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#PrivacyLawExpressionCreationDate"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#xsdDate"
+            metalex:content="2009-04-21"
+            metalex:datatype="date"
+            metalex:type="meta" />   
+        
+        <!-- FRBR manifestation level metadata -->
+        
+        <!-- format -->
+        <meta id="m17"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#Bylaw2Identifier"
+            metalex:rel="http://www.metalex.eu/metalex/2008-05-02#identifierComponent"
+            metalex:href="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#CENMetaLex"
+            metalex:type="meta" />
+        
+        <meta id="m18"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0#CENMetaLex"
+            metalex:property="http://www.metalex.eu/metalex/2008-05-02#manifestationTypeID"
+            metalex:content="text-xml;cen-metalex"
+            metalex:type="meta" />
+        
+        <!-- markup authoring information [obligatory, TODO] 
+             Manifestation resultOf LegislativePublication agent -->
+        <!-- markup specific date 
+            Manifestation resultOf LegislativePublication date -->
+        <!-- markup-related information (multiple versions, etc.) -->    
+    </metadata>
+    
+    <!-- („Сл.гласник РС“, бр. 50/2009) -->
+    
+    <title id="title">Уредба о обрасцу за вођење евиденције и начину вођења евиденције о обради података о личности</title>
+    
+    <part id="part1">
+        <heading id="part1-h">I Основне одредбе</heading>
+        
+        <article id="art1">
+            <heading id="art1-h">Члан 1</heading>
+            <item id="art1-it1">
+                <provision id="art1-it1-p1">Овом уредбом прописује се образац за вођење евиденције о обради и начин вођења евиденције о обради података о личности.</provision>
+            </item>
+            <item id="art1-it2">
+                <provision id="art1-it2-p1">Образац из <simple-citation id="sc1" href="#art1-it1">става 1. овог члана</simple-citation> одштампан је уз ову уредбу и чини њен саставни део.</provision>
+            </item>
+        </article>
+        
+        <article id="art2">
+            <heading id="art2-h">Члан 2</heading>
+            <item id="art2-it1">
+                <provision id="art2-it1-p1">Уписивање података о личности у евиденцију и друге послове везане за евиденцију спроводи руковалац података о личности (у даљем тексту: руковалац), у складу са законом.</provision>
+            </item>
+        </article>
+        
+        <article id="art3">
+            <heading id="art3-h">Члан 3</heading>
+            <item id="art3-it1">
+                <provision id="art3-it1-p1">Евиденција података о личности може се водити ручно или средствима за аутоматску обраду података, ако посебним законом није друкчије одређено.</provision>
+            </item>
+        </article>
+        
+        <article id="art4">
+            <heading id="art4-h">Члан 4</heading>
+            <item id="art4-it1">
+                <provision id="art4-it1-p1">Евиденција података о личности садржи и податке о датуму претходног обавештења о успостављању збирке података о личности, датуму првог пријављивања евиденције и датуму измене и допуне евиденције.</provision>
+            </item>
+        </article>
+        
+        <article id="art5">
+            <heading id="art5-h"></heading>
+            <item id="art5-it1">
+                <provision id="art5-it1-p1"></provision>
+            </item>
+        </article>
+    </part>
+    
+    <part id="part2">
+        <heading id="part2-h">II Садржина евиденције</heading>
+        
+        <article id="art5">
+            <heading id="art5-h">Члан 5</heading>
+            <item id="art5-it1">
+                <provision id="art5-it1-p1">Евиденција о обради података о личности, у складу са законом, садржи податке о: врсти података о личности о којима се води евиденција и називу збирке података о личности (у даљем тексту: збирка података); врсти радње обраде; називу, имену, седишту и адреси руковаоца; датуму започињања обраде, односно успостављању збирке података; сврси обраде; правном основу обраде, односно успостављања збирке података; категорији лица на које се подаци о личности односе; врсти и степену тајности података о личности; начину прикупљања и чувања података о личности; року чувања и употребе података о личности; називу, имену, седишту и адреси корисника података о личности (у даљем тексту: корисник); ознаци уношења, односно изношења података о личности из Републике Србије са називом државе, односно међународне организације и страног корисника; правном основу и сврси уношења, односно изношења података о личности; предузетим мерама заштите података о личности и захтеву поводом обраде.</provision>
+            </item>
+            <item id="art5-it2">
+                <provision id="art5-it2-p1">Поред података из <simple-citation id="sc2" href="#art5-it1">става 1. овог члана</simple-citation>, евиденција о обради података о личности садржи и редни број и напомену.</provision>
+            </item>
+        </article>
+        
+        <article id="art6">
+            <heading id="art6-h">Врста података о личности и назив збирке података. Члан 6</heading>
+            <item id="art6-it1">
+                <provision id="art6-it1-p1">Податак о врсти података о личности садржи попис свих врста података о личности садржаних у евиденцији о обради.</provision>
+            </item>
+            <item id="art6-it2">
+                <provision id="art6-it2-p1">Попис врста посебних категорија података о личности садржаних у евиденцији о обради наводи се посебно.</provision>
+            </item>
+            <item id="art6-it3">
+                <provision id="art6-it3-p1">Ако назив збирке података није одређен посебним законом, назив одређује руковалац посебном одлуком којом се одређује начин и сврха обраде података о личности.</provision>
+            </item>
+        </article>
+        
+        <article id="art7">
+            <heading id="art7-h">Назив, име, седиште и адреса руковаоца. Члан 7</heading>
+            <item id="art7-it1">
+                <provision id="art7-it1-p1">Назив, седиште и адреса руковаоца који је правно лице морају да одговарају регистрованом називу, седишту и адреси тог лица уписаним у регистар.</provision>
+            </item>
+            <item id="art7-it2">
+                <provision id="art7-it2-p1">Ако је руковалац физичко лице, име и адреса морају да одговарају личном имену и адреси пребивалишта тог лица.</provision>
+            </item>
+            <item id="art7-it3">
+                <provision id="art7-it3-p1">Ако је руковалац орган власти, у смислу Закона о заштити података о личности, назив и седиште мора одговарати законом или другим прописом утврђеном називу и седишту тог органа.</provision>
+            </item>
+        </article>
+        
+        <article id="art8">
+            <heading id="art8-h">Сврха обраде. Члан 8</heading>
+            <item id="art8-it1">
+                <provision id="art8-it1-p1">Подаци о сврси обраде садрже опис у коју сврху се подаци о личности прикупљају у одређену збирку података, уз ознаку да ли је сврха обраде одређена законом или је утврђена од стране руковаоца уз пристанак лица на кога се податак односи, односно другог овлашћеног лица.</provision>
+            </item>
+        </article>
+        
+        <article id="art9">
+            <heading id="art9-h">Правни основ обраде, односно успостављања збирке података. Члан 9</heading>
+            <item id="art9-it1">
+                <provision id="art9-it1-p1">Подаци о правном основу обраде, односно успостављању збирке података, који се прикупљају и обрађују уз пристанак лица на које се подаци о личности односе, односно овлашћеног лица, садрже ознаку о начину давања пристанка.</provision>
+            </item>
+            <item id="art9-it2">
+                <provision id="art9-it2-p1">За прикупљање и обраду података о личности, у случајевима одређеним законом или другим прописом, наводи се и одредба закона или прописа којим се утврђује прикупљање података.</provision>
+            </item>
+        </article>
+        
+        <article id="art10">
+            <heading id="art10-h">Категорија лица на које се подаци о личности односе. Члан 10</heading>
+            <item id="art10-it1">
+                <provision id="art10-it1-p1">Подаци о категоријама лица на које се подаци о личности односе садрже ознаку групе или група лица на које се подаци односе.</provision>
+            </item>
+        </article>
+        
+        <article id="art11">
+            <heading id="art11-h">Врста и степен тајности података. Члан 11</heading>
+            <item id="art11-it1">
+                <provision id="art11-it1-p1">Подаци о врсти и степену тајности података о личности садрже ознаку врсте и степена тајности података, у складу са прописима који уређују одређивање и заштиту тајних података.</provision>
+            </item>
+        </article>
+        
+        <article id="art12">
+            <heading id="art12-h">Начин прикупљања и чувања података. Члан 12</heading>
+            <item id="art12-it1">
+                <provision id="art12-it1-p1">Подаци о начину прикупљања података о личности означавају се навођењем извора добијања података (непосредно од лица на које се односи, преузимањем из других збирки података, прикупљањем од другог лица или из других извора који се у евиденцији морају ближе навести). </provision>
+            </item>
+            <item id="art12-it1">
+                <provision id="art12-it1-p1">Обавештење о обради садржи податке о обавештавању лица на које се подаци о личности односе, односно другог лица, о обради података, који су дати пре њиховог прикупљања.</provision>
+            </item>
+            <item id="art12-it1">
+                <provision id="art12-it1-p1">Начин чувања података о личности садржи ознаку облика у коме је податак изражен, као и ознаку носача информације на коме се податак чува.</provision>
+            </item>            
+        </article>
+        
+        <article id="art13">
+            <heading id="art13-h">Рок чувања и употребе података. Члан 13</heading>
+            <item id="art13-it1">
+                <provision id="art13-it1-p1">Подаци о року чувања и употреби података о личности садрже датум успостављања збирке података и рокове чувања и коришћења података о личности одређених законом или другим прописом.</provision>
+            </item>
+            <item id="art13-it2">
+                <provision id="art13-it2-p1">Ако време коришћења података о личности није одређено законом или другим прописом, у евиденцију се уписује рок који је неопходан за остварење сврхе обраде због које су подаци о личности прикупљени.</provision>
+            </item>
+            <item id="art13-it3">
+                <provision id="art13-it3-p1">Евиденција из <simple-citation id="sc3" href="#art3-it1">ст. 1.</simple-citation> и <simple-citation id="sc4" href="art13-it2">2.</simple-citation> овог члана садржи и ознаку о брисању података о личности после протека рока за чување и коришћење података.</provision>
+            </item>
+        </article>
+        
+        <article id="art14">
+            <heading id="art14-h">Назив, име, седиште и адреса корисника. Члан 14</heading>
+            <item id="art14-it1">
+                <provision id="art14-it1-p1">На податке о називу, имену, седишту и адреси корисника сходно се примењује одредба <simple-citation id="sc5" href="#art5">члана 5. ове уредбе</simple-citation>.</provision>
+            </item>
+        </article>
+        
+        <article id="art15">
+            <heading id="art15-h">Ознака уношења, односно изношења података о личности из Републике Србије. Члан 15</heading>
+            <item id="art15-it1">
+                <provision id="art15-it1-p1">Ознака уношења, односно изношења података о личности из Републике Србије садржи податке о чињеници уношења, односно изношења података о личности, са називом државе, односно међународне организације и страног корисника података о личности, као и сврхе уношења, односно изношења података о личности са правним основом, односно назнаком пристанка лица на које се подаци о личности односе или овлашћеног лица.</provision>
+            </item>
+        </article>
+        
+        <article id="art16">
+            <heading id="art16-h">Предузете мере заштите података о личности. Члан 16</heading>
+            <item id="art16-it1">
+                <provision id="art16-it1-p1">Ознака предузетих мера заштите података о личности садржи податке о томе које су организационе, кадровске и техничке мере заштите предузете.</provision>
+            </item>
+        </article>
+        
+        <article id="art17">
+            <heading id="art17-h">Захтев поводом обраде. Члан 17</heading>
+            <item id="art17-it1">
+                <provision id="art17-it1-p1">Ознака захтева поводом обраде садржи податке о називу, имену, седишту и адреси подносиоца захтева, датуму подношења захтева и врсти захтева (захтев за обавештење, увид или копију).</provision>
+            </item>
+        </article>
+        
+        <article id="art18">
+            <heading id="art18-h">Обавеза руковаоца који води евиденцију. Члан 18</heading>
+            <item id="art18-it1">
+                <provision id="art18-it1-p1">Руковалац који образује и води евиденцију из <simple-citation id="sc6" href="#art5">члана 5. ове уредбе</simple-citation> дужан је да, у складу са законом, ажурно води евиденцију и проверава да ли се стање по књизи слаже са стварним стањем.</provision>
+            </item>
+            <item id="art18-it2">
+                <provision id="art18-it2-p1">У случају промене основних података из <simple-citation id="sc7" href="#art">члана 5. ове уредбе</simple-citation> о којима се води евиденција, руковалац је дужан да ажурира евиденцију у року од 15 дана од дана настанка промене, у складу са законом.</provision>
+            </item>
+            <item id="art18-it3">
+                <provision id="art18-it3-p1">На вођење евиденције о обради података о личности сходно се примењују прописи о канцеларијском пословању у органима државне управе.</provision>
+            </item>
+        </article>
+    </part>
+    
+    <part id="part3">
+        <heading id="part3-h">III Завршна одредба </heading>
+        
+        <article id="art19">
+            <heading id="art19-h">Ступање на снагу. Члан 19</heading>
+            <item id="art19-it1">
+                <provision id="art19-it1-p1">Ова уредба ступа на снагу осмог дана од дана објављивања у "Службеном гласнику Републике Србије".</provision>
+            </item>
+        </article>
+    
+    <attachment id="attachment1" />
+</regulation>

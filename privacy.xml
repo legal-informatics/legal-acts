@@ -1,0 +1,2091 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="regulation.css"?>
+
+<!--
+This document is a part of the supplementary material that comes with the PhD thesis entitled 
+“Creation of Usage of Digital Legislation” defended by Stevan Gostojić
+
+For more information, see http://informatika.ftn.uns.ac.rs/legal
+-->
+
+<!-- 
+    назив: Закон о заштити података о личности ("Службени гласник РС", бр. 97/08)
+    донет: 2008-10-23
+проглашен: 2008-10-27
+ објављен: 2008-10-27
+-->
+
+<regulation
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:metalex="http://www.metalex.eu/metalex/1.0"
+    xmlns:regulation="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/strict"
+    xmlns="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/strict"
+    xsi:schemaLocation="http://informatika.ftn.uns.ac.rs/legal/metalex/1.0/strict regulation-strict.xsd"
+    id="regulation" metalex:LocalNamingConventionMethod="individual" metalex:LocalNamingConventionScope="root"
+    metalex:type="container" metalex:subtype="root" 
+    xml:base="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik" 
+    metalex:naming="urn:metalex:sr" 
+    xml:lang="sr"
+    grddl:transformation="RDFa2RDFXML.xsl http://ns.inria.fr/grddl/rdfa/2008/09/03/RDFa2RDFXML.xsl" xmlns:grddl="http://www.w3.org/2003/g/data-view#">
+    
+    <!-- metalex:naming attribute (value: an IRI) must be used to signal conformance to a naming convention -->
+    <!-- xml:base attribute is an identifier of the manifestation of the legislation -->
+    <!-- xml:lang attribute is an identifier of the language of the legislation -->
+     
+    <title id="title">Закон о заштити података о личности</title>
+    
+    <!-- Metadatа in RDFa format will not "validate" against OWL schema because it is not complete. Use metadata in Protege instead. -->
+    <metadata id="md" metalex:type="mcontainer">
+        <!-- all attribute names must be prefixed -->
+        
+        <!-- The RDF interpretation of a name MUST assign an IRI reference to the work, expression, and manifestation, and link these 
+            using the properties metalex-owl:embodies and metalex-owl:realizes p. 25 -->
+        
+        <!-- IRI format compatibile with urn:lex URN namespace
+            
+            Syntax:
+            urn:lex
+            :"<jurisdiction-code>[";"<jurisdiction-unit>]*"
+            :"<authority>":"<measure>":"<details>[":"<annex>]*
+            @<expression>::="@"<version>[":"<language>]?
+            $<format>[";"<specification>"]*":"<editor>[";"<specification>]*[":"<component>[";"<specification>]*]?
+            [":"<feature>[";"<specification>]*]?
+            
+            Examples:
+            urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik
+            urn:lex:rs:sluzbeni-glasnik:zakon:2008-10-27;2375@original:sr$text-xml;cen-metalex:sluzbeni-glasnik
+        -->
+        
+        <!-- Expression realizes Work -->
+        <meta id="m1" metalex:about="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr"
+            metalex:rel="metalex-owl:realizes"
+            href="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1" metalex:type="meta"/>
+        
+        <!-- Manifestation emodies Expression -->
+        <meta id="m2"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex-owl:embodies"
+            href="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr" metalex:type="meta"/>
+        
+        <!-- Manifestation must be examplified by at least one Item -->
+        <meta id="m3"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex-owl:exemplifiedBy" href="http://informatika.ftn.uns.ac.rs/legal/metalex/privacy.xml"
+            metalex:type="meta"/>
+        
+        <!-- If one wants to conform to a naming convention that depends on serialization of IRI but also want to embed another 
+             identifier, this is trivially achieved with a RDF statement of that impact, for instance: -->
+        <meta id="m4"
+            metalex:about="http://informatika.ftn.uns.ac.rs/legal/metalex/privacy.xml"
+            metalex:rel="owl:sameAs" href="http://foo.bar" metalex:type="meta"/>       
+        
+        <!-- FRBR Work Level Metadata -->
+        <!-- country -->
+        <meta id="m5"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="Serbia" />     
+        <meta id="m6"
+            metalex:about="Serbia"
+            metalex:property="metalex:countryCode"
+            metalex:content="RS" 
+            rdf:typeof="metalex:Country"/>   
+        
+        <!-- document type -->
+        <meta id="m7"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="Law" />
+        <meta id="m8"
+            metalex:about="Law"
+            metalex:property="metalex:workTypeID"
+            metalex:content="LAW"
+            rdf:typeof="metalex:WorkType" />
+        
+        <!-- creation date -->
+        <meta id="m9"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="WorkCreationDate" />   
+        <meta id="m10"
+            metalex:about="WorkCreationDate"
+            metalex:property="metalex:xsdDate"
+            metalex:content="2008-10-23"
+            metalex:datatype="date"
+            rdf:typeof="metalex:Date" />
+        
+        <!-- emanating actor -->
+        <meta id="m11"
+            metalex:about="LegislativeDeliveryEvent"
+            metalex:property="metalex:dateOf"
+            metalex:content="WorkCreationDate"
+            rdf:typeof="metalex:LegislativeDelivery" />
+        <meta id="m12"
+            metalex:about="LegislativeDeliveryEvent"
+            metalex:property="metalex:agent"
+            metalex:content="NationalAssembly"
+            rdf:typeof="metalex:LegislativeDelivery" />
+        
+        <!-- number / disambiguating feature -->
+        <meta id="m13"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="1stIssue" />
+        <meta id="m14"
+            metalex:about="1stIssue"
+            metalex:property="metalex:issueID"
+            metalex:content="1"
+            rdf:typeof="metalex:Issue" />
+         
+        <!-- FRBR expression level metadata -->
+        <!-- languages -->
+        <meta id="m15"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="Serbian" />  
+        <meta id="m16"
+            metalex:about="Serbian"
+            metalex:property="metalex:languageCode"
+            metalex:content="SR"
+            rdf:typeof="metalex:Language" />
+        
+        <!-- content-specification date -->
+        <meta id="m17"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="ExpressionCreationDate" />   
+        <meta id="m18"
+            metalex:about="ExpressionCreationDate"
+            metalex:property="metalex:xsdDate"
+            metalex:content="2008-10-23"
+            metalex:datatype="date"
+            rdf:typeof="metalex:Date" />
+        
+        
+        <!-- FRBR manifestation level metadata -->
+        <!-- format -->
+        <meta id="m19"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:rel="metalex:identifierComponent"
+            metalex:href="CENMetaLex" />
+        <meta id="m20"
+            metalex:about="CENMetaLex"
+            metalex:property="metalex:manifestationTypeID"
+            metalex:content="CEN MetaLex"
+            rdf:typeof="metalex:ManifestationType" />  
+        
+        <!-- markup authoring information -->
+        <meta id="m21"
+            metalex:about="urn:lex:rs:narodna-skupstina:zakon:2008-10-23;lex-1@original:sr$text-xml;cen-metalex:sluzbeni-glasnik"
+            metalex:property="metalex:resultOf"
+            metalex:content="LegislativePublicationEvent" />
+        <meta id="m22"
+            metalex:about="LegislativePublicationEvent"
+            metalex:property="metalex:agent"
+            metalex:content="OfficialGazette"
+            rdf:typeof="metalex:LegislativePublication" />
+        
+        <!-- markup specific date -->
+        <meta id="m23"
+            metalex:about="LegislativePublicationEvent"
+            metalex:property="metalex:date"
+            metalex:content="ManifestationCreationDate"
+            rdf:typeof="metalex:LegislativePublication" />
+        <meta id="m24"
+            metalex:about="ManifestationCreationDate"
+            metalex:property="metalex:xsdDate"
+            metalex:content="2008-10-27"
+            metalex:datatype="date"
+            rdf:typeof="metalex:Date" />    
+    </metadata>
+
+    <section id="section1" metalex:type="hcontainer">
+        <index id="section1-i">I</index>
+        <heading id="section1-h">ОСНОВНЕ ОДРЕДБЕ</heading>
+        <article id="art1" metalex:type="hcontainer">
+            <heading id="art1-h" metalex:type="block">Предмет закона</heading>
+            <index id="art1-i" metalex:type="block">Члан 1.</index>
+            <item id="art1-it1" metalex:type="container">
+                <provision id="art1-it1-p1">Овим законом се уређују услови за прикупљање и обраду
+                    података о личности, права лица и заштита права лица чији се подаци прикупљају и
+                    обрађују, ограничења заштите података о личности, поступак пред надлежним
+                    органом за заштиту података о личности, обезбеђење података, евиденција,
+                    изношење података из Републике Србије и надзор над извршавањем овог
+                    закона.</provision>
+            </item>
+            <item id="art1-it2" metalex:type="container">
+                <provision id="art1-it1-p1">Заштита података о личности обезбеђује се сваком
+                    физичком лицу, без обзира на држављанство и пребивалиште, расу, године живота,
+                    пол, језик, вероисповест, политичко и друго уверење, националну припадност,
+                    социјално порекло и статус, имовинско стање, рођење, образовање, друштвени
+                    положај или друга лична својства.</provision>
+            </item>
+            <item id="art1-it3" metalex:type="container">
+                <provision id="art1-it1-p1">Послове заштите података о личности обавља Повереник за
+                    информације од јавног значаја и заштиту података о личности (у даљем тексту:
+                    Повереник), као самосталан државни орган, независан у вршењу своје надлежности.
+                </provision>
+            </item>
+        </article>
+
+        <article id="art2" metalex:type="hcontainer">
+            <heading id="art2-h" metalex:type="block">Циљ закона</heading>
+            <index id="art2-i" metalex:type="block"> Члан 2.</index>
+            <item id="art2-it1" metalex:type="container">
+                <provision id="art2-it2-p1" metalex:type="block"> Циљ овог закона је да, у вези са обрадом
+                    података о личности, сваком физичком лицу обезбеди остваривање и заштиту права
+                    на приватност и осталих права и слобода. </provision>
+            </item>
+        </article>
+
+        <article id="art3" metalex:type="hcontainer">
+            <heading id="art3-h" metalex:type="block">Значење израза у овом закону</heading>
+            <index id="art3-i" metalex:type="block">Члан 3.</index>
+            <item id="art3-it1" metalex:type="container">
+                <provision id="art3-it1-p1" metalex:type="block"> Поједини изрази у овом закону имају следеће
+                    значење:</provision>
+                <point id="art3-it1-pt1" metalex:type="container">
+                    <provision id="art3-it1-pt1-p1" metalex:type="block">1) Податак о личности је свака информација
+                        која се односи на физичко лице, без обзира на облик у коме је изражена и на
+                        носач информације (папир, трака, филм, електронски медиј и сл), по чијем
+                        налогу, у чије име, односно за чији рачун је информација похрањена, датум
+                        настанка информације, место похрањивања информације, начин сазнавања
+                        информације (непосредно, путем слушања, гледања и сл, односно посредно,
+                        путем увида у документ у којем је информација садржана и сл), или без обзира
+                        на друго својство информације (у даљем тексту: податак);</provision>
+                </point>
+                <point id="art3-it1-pt2" metalex:type="container">
+                    <provision id="art3-it1-pt3-p1" metalex:type="block"> 2) Физичко лице је човек на кога се
+                        односи податак, чији је идентитет одређен или одредив на основу личног
+                        имена, јединственог матичног броја грађана, адресног кода или другог
+                        обележја његовог физичког, психолошког, духовног, економског, културног или
+                        друштвеног идентитета (у даљем тексту: лице);</provision>
+                </point>
+                <point id="art3-it1-pt3" metalex:type="container">
+                    <provision id="art3-it1-pt3-p1" metalex:type="block"> 3) Обрада података је свака радња
+                        предузета у вези са подацима као што су: прикупљање, бележење, преписивање,
+                        умножавање, копирање, преношење, претраживање, разврставање, похрањивање,
+                        раздвајање, укрштање, обједињавање, уподобљавање, мењање, обезбеђивање,
+                        коришћење, стављање на увид, откривање, објављивање, ширење, снимање,
+                        организовање, чување, прилагођавање, откривање путем преноса или на други
+                        начин чињење доступним, прикривање, измештање и на други начин чињење
+                        недоступним, као и спровођење других радњи у вези са наведеним подацима, без
+                        обзира да ли се врши аутоматски, полуаутоматски или на други начин (у даљем
+                        тексту: обрада); </provision>
+                </point>
+                <point id="art3-it1-pt4" metalex:type="container">
+                    <provision id="art3-it1-pt4-p1" metalex:type="block">4) Орган власти је државни орган, орган
+                        територијалне аутономије и јединице локалне самоуправе, односно други орган
+                        или организација којој је поверено вршење јавних овлашћења; </provision>
+                </point>
+                <point id="art3-it1-pt5" metalex:type="container">
+                    <provision id="art3-it1-pt5-p1" metalex:type="block">5) Руковалац података је физичко или
+                        правно лице, односно орган власти који обрађује податке (у даљем тексту:
+                        руковалац);</provision>
+                </point>
+                <point id="art3-it1-pt6" metalex:type="container">
+                    <provision id="art3-it1-pt6-p1" metalex:type="block">6) Збирка података је скуп података
+                        који се аутоматизовано или неаутоматизовано воде и доступни су по личном,
+                        предметном или другом основу, независно од начина на који су похрањени и
+                        места где се чувају; </provision>
+                </point>
+                <point id="art3-it1-pt7" metalex:type="container">
+                    <provision id="art3-it1-pt7-p1" metalex:type="block">7) Корисник података је физичко или
+                        правно лице, односно орган власти, који је законом или по пристанку лица
+                        овлашћен да користи податке (у даљем тексту: корисник);</provision>
+                </point>
+                <point id="art3-it1-pt8" metalex:type="container">
+                    <provision id="art3-it1-pt8-p1" metalex:type="block"> 8) Обрађивач података је физичко или
+                        правно лице, односно орган власти, коме руковалац на основу закона или
+                        уговора поверава одређене послове у вези са обрадом (у даљем тексту:
+                        обрађивач); </provision>
+                </point>
+                <point id="art3-it1-pt9" metalex:type="container">
+                    <provision id="art3-it1-pt9-p1" metalex:type="block">9) Писмени облик подразумева и
+                        електронски облик, под условима из закона којим се уређује електронски
+                        потпис; </provision>
+                </point>
+                <point id="art3-it1-pt10" metalex:type="container">
+                    <provision id="art3-it1-pt10-p1" metalex:type="block">10) Централни регистар збирки података
+                        (у даљем тексту: Централни регистар) је евиденција коју чини регистар збирки
+                        података и каталог збирки података коју води Повереник. </provision>
+                </point>
+            </item>
+        </article>
+
+        <article id="art4" metalex:type="hcontainer">
+            <heading id="art4-h" metalex:type="block">Примена закона</heading>
+            <index id="art4-i" metalex:type="block">Члан 4.</index>
+            <item id="art4-it1" metalex:type="container">
+                <provision id="art4-it1-p1" metalex:type="block"> Одредбе овог закона примењују се на сваку
+                    аутоматизовану обраду, као и на обраду садржану у збирци податка која се не води
+                    аутоматизовано. </provision>
+            </item>
+        </article>
+
+        <article id="art5" metalex:type="hcontainer">
+            <heading id="art5-h" metalex:type="block">Подаци на које се закон не примењује</heading>
+            <index id="art5-i" metalex:type="block">Члан 5.</index>
+            <item id="art5-it1" metalex:type="container">
+                <provision id="art5-it1-p1" metalex:type="block"> Осим ако очигледно претежу супротни интереси
+                    лица</provision><provision id="art5-it1-p2" metalex:type="block">, поједине одредбе овог закона о условима за обраду, као и о правима и
+                    обавезама у вези са обрадом не примењују се на обраду: </provision>
+                <point id="art5-it1-pt1" metalex:type="container">
+                    <provision id="art5-it1-pt1-p1" metalex:type="block">1) података који су доступни свакоме и
+                        објављени у јавним гласилима и публикацијама или приступачни у архивама,
+                        музејима и другим сличним организацијама; </provision>
+                </point>
+                <point id="art5-it1-pt2" metalex:type="container">
+                    <provision id="art5-it1-pt2-p1" metalex:type="block">2) података који се обрађују за
+                        породичне и друге личне потребе и нису доступни трећим лицима; </provision>
+                </point>
+                <point id="art5-it1-pt3" metalex:type="container">
+                    <provision id="art5-it1-pt3-p1" metalex:type="block">3) података који се о члановима
+                        политичких странака, удружења, синдиката, као и других облика удруживања
+                        обрађују од стране тих организација, под условом да члан да писмену изјаву
+                        да одређене одредбе овог закона не важе за обраду података о њему за
+                        одређено време, али не дуже од времена трајања његовог чланства;
+                    </provision>
+                </point>
+                <point id="art5-it1-pt4" metalex:type="container">
+                    <provision id="art5-it1-pt4-p1" metalex:type="block">4) података које је лице, способно да
+                        се само стара о својим интересима, објавило о себи. </provision>
+                </point>
+            </item>
+        </article>
+
+        <article id="art6" metalex:type="hcontainer">
+            <heading id="art6-h" metalex:type="block">Обрада у историјске, статистичке или научноистраживачке
+            сврхе</heading>
+            <index id="art6-i" metalex:type="block">Члан 6.</index>
+            <item id="art6-it1" metalex:type="container">
+                <provision id="art6-it1-p1" metalex:type="block"> Подаци прикупљени и обрађивани у друге сврхе
+                    могу да се обрађују искључиво у историјске, статистичке или научноистраживачке
+                    сврхе</provision><provision id="art6-it1-p2" metalex:type="block">, ако не служе доношењу одлука или предузимању мера према одређеном лицу уз
+                    обезбеђивање одговарајућих мера заштите.</provision>
+            </item>
+            <item id="art6-it2" metalex:type="container">
+                <provision id="art6-it2-p2" metalex:type="block"> Мере заштите података који се архивирају у
+                    искључиво историјске, статистичке или научноистраживачке сврхе уређују се
+                    посебним прописом. </provision>
+            </item>
+        </article>
+
+        <article id="art7" metalex:type="hcontainer">
+            <heading id="art7-h" metalex:type="block">Руковалац одређен посебним прописом</heading>
+            <index id="art7-i" metalex:type="block">Члан 7.</index>
+            <item id="art7-it1" metalex:type="container">
+                <provision id="art7-it1-p1" metalex:type="block"> Ако посебан пропис уређује сврху и начин обраде,
+                    руковалац може да се одреди тим прописом. </provision>
+            </item>
+        </article>
+    </section>
+
+
+
+    <section id="section2" metalex:type="hcontainer">
+        <index id="section2-i" metalex:type="block">II.</index>
+        <heading id="section2-h" metalex:type="block">УСЛОВИ ЗА ОБРАДУ </heading>
+        <article id="art8" metalex:type="hcontainer">
+            <heading id="art8-h" metalex:type="block">Недозвољеност обраде</heading>
+            <index id="art8-i" metalex:type="block">Члан 8.</index>
+            <item id="art8-it1" metalex:type="container">
+                <provision id="art8-it1-p1" metalex:type="block">Обрада није дозвољена ако:</provision>
+                <point id="art8-it1-pt1" metalex:type="container">
+                    <provision id="art8-it1-pt1-p1" metalex:type="block">1) физичко лице није дало пристанак за
+                        обраду, односно ако се обрада врши без законског овлашћења; </provision>
+                </point>
+                <point id="art8-it1-pt2" metalex:type="container">
+                    <provision id="art8-it1-pt2-p1" metalex:type="block">2) се врши у сврху различиту од оне за
+                        коју је одређена, без обзира да ли се врши на основу пристанка лица или
+                        законског овлашћења за обраду без пристанка; </provision>
+                </point>
+                <point id="art8-it1-pt3" metalex:type="container">
+                    <provision id="art8-it1-pt3-p1" metalex:type="block">3) сврха обраде није јасно одређена,
+                        ако је измењена, недозвољена или већ остварена; </provision>
+                </point>
+                <point id="art8-it1-pt4" metalex:type="container">
+                    <provision id="art8-it1-pt4-p1" metalex:type="block">4) је лице на које се подаци односе
+                        одређено или одредиво и након што се оствари сврха обраде; </provision>
+                </point>
+                <point id="art8-it1-pt5" metalex:type="container">
+                    <provision id="art8-it1-pt5-p1" metalex:type="block">5) је начин обраде недозвољен;
+                    </provision>
+                </point>
+                <point id="art8-it1-pt6" metalex:type="container">
+                    <provision id="art8-it1-pt6-p1" metalex:type="block">6) је податак који се обрађује
+                        непотребан или неподесан за остварење сврхе обраде; </provision>
+                </point>
+                <point id="art8-it1-pt7" metalex:type="container">
+                    <provision id="art8-it1-pt7-p1" metalex:type="block">7) су број или врста података који се
+                        обрађују несразмерни сврси обраде; </provision>
+                </point>
+                <point id="art8-it1-pt8" metalex:type="container">
+                    <provision id="art8-it1-pt8-p1" metalex:type="block">8) је податак неистинит и непотпун,
+                        односно када није заснован на веродостојном извору или је застарео.
+                    </provision>
+                </point>
+            </item>
+        </article>
+
+        <article id="art9" metalex:type="hcontainer">
+            <heading id="art9-h" metalex:type="block">Одлука помоћу аутоматизоване обраде</heading>
+            <index id="art9-i" metalex:type="block">Члан 9.</index>
+            <item id="art9-it1" metalex:type="container">
+                <provision id="art9-it1-p1" metalex:type="block"> Одлука која производи правне последице за лице
+                    или погоршава његов положај, не може бити искључиво заснована на подацима који
+                    се обрађују аутоматизовано и који служе оцени неког његовог својства (радне
+                    способности, поузданости, кредитне способности и сл). </provision>
+            </item>
+            <item id="art9-it2" metalex:type="container">
+                <provision id="art9-it2-p1" metalex:type="block">Одлука из <simple-citation id="sc1" href="#art9-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation> може се донети када
+                    је то законом изричито одређено, односно када се усваја захтев лица у вези са
+                    закључењем или испуњењем уговора, уз спровођење одговарајућих мера заштите.
+                </provision>
+            </item>
+            <item id="art9-it3" metalex:type="container">
+                <provision id="art9-it1-p3" metalex:type="block">У случају из <simple-citation id="sc2" href="#art9-it2" type="inline" subtype="citationSimple">става 2. овог члана</simple-citation> лице мора бити
+                    упознато са поступком аутоматизоване обраде и начином доношења одлуке.
+                </provision>
+            </item>
+        </article>
+
+        <article id="art10" metalex:type="hcontainer">
+            <heading id="art10-h" metalex:type="block">Обрада са пристанком</heading>
+            <index id="art10-i" metalex:type="block">Члан 10.</index>
+            <item id="art10-it1" metalex:type="container">
+                <provision id="art10-it1-p1" metalex:type="block"> Пуноважан пристанак за обраду може дати лице,
+                    након што га руковалац претходно обавести у смислу одредбе <simple-citation id="sc3" href="#art15" type="inline" subtype="citationSimple">члана 15. овог
+                    закона</simple-citation>. </provision>
+            </item>
+            <item id="art10-it2" metalex:type="container">
+                <provision id="art10-it2-p1" metalex:type="block">Пуноважан пристанак лице може дати писмено или
+                    усмено на записник. </provision>
+            </item>
+            <item id="art10-it3" metalex:type="container">
+                <provision id="art10-it3-p1" metalex:type="block">Пристанак се може дати преко пуномоћника.
+                </provision>
+            </item>
+            <item id="art10-it4" metalex:type="container">
+                <provision id="art10-it4-p1" metalex:type="block">Пуномоћје мора бити оверено, изузев ако законом
+                    није прописано друкчије. </provision>
+            </item>
+            <item id="art10-it5" metalex:type="container">
+                <provision id="art10-it5-p1" metalex:type="block">Пристанак за лице које није способно за давање
+                    пристанка даје законски заступник или старалац. </provision>
+            </item>
+            <item id="art10-it6" metalex:type="container">
+                <provision id="art10-it6-p1" metalex:type="block">Пристанак за обраду података о лицу које је умрло
+                    могу дати супружник, деца са навршених 15 година живота, родитељи, браћа и
+                    сестре, односно законски наследник или лице које је за то одредио умрли.
+                </provision>
+            </item>
+        </article>
+
+        <article id="art11" metalex:type="hcontainer">
+            <heading id="art11-h" metalex:type="block">Oпозив пристанка</heading>
+            <index id="art11-i" metalex:type="block">Члан 11.</index>
+            <item id="art11-it1" metalex:type="container">
+                <provision id="art11-it1-p1" metalex:type="block"> Пристанак се може опозвати. </provision>
+            </item>
+            <item id="art11-it2" metalex:type="container">
+                <provision id="art11-it2-p1" metalex:type="block">Пуноважан опозив лице може дати писмено или
+                    усмено на записник. </provision>
+            </item>
+            <item id="art11-it3" metalex:type="container">
+                <provision id="art11-it3-p1" metalex:type="block">У случају опозива, лице које је дало пристанак
+                    дужно је да руковаоцу накнади оправдане трошкове и штету, у складу са прописима
+                    који уређују одговорност за штету. </provision>
+            </item>
+            <item id="art11-it4" metalex:type="container">
+                <provision id="art11-it4-p1" metalex:type="block">Обрада података је недозвољена после опозива
+                    пристанка. </provision>
+            </item>
+        </article>
+
+        <article id="art12" metalex:type="hcontainer">
+            <heading id="art12-h" metalex:type="block">Обрада без пристанка</heading>
+            <index id="art12-i" metalex:type="block">Члан 12.</index>
+            <item id="art12-it1" metalex:type="container">
+                <provision id="art12-it1-p1" metalex:type="block"> Обрада без пристанка је дозвољена: </provision>
+                <point id="art12-it1-pt1" metalex:type="container">
+                    <provision id="art12-it1-pt1-p1" metalex:type="block">1) да би се остварили или заштитили
+                        животно важни интереси лица или другог лица, а посебно живот, здравље и
+                        физички интегритет; </provision>
+                </point>
+                <point id="art12-it1-pt2" metalex:type="container">
+                    <provision id="art12-it1-pt2-p1" metalex:type="block">2) у сврху извршења обавеза одређених
+                        законом, актом донетим у складу са законом или уговором закљученим између
+                        лица и руковаоца, као и ради припреме закључења уговора; </provision>
+                </point>
+                <point id="art12-it1-pt3" metalex:type="container">
+                    <provision id="art12-it1-pt3-p1" metalex:type="block">3) у другим случајевима одређеним овим
+                        законом или другим прописом донетим у складу са овим законом, ради остварења
+                        претежног оправданог интереса лица, руковаоца или корисника. </provision>
+                </point>
+            </item>
+        </article>
+
+        <article id="art13" metalex:type="hcontainer">
+            <heading id="art13-h" metalex:type="block">Обрада од стране органа власти</heading>
+            <index id="art13-i" metalex:type="block">Члан 13.</index>
+            <item id="art13-it1" metalex:type="container">
+                <provision id="art13-it1-p1" metalex:type="block">Орган власти обрађује податке без пристанка
+                    лица, </provision><provision id="art13-it1-p2" metalex:type="block">ако је обрада неопходна ради обављања послова из своје надлежности
+                    одређених законом или другим прописом у циљу остваривања интереса националне или
+                    јавне безбедности, одбране земље, спречавања, откривања, истраге и гоњења за
+                    кривична дела, економских, односно финансијских интереса државе, заштите здравља
+                    и морала, заштите права и слобода и другог јавног интереса, а у другим
+                    случајевима на основу писменог пристанка лица.</provision>
+            </item>
+        </article>
+
+        <article id="art14" metalex:type="hcontainer">
+            <heading id="art14-h" metalex:type="block">Прикупљање података</heading>
+            <index id="art14-i" metalex:type="block">Члан 14.</index>
+            <item id="art14-it1" metalex:type="container">
+                <provision id="art14-it1-p1" metalex:type="block"> Подаци се прикупљају од лица на које се односе и
+                    од органа управе који су законом овлашћени за њихово прикупљање.</provision>
+            </item>
+            <item id="art14-it2" metalex:type="container">
+                <provision id="art14-it2-p1" metalex:type="block"> Подаци се могу прикупљати и од другог лица ако: </provision>
+
+                <point id="art14-it2-pt1" metalex:type="container">
+                    <provision id="art14-it2-pt1-p1" metalex:type="block">1) је то предвиђено уговором закљученим
+                        са лицем на које се подаци односе; </provision>
+                </point>
+                <point id="art14-it2-pt2" metalex:type="container">
+                    <provision id="art14-it2-pt2-p1" metalex:type="block">2) је то прописано законом или другим
+                        прописом донетим у складу са законом; </provision>
+                </point>
+                <point id="art14-it2-pt3" metalex:type="container">
+                    <provision id="art14-it2-pt3-p1" metalex:type="block">3) је то неопходно с обзиром на природу
+                        посла; </provision>
+                </point>
+                <point id="art14-it2-pt4" metalex:type="container">
+                    <provision id="art14-it2-pt4-p1" metalex:type="block">4) прикупљање података од самог лица на
+                        које се односе захтева прекомерни утрошак времена и средстава; </provision>
+                </point>
+                <point id="art14-it2-pt5" metalex:type="container">
+                    <provision id="art14-it2-pt5-p1" metalex:type="block">5) се прикупљају подаци ради остварења
+                        или заштите животно важних интереса лица на које се односе, посебно живота,
+                        здравља и физичког интегритета. </provision>
+                </point>
+            </item>
+        </article>
+
+        <article id="art15" metalex:type="hcontainer">
+            <heading id="art15-h" metalex:type="block">Обавештавање о обради</heading>
+            <index id="art15-i" metalex:type="block">Члан 15.</index>
+            <item id="art15-it1" metalex:type="container">
+                <provision id="art15-it1-p1" metalex:type="block"> Руковалац који податке прикупља од лица на које
+                    се односе, односно од другог лица, </provision><provision id="art15-it1-p2" metalex:type="block">пре прикупљања, упознаће лице на које се
+                    подаци односе, односно друго лице о: </provision>
+                <point id="art15-it1-pt1" metalex:type="container">
+                    <provision id="art15-it1-pt1-p1" metalex:type="block">1) свом идентитету, односно имену и
+                        адреси или фирми, односно идентитету другог лица које је одговорно за обраду
+                        података у складу са законом; </provision>
+                </point>
+                <point id="art15-it1-pt2" metalex:type="container">
+                    <provision id="art15-it1-pt2-p1" metalex:type="block">2) сврси прикупљања и даље обраде
+                        података; </provision>
+                </point>
+                <point id="art15-it1-pt3" metalex:type="container">
+                    <provision id="art15-it1-pt3-p1" metalex:type="block">3) начину коришћења података;
+                    </provision>
+                </point>
+                <point id="art15-it1-pt4" metalex:type="container">
+                    <provision id="art15-it1-pt4-p1" metalex:type="block">4) идентитету лица или врсти лица која
+                        користе податке;</provision>
+                </point>
+                <point id="art15-it1-pt5" metalex:type="container">
+                    <provision id="art15-it1-pt5-p1" metalex:type="block"> 5) обавезности и правном основу,
+                        односно добровољности давања података и обраде; </provision>
+                </point>
+                <point id="art15-it1-pt6" metalex:type="container">
+                    <provision id="art15-it1-pt6-p1" metalex:type="block">6) праву да пристанак за обраду
+                        опозове, као и правне последице у случају опозива; </provision>
+                </point>
+                <point id="art15-it1-pt7" metalex:type="container">
+                    <provision id="art15-it1-pt7-p1" metalex:type="block">7) правима која припадају лицу у
+                        случају недозвољене обраде; </provision>
+                </point>
+                <point id="art15-it1-pt8" metalex:type="container">
+                    <provision id="art15-it1-pt8-p2" metalex:type="block">8) другим околностима чије би
+                        несаопштавање лицу на које се односе подаци, односно другом лицу било
+                        супротно савесном поступању. </provision>
+                </point>
+            </item>
+            <item id="art15-it2" metalex:type="container">
+                <provision id="art15-it2-p1" metalex:type="block">Обавеза из <simple-citation id="sc4" href="#art15-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation> не постоји</provision> <provision id="art15-it2-p2" metalex:type="block">када
+                    такво упознавање, с обзиром на околности случаја, није могуће или је очигледно
+                    непотребно, односно непримерено, а нарочито ако је лице на које се односе
+                    подаци, односно друго лице већ упознато са тиме или ако лице на које се подаци
+                    односе није доступно. </provision>
+            </item>
+            <item id="art15-it3" metalex:type="container">
+                <provision id="art15-it3-p1" metalex:type="block">Руковалац који је податке о лицу прикупио од
+                    другог лица, упознаће са условима из <simple-citation id="sc5" href="#art9-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation>, лице на које се подаци
+                    односе, без одлагања или најкасније при првој обради, осим када такво
+                    упознавање, с обзиром на околности случаја, није могуће, односно захтева
+                    прекомерни утрошак времена и средстава или је очигледно непотребно, а нарочито
+                    ако је лице на које се односе подаци већ упознато са тиме, односно ако лице на
+                    које се подаци односе није доступно или ако је прикупљање и даља обрада података
+                    од другог лица прописана законом. </provision>
+            </item>
+            <item id="art15-it4" metalex:type="container">
+                <provision id="art15-it4-p1" metalex:type="block">У случају из <simple-citation id="sc6" href="#art9-it3" type="inline" subtype="citationSimple">става 3. овог члана</simple-citation>, руковалац је
+                    дужан да обавести лице на које се подаци односе чим то постане могуће, односно
+                    ако лице то захтева. </provision>
+            </item>
+            <item id="art15-it5" metalex:type="container">
+                <provision id="art15-it5-p1" metalex:type="block">Упознавање из <simple-citation id="sc7" href="#art9-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation> врши се у
+                    писменом облику у случају када се за пристанак за обраду даје у писменом облику,
+                    осим ако лице на које се подаци односе, односно друго лице, пристане на усмено
+                    упознавање. </provision>
+            </item>
+            <item id="art15-it6" metalex:type="container">
+                <provision id="art15-it6-p1" metalex:type="block">Руковалац ће обавестити лице на које се подаци
+                    односе и корисника о измени, допуни или брисању података без одлагања, а
+                    најкасније у року од 15 дана од дана измене, допуне или брисања података.
+                </provision>
+            </item>
+        </article>
+
+        <article id="art16" metalex:type="hcontainer">
+            <heading id="art16-h" metalex:type="block">Нарочито осетљиви подаци</heading>
+            <index id="art16-i" metalex:type="block">Члан 16.</index>
+            <item id="art16-it1" metalex:type="container">
+                <provision id="art16-it1-p1" metalex:type="block"> Подаци који се односе на националну припадност,
+                    расу, пол, језик, вероисповест, припадност политичкој странци, синдикално
+                    чланство, здравствено стање, примање социјалне помоћи, жртву насиља, осуду за
+                    кривично дело и сексуални живот могу се обрађивати на основу слободно датог
+                    пристанка лица</provision> <provision id="art16-it1-p2" metalex:type="block">, осим када законом није дозвољена обрада ни уз пристанак.
+                </provision>
+            </item>
+            <item id="art16-it2" metalex:type="container">
+                <provision id="art16-it2-p1" metalex:type="block">Изузетно, подаци који се односе на припадност
+                    политичкој странци, здравствено стање и примање социјалне помоћи, могу се
+                    обрађивати без пристанка лица</provision><provision id="art16-it2-p2" metalex:type="block">, само ако је то законом прописано.</provision>
+            </item>
+            <item id="art16-it3" metalex:type="container">
+                <provision id="art16-it3-p1" metalex:type="block"> У случају из <citation-range id="cr1"
+                        metalex:type="inline" href="#art16-it1" upTo="#art16-it2" type="inline" subtype="citationRange">ст. 1. и 2. овог
+                        члана</citation-range>, обрада мора бити посебно означена и заштићена мерама
+                    заштите. </provision>
+            </item>
+            <item id="art16-it4" metalex:type="container">
+                <provision id="art16-it4-p1" metalex:type="block">У случају из <citation-range id="cr2"
+                        metalex:type="inline" href="#art16-it1" upTo="#art16-it2">ст. 1. и 2. овог члана</citation-range>, Повереник
+                    има право увида у податке и провере законитости обраде по службеној дужности или
+                    по захтеву лица, односно руковаоца. </provision>
+            </item>
+            <item id="art16-it5" metalex:type="container">
+                <provision id="art16-it5-p1" metalex:type="block">Начин архивирања и мере заштите података из <citation-range id="cr3"
+                        metalex:type="inline" href="#art16-it1" upTo="#art16-it2">ст. 1. и 2. овог члана</citation-range>, уз претходно прибављено мишљење Повереника, уређује Влада.
+                </provision>
+            </item>
+        </article>
+
+        <article id="art17" metalex:type="hcontainer">
+            <heading id="art27-h" metalex:type="block">Пристанак за обраду нарочито осетљивих података</heading>
+            <index id="art17-i" metalex:type="block"> Члан
+                17.</index>
+            <item id="art17-it1" metalex:type="container">
+                <provision id="art17-it1-p1" metalex:type="block"> Пристанак за обраду нарочито осетљивих података
+                    даје се у писменом облику, који садржи ознаку податка који се обрађује, сврху
+                    обраде и начин његовог коришћења. </provision>
+            </item>
+            <item id="art17-it2" metalex:type="container">
+                <provision id="art17-it2-p1" metalex:type="block">Ако давалац пристанка није писмен или из другог
+                    разлога није у стању да пристанак својеручно потпише, пристанак је пуноважан ако
+                    два сведока својим потписима потврде да писмено садржи изјаву воље даваоца
+                    пристанка. </provision>
+            </item>
+        </article>
+
+        <article id="art18" metalex:type="hcontainer">
+            <heading id="art18-h" metalex:type="block">Опозив пристанка за обраду нарочито осетљивих података</heading>
+            <index id="art18-i" metalex:type="block">
+                Члан 18.</index>
+            <item id="art18-it1" metalex:type="container">
+                <provision id="art18-it1-p1" metalex:type="block"> У случају опозива, лице које је дало пристанак
+                    дужно је да руковаоцу накнади оправдане трошкове и штету, у складу са прописима
+                    који уређују одговорност за штету, осим ако је друкчије одређено у изјави о
+                    пристанку. </provision>
+            </item>
+            <item id="art18-it2" metalex:type="container">
+                <provision id="art18-it2-p1" metalex:type="block">На опозив пристанка за обраду нарочито осетљивих
+                    података сходно се примењује <simple-citation id="sc8" href="#art11" type="inline" subtype="citationSimple">члан 11. овог закона</simple-citation>. </provision>
+            </item>
+        </article>
+    </section>
+    
+    
+
+    <section id="section3" metalex:type="hcontainer">
+        <index id="section3-i" metalex:type="block">III</index>
+        <heading id="section3-h" metalex:type="block">ПРАВА ЛИЦА И ЗАШТИТА ПРАВА ЛИЦА</heading>
+        <subsection id="section3-sub1">
+            <index id="section3-sub1-i" metalex:type="block">1.</index>
+            <heading id="section3-sub1-h">Права</heading>
+            <article id="art19" metalex:type="hcontainer">
+                <heading id="art19-h" metalex:type="block">Право на обавештење о обради</heading>
+                <index id="art19-i" metalex:type="block">Члан 19.</index>
+                <item id="art19-it1" metalex:type="container">
+                    <provision id="art19-it1-p1" metalex:type="block"> Лице има право да захтева да га руковалац
+                        истинито и потпуно обавести о томе: </provision>
+
+                    <point id="art19-it1-pt1" metalex:type="container">
+                        <provision id="art19-it1-pt1-p1" metalex:type="block">1) да ли руковалац обрађује податке
+                            о њему и коју радњу обраде врши; </provision>
+                    </point>
+                    <point id="art19-it1-pt2" metalex:type="container">
+                        <provision id="art19-it1-pt2-p1" metalex:type="block">2) које податке обрађује о њему;
+                        </provision>
+                    </point>
+                    <point id="art19-it1-pt3" metalex:type="container">
+                        <provision id="art19-it1-pt3-p1" metalex:type="block">3) од кога су прикупљени подаци о
+                            њему, односно ко је извор података; </provision>
+                    </point>
+                    <point id="art19-it1-pt4" metalex:type="container">
+                        <provision id="art19-it1-pt4-p1" metalex:type="block">4) у које сврхе обрађује податке о
+                            њему; </provision>
+                    </point>
+                    <point id="art19-it1-pt5" metalex:type="container">
+                        <provision id="art19-it1-pt5-p1" metalex:type="block">5) по ком правном основу обрађује
+                            податке о њему; </provision>
+                    </point>
+                    <point id="art19-it1-pt6" metalex:type="container">
+                        <provision id="art19-it1-pt6-p1" metalex:type="block">6) у којим збиркама података се
+                            налазе подаци о њему; </provision>
+                    </point>
+                    <point id="art19-it1-pt7" metalex:type="container">
+                        <provision id="art19-it1-pt7-p1" metalex:type="block">7) ко су корисници података о њему;
+                        </provision>
+                    </point>
+                    <point id="art19-it1-pt8" metalex:type="container">
+                        <provision id="art19-it1-pt8-p1" metalex:type="block">8) које податке, односно које врсте
+                            података о њему користе; </provision>
+                    </point>
+                    <point id="art19-it1-pt9" metalex:type="container">
+                        <provision id="art19-it1-pt9-p1" metalex:type="block">9) у које сврхе се користе подаци о
+                            њему; </provision>
+                    </point>
+                    <point id="art19-it1-pt10" metalex:type="container">
+                        <provision id="art19-it1-pt10-p1" metalex:type="block">10) по ком правном основу користи
+                            податке о њему; </provision>
+                    </point>
+                    <point id="art19-it1-pt11" metalex:type="container">
+                        <provision id="art19-it1-pt11-p1" metalex:type="block">11) коме се подаци преносе;
+                        </provision>
+                    </point>
+                    <point id="art19-it1-pt12" metalex:type="container">
+                        <provision id="art19-it1-pt12-p1" metalex:type="block">12) који подаци се преносе;
+                        </provision>
+                    </point>
+                    <point id="art19-it1-pt13" metalex:type="container">
+                        <provision id="art19-it1-pt13-p1" metalex:type="block">13) у које сврхе се подаци преносе;
+                        </provision>
+                    </point>
+                    <point id="art19-it1-pt14" metalex:type="container">
+                        <provision id="art19-it1-pt14-p1" metalex:type="block">14) по ком правном основу се подаци
+                            преносе; </provision>
+                    </point>
+                    <point id="art19-it1-pt15" metalex:type="container">
+                        <provision id="art19-it1-pt15-p1" metalex:type="block">15) у ком временском периоду се
+                            подаци обрађују. </provision>
+                    </point>
+                </item>
+            </article>
+
+            <article id="art20" metalex:type="hcontainer">
+                <heading id="art20-h" metalex:type="block">Право на увид</heading>
+                <index id="art20-i" metalex:type="block">Члан 20.</index>
+                <item id="art20-it1" metalex:type="container">
+                    <provision id="art20-it1-p1" metalex:type="block"> Лице има право да од руковаоца захтева да му
+                        стави на увид податке који се на њега односе. </provision>
+                </item>
+                <item id="art20-it2" metalex:type="container">
+                    <provision id="art20-it2-p1" metalex:type="block">Право на увид у податке који се на њега
+                        односе обухвата право на преглед, читање и слушање података, као и прављење
+                        забележака. </provision>
+                </item>
+            </article>
+
+            <article id="art21" metalex:type="hcontainer">
+                <heading id="art21-h" metalex:type="block">Право на копију</heading>
+                <index id="art21-i" metalex:type="block">Члан 21.</index>
+                <item id="art21-it1" metalex:type="container">
+                    <provision id="art21-it1-p1" metalex:type="block"> Лице има право да од руковаоца захтева
+                        копију податка који се на њега односи. </provision>
+                </item>
+                <item id="art21-it2" metalex:type="container">
+                    <provision id="art21-it2-p1" metalex:type="block">Руковалац издаје копију податка (фотокопију,
+                        аудио копију, видео копију, дигиталну копију и сл) у облику у којем се
+                        информација налази, односно у другом облику ако би у облику у коме се
+                        информација налази лицу била неразумљива. </provision>
+                </item>
+                <item id="art21-it3" metalex:type="container">
+                    <provision id="art21-it3-p1" metalex:type="block">Лице сноси нужне трошкове израде и предаје
+                        копије податка. </provision>
+                </item>
+            </article>
+
+            <article id="art22" metalex:type="hcontainer">
+                <heading id="art22-h" metalex:type="block">Права лица поводом извршеног увида</heading>
+                <index id="art22-i" metalex:type="block"> Члан
+                    22.</index>
+                <item id="art22-it1" metalex:type="container">
+                    <provision id="art22-it1-p1" metalex:type="block"> Лице има право да од руковаоца захтева
+                        исправку, допуну, ажурирање, брисање података, као и прекид и привремену
+                        обуставу обраде. </provision>
+                    </item>
+                    <item id="art22-it2" metalex:type="container">
+                        <provision id="art22-it2-p1" metalex:type="block">   Лице има право на брисање података ако:</provision>
+                    <point id="art22-it2-pt1" metalex:type="container">
+                        <provision id="art-it2-pt1-p1" metalex:type="block"> 1) сврха обраде није јасно
+                            одређена; </provision>
+                    </point>
+                    <point id="art22-it2-pt2" metalex:type="container">
+                        <provision id="art22-it2-pt2-p1" metalex:type="block">2) је сврха обраде измењена, а нису
+                            испуњени услови за обраду за ту измењену сврху; </provision>
+                    </point>
+                    <point id="art22-it2-pt3" metalex:type="container">
+                        <provision id="art22-it2-pt3-p1" metalex:type="block">3) је сврха обраде остварена,
+                            односно подаци више нису потребни за остваривање сврхе; </provision>
+                    </point>
+                    <point id="art22-it2-pt4" metalex:type="container">
+                        <provision id="art22-it2-pt4-p1" metalex:type="block">4) је начин обраде недозвољен;
+                        </provision>
+                    </point>
+                    <point id="art22-it2-pt5" metalex:type="container">
+                        <provision id="art22-it2-pt5-p1" metalex:type="block">5) податак спада у број и врсту
+                            података чија је обрада несразмерна сврси; </provision>
+                    </point>
+                    <point id="art22-it2-pt6" metalex:type="container">
+                        <provision id="art22-it2-pt6-p1" metalex:type="block">6) је податак нетачан, а не може се
+                            путем исправке заменити тачним; </provision>
+                    </point>
+                    <point id="art22-it2-pt7" metalex:type="container">
+                        <provision id="art22-it2-pt7-p1" metalex:type="block">7) се податак обрађује без
+                            пристанка или овлашћења заснованог на закону и у другим случајевима када
+                            се обрада не може вршити у складу са одредбама овог закона. </provision>
+                    </point>
+                </item>
+                <item id="art22-it3" metalex:type="container">
+                    <provision id="art22-it3-p1" metalex:type="block">Лице има право на прекид и привремену
+                        обуставу обраде</provision><provision id="art22-it3-p2" metalex:type="block">, ако је оспорило тачност, потпуност и ажурност података</provision><provision id="art22-it3-p3" metalex:type="block">, као
+                        и право да се ти подаци означе као оспорени, док се не утврди њихова тачност, потпуност и ажурност. </provision>
+                </item>
+            </article>
+        </subsection>
+        
+        
+        <subsection id="section3-sub2">
+            <index id="section3-sub2-i" metalex:type="block">2.</index>
+            <heading id="section3-sub2-h">Ограничења</heading>
+            <article id="art23" metalex:type="hcontainer">
+                <heading id="art23-h" metalex:type="block">Ограничења права</heading>
+                <index id="art23-i" metalex:type="block">Члан 23.</index>
+                <item id="art23-it1" metalex:type="container">
+                    <provision id="art23-it1-p1" metalex:type="block"> Право на обавештење, увид и копију може се
+                        ограничити ако: </provision>
+                    <point id="art23-it1-pt1" metalex:type="container">
+                        <provision id="art23-it1-pt1-p1" metalex:type="block">1) лице тражи обавештење из <citation-range id="cr4" href="#art19-it1-pt2" upTo="#art19-it1-pt10" metalex:exclude="#art19-it1-pt3" metalex:excludeTo="#art19-it1-pt6">члана
+                            19. тач. 2) и 7) до 10) овог закона</citation-range>, а руковалац је податке о њему унео
+                            у јавни регистар или их је на други начин учинио доступним јавности;
+                        </provision>
+                    </point>
+                    <point id="art23-it1-pt2" metalex:type="container">
+                        <provision id="art23-it1-pt2-p1" metalex:type="block">2) лице злоупотребљава своје право
+                            на обавештење, увид и копију; </provision>
+                    </point>
+                    <point id="art23-it1-pt3" metalex:type="container">
+                        <provision id="art23-it1-pt3-p1" metalex:type="block">3) је руковалац или друго лице, у
+                            складу с <simple-citation id="sc9" href="#art15" type="inline" subtype="citationSimple">чланом 15. овог закона</simple-citation>, већ упознао лице са оним о чему тражи
+                            да буде обавештен, односно ако је лице извршило увид или добило копију,
+                            а у међувремену није дошло до промене податка; </provision>
+                    </point>
+                    <point id="art23-it1-pt4" metalex:type="container">
+                        <provision id="art23-it1-pt4-p1" metalex:type="block">4) би руковалац био онемогућен у
+                            вршењу послова из свог делокруга; </provision>
+                    </point>
+                    <point id="art23-it1-pt4" metalex:type="container">
+                        <provision id="art23-it1-pt4-p1" metalex:type="block">5) би давање обавештења озбиљно
+                            угрозило интересе националне и јавне безбедности, одбране земље, или
+                            радње спречавања, откривања, истраге и гоњења за кривична дела;
+                        </provision>
+                    </point>
+                    <point id="art23-it1-pt4" metalex:type="container">
+                        <provision id="art23-it1-pt4-p1" metalex:type="block">6) би давање обавештења озбиљно
+                            угрозило важан привредни или финансијски интерес државе; </provision>
+                    </point>
+                    <point id="art23-it1-pt5" metalex:type="container">
+                        <provision id="art23-it1-pt5-p1" metalex:type="block">7) би се обавештењем учинио
+                            доступним податак за који је законом, другим прописима или актима
+                            заснованим на закону одређено да се чува као тајна, а због чијег би
+                            одавања могле наступити тешке последице по интерес заштићен законом;
+                        </provision>
+                    </point>
+                    <point id="art23-it1-pt6" metalex:type="container">
+                        <provision id="art23-it1-pt6-p1" metalex:type="block">8) би обавештење озбиљно угрозило
+                            приватност или важан интерес лица, посебно живот, здравље и физички
+                            интегритет; </provision>
+                    </point>
+                    <point id="art23-it1-pt7" metalex:type="container">
+                        <provision id="art23-it1-pt7-p1" metalex:type="block">9) се подаци о њему користе
+                            искључиво за научноистраживачке и статистичке сврхе, док такво коришћење
+                            траје. </provision>
+                    </point>
+                </item>
+                <item id="art23-it2" metalex:type="container">
+                    <provision id="art23-it2-p1" metalex:type="block">Лице нема право на увид док траје обустава
+                        обраде ако је обрада обустављена на његов захтев. </provision>
+                </item>
+            </article>
+        </subsection>
+        
+        
+        <subsection id="section3-sub3">
+            <index id="section3-sub3-i" metalex:type="block">3.</index>
+            <heading id="section3-sub3-h">Захтев</heading>
+            <article id="art24" metalex:type="hcontainer">
+                <heading id="art23-h" metalex:type="block">Захтев за остваривање права</heading>
+                <index id="art24-i" metalex:type="block">Члан 24.</index>
+                <item id="art24-it1" metalex:type="container">
+                    <provision id="art24-it1-p1" metalex:type="block"> Захтев за обавештење, увид и копију подноси
+                        се руковаоцу у писменом облику, а руковалац може прихватити и усмени захтев,
+                        из разлога ефикасности и економичности. Захтев за остваривање права поводом
+                        извршеног увида подноси се руковаоцу у писменом облику. </provision>
+                </item>
+                <item id="art24-it2" metalex:type="container">
+                    <provision id="art24-it2-p1" metalex:type="block">Захтев из <simple-citation id="sc10" href="#art24-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation> садржи: податке
+                        о идентитету подносиоца (име и презиме, име једног родитеља, датум и место
+                        рођења, јединствени матични број грађана), адресу пребивалишта, односно
+                        боравишта, као и друге податке неопходне за контакт. </provision>
+                </item>
+                <item id="art24-it3" metalex:type="container">
+                    <provision id="art24-it3-p1" metalex:type="block">Захтев који подноси законски наследник умрлог
+                        лица садржи и податке о идентитету умрлог. Уз захтев се прилаже извод из
+                        матичне књиге умрлих, као и доказ о сродству подносиоца са умрлим.
+                    </provision>
+                </item>
+                <item id="art24-it4" metalex:type="container">
+                    <provision id="art24-it4-p1" metalex:type="block">Неписмено лице, односно лице које због
+                        телесних или других недостатака није у могућности да захтев сачини у
+                        писменом облику може захтев усмено саопштити у записник. </provision>
+                </item>
+                <item id="art24-it5" metalex:type="container">
+                    <provision id="art24-it5-p1" metalex:type="block">Руковалац може прописати образац за подношење
+                        захтева, али је дужан да размотри и захтев који није сачињен на том обрасцу.
+                    </provision>
+                </item>
+                <item id="art24-it6" metalex:type="container">
+                    <provision id="art24-it6-p1" metalex:type="block">Ако је захтев неразумљив или непотпун,
+                        руковалац је дужан да поучи подносиоца како да недостатке отклони.
+                    </provision>
+                </item>
+                <item id="art24-it7" metalex:type="container">
+                    <provision id="art24-it7-p1" metalex:type="block">Ако подносилац не отклони недостатке у
+                        одређеном року, а најдуже у року од 15 дана од дана пријема поуке о допуни,
+                        а недостаци су такви да се по захтеву не може поступати, руковалац ће
+                        закључком одбацити захтев као неуредан. </provision>
+                </item>
+            </article>
+        </subsection>
+
+
+        <subsection id="section3-sub4">
+            <index id="section3-sub4-i" metalex:type="block">4.</index>
+            <heading id="section3-sub4-h">Одлучивање</heading>
+            <article id="art25" metalex:type="hcontainer">
+                <heading id="art25-h" metalex:type="block">Одлучивање о захтеву за обавештење, увид и копију</heading>
+                <index id="art25-i" metalex:type="block">Члан 25.</index>
+                <item id="art25-it1" metalex:type="container">
+                    <provision id="art25-it1-p1" metalex:type="block"> Руковалац је дужан да обавештење о поднетом
+                        захтеву изда без одлагања, а најкасније у року од 15 дана од дана подношења.
+                        Обавештење се даје у писменом облику, а изузетно се може дати и усмено ако
+                        на то пристане подносилац. </provision>
+                </item>
+                <item id="art25-it2" metalex:type="container">
+                    <provision id="art25-it2-p1" metalex:type="block">Руковалац је дужан да без одлагања, а
+                        најкасније у року од 30 дана од дана пријема уредног захтева за увид,
+                        односно за издавање копије, омогући подносиоцу да изврши увид, односно да му
+                        преда копију. </provision>
+                </item>
+                <item id="art25-it3" metalex:type="container">
+                    <provision id="art25-it3-p1" metalex:type="block">Руковалац ће заједно са обавештењем о томе да
+                        ће подносиоцу захтева ставити на увид податак, односно издати му копију
+                        податка, саопштити и време, место и начин на који ће му податак бити стављен
+                        на увид, износ нужних трошкова израде копије податка, а у случају да не
+                        располаже техничким средствима за израду копије, упознаће подносиоца са
+                        могућношћу да употребом своје опреме изради копију. </provision>
+                </item>
+                <item id="art25-it4" metalex:type="container">
+                    <provision id="art25-it4-p1" metalex:type="block">Подносилац захтева из <simple-citation id="sc11" href="#art25-it2" type="inline" subtype="citationSimple">става 2. овог члана</simple-citation>
+                        може из оправданих разлога тражити да увид у податке изврши у друго време.
+                        Увид у податке врши се по правилу у службеним просторијама руковаоца.
+                    </provision>
+                </item>
+                <item id="art25-it5" metalex:type="container">
+                    <provision id="art25-it5-p1" metalex:type="block">Ако руковалац није у могућности, из
+                        оправданих разлога, да поступи по захтеву у прописаном року, обавестиће о
+                        томе подносиоца и одредити нови рок за поступање који не може бити дужи од
+                        30 дана од истека рока из <citation-range id="cr5" href="#art25-it1" upTo="#art25-it2">ст. 1. и 2. овог члана</citation-range>. </provision>
+                </item>
+                <item id="art25-it6" metalex:type="container">
+                    <provision id="art25-it6-p1" metalex:type="block">Ако прихвати захтев за обавештење, увид и
+                        копију, руковалац о томе сачињава забелешку. </provision>
+                </item>
+                <item id="art25-it7" metalex:type="container">
+                    <provision id="art25-it7-p1" metalex:type="block">Ако руковалац одбије захтев, о томе доноси
+                        решење са поуком о правном средству. </provision>
+                </item>
+                <item id="art25-it7" metalex:type="container">
+                    <provision id="art25-it7-p1" metalex:type="block">Ако руковалац не одговори на захтев у
+                        роковима из <citation-range id="cr6" href="#art25-it1" upTo="#art25-it2">ст. 1. и 2. овог члана</citation-range>, као и ако одбије захтев, подносилац
+                        захтева може изјавити жалбу Поверенику. </provision>
+                </item>
+            </article>
+
+            <article id="art26" metalex:type="hcontainer">
+                <heading id="art26-h" metalex:type="block">Одлучивање о захтеву поводом извршеног увида</heading>
+                <index id="art26-i" metalex:type="block">Члан 26.</index>
+                <item id="art26-it1" metalex:type="container">
+                    <provision id="art26-it1-p1" metalex:type="block"> Руковалац је дужан да одлучи о захтеву
+                        поводом извршеног увида из <simple-citation id="sc12" href="#art25" type="inline" subtype="citationSimple">члана 24. овог закона</simple-citation>, без одлагања, а најкасније
+                        у року од 15 дана од дана подношења захтева и да о одлуци обавести
+                        подносиоца захтева. </provision>
+                </item>
+                <item id="art26-it2" metalex:type="container">
+                    <provision id="art26-it2-p1" metalex:type="block">Када руковалац одбије захтев из <simple-citation id="sc13" href="#art26-it1" type="inline" subtype="citationSimple">става 1. овог
+                        члана</simple-citation>, у образложењу решења наводи разлоге за одбијање захтева, као и
+                        разлоге за дозвољеност обраде. </provision>
+                </item>
+                <item id="art26-it3" metalex:type="container">
+                    <provision id="art26-it3-p1" metalex:type="block">Подносилац захтева може изјавити жалбу
+                        Поверенику против решења о одбијању захтева из <simple-citation id="sc14" href="#art26-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation>, у року
+                        од 15 дана од дана достављања решења. </provision>
+                </item>
+                <item id="art26-it4" metalex:type="container">
+                    <provision id="art26-it4-p1" metalex:type="block">Ако је руковалац утврдио да је захтев поводом
+                        извршеног увида основан, а не постоји техничка могућност да се без одлагања
+                        поступи по захтеву, или ако би неодложно поступање по захтеву изискивало
+                        прекомерни утрошак времена и средстава, руковалац ће по службеној дужности
+                        означити податке као оспорене и привремено обуставити њихову обраду.
+                    </provision>
+                </item>
+                <item id="art26-it5" metalex:type="container">
+                    <provision id="art26-it5-p1" metalex:type="block">Руковалац који је орган власти, а који је
+                        утврдио да је захтев поводом извршеног увида основан, означиће податак као
+                        оспорен и привремено обуставити његову обраду. Руковалац неће исправити,
+                        допунити, ажурирати и брисати податак, односно прекинути обраду ако: </provision>
+
+                    <point id="art26-it5-pt1" metalex:type="container">
+                        <provision id="art26-it5-pt1-p1" metalex:type="block">1) није истекао рок за обавезно
+                            чување података; </provision>
+                    </point>
+                    <point id="art26-it5-pt2" metalex:type="container">
+                        <provision id="art26-it5-pt2-p1" metalex:type="block">2) је очигледно да би поступање по
+                            захтеву нанело озбиљну штету интересима других лица; </provision>
+                    </point>
+                    <point id="art26-it5-pt3" metalex:type="container">
+                        <provision id="art25-it5-pt3-p1" metalex:type="block">3) је због посебног начина чувања
+                            података поступање по захтеву немогуће или изискује прекомерни утрошак
+                            времена или средстава. </provision>
+                    </point>
+                </item>
+                <item id="art26-it6" metalex:type="container">
+                    <provision id="art26-it6-p1" metalex:type="block">Ознака оспорености из <simple-citation id="sc15" href="#art22-it3" type="inline" subtype="citationSimple">члана 22. став 3. овог
+                        закона</simple-citation>, брисаће се на основу одлуке надлежног органа или по пристанку лица
+                        на које се податак односи. </provision>
+                </item>
+            </article>
+        </subsection>
+
+
+        <subsection id="section3-sub5">
+            <index id="section3-sub5-i" metalex:type="block">5.</index>
+            <heading id="section3-sub5-h">Начин остваривања права</heading>
+            <article id="art27" metalex:type="hcontainer">
+                <heading id="art27-h" metalex:type="block">Начин остваривање права на увид</heading>
+                <index id="art27-i" metalex:type="block">Члан 27.</index>
+                <item id="art27-it1" metalex:type="container">
+                    <provision id="art-it1-p1" metalex:type="block"> Руковалац је дужан да подносиоцу учини
+                        доступним податак који се на њега односи, у разумљивом облику. </provision>
+                </item>
+                <item id="art27-it2" metalex:type="container">
+                    <provision id="art27-it2-p1" metalex:type="block">Руковалац је дужан да подносиоцу учини
+                        доступним све податке у стању у каквом се налазе. </provision>
+                </item>
+                <item id="art27-it3" metalex:type="container">
+                    <provision id="art27-it3-p1" metalex:type="block">Ако се податак чува у разним облицима (папир,
+                        аудио, видео или електронски запис и др), подносилац има право да изврши
+                        увид у облику који сам изабере, осим када је то неизводљиво. </provision>
+                </item>
+                <item id="art27-it4" metalex:type="container">
+                    <provision id="art27-it4-p1" metalex:type="block">Лице које није у стању да без пратиоца изврши
+                        увид у податке, може да то учини уз помоћ пратиоца. </provision>
+                </item>
+                <item id="art27-it5" metalex:type="container">
+                    <provision id="art27-it5-p1" metalex:type="block">Руковалац ће, на захтев лица којем је
+                        потребна стручна помоћ ради разумевања садржине података који се на њега
+                        односе, пружити такву помоћ. </provision>
+                </item>
+                <item id="art27-it6" metalex:type="container">
+                    <provision id="art27-it6-p1" metalex:type="block">Вршење права на увид у податке руковалац не
+                        сме условити плаћањем накнаде. </provision>
+                </item>
+                <item id="art27-it7" metalex:type="container">
+                    <provision id="art27-it7-p1" metalex:type="block">Ако руковалац располаже податком на језику на
+                        коме је поднет захтев, дужан је да подносиоцу стави на увид податак и изради
+                        копију на том језику, осим ако подносилац не одреди друкчије, а руковалац
+                        има могућности да удовољи захтеву. </provision>
+                </item>
+            </article>
+
+            <article id="art28" metalex:type="hcontainer">
+                <heading id="art28-h" metalex:type="block">Начин остваривања права на копију</heading>
+                <index id="art28-i" metalex:type="block">Члан 28.</index>
+                <item id="art28-it1" metalex:type="container">
+                    <provision id="art28-it1-p1" metalex:type="block"> Руковалац издаје копију податка (фотокопију,
+                        аудио копију, видео копију, дигиталну копију и сл) у облику у којем се
+                        информација налази, односно у другом облику, ако би у облику у коме се
+                        информација налази лицу била неразумљива. </provision>
+                </item>
+                <item id="art28-it2" metalex:type="container">
+                    <provision id="art28-it2-p1" metalex:type="block">Нужне трошкове израде и предаје копије
+                        податка сноси подносилац. </provision>
+                </item>
+            </article>
+        </subsection>
+
+
+        <subsection id="section3-sub6">
+            <index id="section3-sub6-i" metalex:type="block">6.</index>
+            <heading id="section3-sub6-h">Обрада за делатност јавних гласила</heading>
+            <article id="art29" metalex:type="hcontainer">
+                <heading id="art29-h" metalex:type="block">Члан 29.</heading>
+                <index id="art29-i" metalex:type="block">Члан 29.</index>
+                <item id="art29-it1" metalex:type="container">
+                    <provision id="art29-it1-p1" metalex:type="block"> За обраду од стране новинара и других
+                        медијских посленика која искључиво служи публицистичкој делатности јавног
+                        гласила, изузимајући обраду која служи оглашавању, важе одредбе <simple-citation id="sc16" href="#art3">чл. 3</simple-citation>, <simple-citation id="sc17" href="#art5" type="inline" subtype="citationSimple">5.</simple-citation> и
+                        <citation-range id="cr7" href="#art8-it1-pt1" upTo="#art8-it1-pt5">8. тач. 1) до 5)</citation-range> и <citation-range id="cr8" href="#art46" upTo="#art47">чл. 46. и 47. овог закона</citation-range>. </provision>
+                </item>
+                <item id="art29-it2" metalex:type="container">
+                    <provision id="art29-it2-p1" metalex:type="block">За потребе обраде из <simple-citation id="sc18" href="#art29-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation> могу
+                        се користити и подаци који се односе на припадност политичкој странци лица,
+                        ако су важни с обзиром на јавну функцију коју лице врши. </provision>
+                </item>
+            </article>
+
+            <article id="art30" metalex:type="hcontainer">
+                <heading id="art30-h" metalex:type="block">Прикључивање одговора и других информација</heading>
+                <index id="art30-i" metalex:type="block"> Члан
+                    30.</index>
+                <item id="art30-it1" metalex:type="container">
+                    <provision id="art30-it1-p1" metalex:type="block"> Одговор, исправку, опозив или коју другу
+                        информацију која се објави на захтев лица на кога се односи податак из <simple-citation id="sc18a" href="#art29" type="inline" subtype="citationSimple">члана
+                        29. овог закона</simple-citation>, руковалац прикључује обрађиваном податку и чува у року за
+                        чување тог податка. </provision>
+                </item>
+            </article>
+
+            <article id="art31" metalex:type="hcontainer">
+                <heading id="art31-h" metalex:type="block">Заштита личности</heading>
+                <index id="art31-i" metalex:type="block">Члан 31.</index>
+                <item id="art31-it1" metalex:type="container">
+                    <provision id="art31-it1-p1" metalex:type="block"> Ако се објављивањем податка у јавном гласилу
+                        и публикацији повреди право или правно заштићен интерес лица, повређено лице
+                        може захтевати од одговорног уредника и издавача јавног гласила обавештење о
+                        подацима који се о њему обрађују, увид у податке и копију, изузев ако: </provision>
+
+                    <point id="art31-it1-pt1" metalex:type="container">
+                        <provision id="art31-it1-pt1-p1" metalex:type="block">1) би се тиме открили подаци у вези
+                            са извором информације које новинар и други медијски посленик нису дужни
+                            или нису спремни да открију; </provision>
+                    </point>
+                    <point id="art31-it1-pt2" metalex:type="container">
+                        <provision id="art31-it1-pt2-p1" metalex:type="block">2) би се тиме открили подаци у вези
+                            са лицем које је учествовало у припреми и објављивању информације, а
+                            одговорни уредник није спреман да их открије; </provision>
+                    </point>
+                    <point id="art31-it1-pt3" metalex:type="container">
+                        <provision id="art31-it1-pt3-p1" metalex:type="block">3) постоје околности у којима би
+                            обавештавање, увид или израда копије битно омели обавештавање јавности о
+                            информацијама од јавног значаја. </provision>
+                    </point>
+                </item>
+            </article>
+        </subsection>
+
+
+        <subsection id="section3-sub7">
+            <index id="section3-sub7-i" metalex:type="block">7.</index>
+            <heading id="section3-sub7-h">Посебне одредбе</heading>
+            <article id="art32" metalex:type="hcontainer">
+                <heading id="art32-h" metalex:type="block">Прослеђивање захтева Поверенику</heading>
+                <index id="art32-i" metalex:type="block">Члан 32.</index>
+                <item id="art32-it1" metalex:type="container">
+                    <provision id="art32-it1-p1" metalex:type="block"> Када руковалац не обрађује податак,
+                        проследиће захтев Поверенику, осим ако се подносилац захтева томе противи.
+                    </provision>
+                </item>
+            </article>
+
+            <article id="art33" metalex:type="hcontainer">
+                <heading id="art33-h" metalex:type="block">Поступање Повереника</heading>
+                <index id="art33-i" metalex:type="block">Члан 33.</index>
+                <item id="art33-it1" metalex:type="container">
+                    <provision id="art33-it1-p1" metalex:type="block"> По пријему захтева Повереник проверава да ли
+                        руковалац обрађује тражени податак. </provision>
+                </item>
+                <item id="art33-it2" metalex:type="container">
+                    <provision id="art33-it2-p1" metalex:type="block">Ако утврди да руковалац не обрађује податак,
+                        Повереник ће доставити захтев руковаоцу који обрађује податак и о томе ће
+                        обавестити подносиоца захтева или ће га упутити на руковаоца који обрађује
+                        податак, у зависности од тога на који ће се начин ефикасније остварити
+                        захтев. </provision>
+                </item>
+                <item id="art33-it3" metalex:type="container">
+                    <provision id="art33-it3-p1" metalex:type="block">Ако утврди да руковалац обрађује податак,
+                        Повереник ће решењем наложити руковаоцу да одлучи о захтеву. </provision>
+                </item>
+                <item id="art33-it4" metalex:type="container">
+                    <provision id="art33-it4-p1" metalex:type="block">Руковалац одлучује о достављеном захтеву из
+                        <simple-citation id="sc19" href="#art33">става 2. овог члана</simple-citation> у роковима из <simple-citation id="sc20" href="#art25-it1">члана 25. став 1.</simple-citation> и <simple-citation id="sc21" href="#art26-it1" type="inline" subtype="citationSimple">члана 26. став 1.</simple-citation> овог
+                        закона <!-- citat --> од дана достављања, а у случају из <simple-citation id="sc22" href="#art33-it3" type="inline" subtype="citationSimple">става 3. овог члана</simple-citation> у року од
+                        седам дана од дана достављања решења Повереника. </provision>
+                </item>
+            </article>
+
+            <article id="art34" metalex:type="hcontainer">
+                <heading id="art34-h" metalex:type="block">Пуномоћник</heading>
+                <index id="art34-i" metalex:type="block">Члан 34.</index>
+                <item id="art34-it1" metalex:type="container">
+                    <provision id="art34-it1-p1" metalex:type="block"> Права прописана овим законом могу се
+                        остварити лично или преко пуномоћника. </provision>
+                </item>
+                <item id="art34-it2" metalex:type="container">
+                    <provision id="art34-it2-p1" metalex:type="block">Пуномоћје мора бити оверено. </provision>
+                </item>
+            </article>
+
+            <article id="art35" metalex:type="hcontainer">
+                <heading id="art35-h" metalex:type="block">Чување и коришћење у случају смрти</heading>
+                <index id="art35-i" metalex:type="block">Члан
+                    35.</index>
+                <item id="art35-it1" metalex:type="container">
+                    <provision id="art35-it1-p1" metalex:type="block"> У случају смрти и проглашења несталог лица
+                        за умрло, подаци који су прикупљени на основу уговора, односно сагласности у
+                        писменом облику, чувају се у складу са условима утврђеним у уговору, односно
+                        пристанку, а подаци који су прикупљени на основу закона чувају се најмање
+                        годину дана од дана смрти, односно проглашења несталог лица за умрло, а
+                        након тога се уништавају. О уништавању података сачињава се забелешка.
+                    </provision>
+                </item>
+                <item id="art35-it2" metalex:type="container">
+                    <provision id="art35-it2-p1" metalex:type="block">Пристанак за коришћење података о умрлом лицу
+                        дају лица из <simple-citation id="cs23" href="#art10-it6">члана 10. став 6. овог закона</simple-citation>. </provision>
+                </item>
+            </article>
+
+            <article id="art36" metalex:type="hcontainer">
+                <heading id="art36-h" metalex:type="block">Обавеза руковаоца</heading>
+                <index id="art36-i" metalex:type="block">Члан 36.</index>
+                <item id="art36-it1" metalex:type="container">
+                    <provision id="art36-it1-p1" metalex:type="block"> Ако је збирка података успостављена
+                        уговором, односно на основу пристанка у писменом облику, у случају раскида
+                        уговора, односно повлачења пристанка у писменом облику, руковалац је
+                        обавезан да податке брише у року од 15 дана од дана раскида уговора, односно
+                        повлачења пристанка, осим ако је другачије прописано или уговорено.
+                    </provision>
+                </item>
+            </article>
+
+            <article id="art37" metalex:type="hcontainer">
+                <heading id="art37-h" metalex:type="block">Сходна примена одредаба закона о управном поступку</heading>
+                <index id="art37-i" metalex:type="block">Члан 37.</index>
+                <item id="art37-it1" metalex:type="container">
+                    <provision id="art37-it1-p1" metalex:type="block"> На поступак одлучивања о захтевима примењују
+                        се одредбе закона којим се уређује општи управни поступак, осим ако овим
+                        законом није друкчије одређено. </provision>
+                </item>
+            </article>
+        </subsection>
+    </section>
+
+
+
+    <section id="section4" metalex:type="hcontainer">
+        <index id="section4-i" metalex:type="block">IV</index>
+        <heading id="art38-h" metalex:type="block">ПОСТУПАК ПО ЖАЛБИ </heading>
+        <article id="art38" metalex:type="hcontainer">
+            <heading id="art38-h" metalex:type="block">Право на жалбу</heading>
+            <index id="art38-i" metalex:type="block">Члан 38.</index>
+            <item id="art38-it1" metalex:type="container">
+                <provision id="art38-it1-p1" metalex:type="block"> Подносилац захтева за остваривање права у вези
+                    са обрадом може изјавити жалбу Поверенику: </provision>
+                <point id="art38-it1-pt1" metalex:type="container">
+                    <provision id="art38-it1-pt1-p1" metalex:type="block">1) против одлуке руковаоца којом је
+                        одбијен или одбачен захтев; </provision>
+                </point>
+                <point id="art38-it1-pt2" metalex:type="container">
+                    <provision id="art38-it1-pt2-p1" metalex:type="block">2) када руковалац не одлучи о захтеву у
+                        прописаном року; </provision>
+                </point>
+                <point id="art38-it1-pt3" metalex:type="container">
+                    <provision id="art38-it1-pt3-p1" metalex:type="block">3) ако руковалац не стави на увид
+                        податак, односно не изда копију податка или то не учини у року и на начин
+                        прописан овим законом; </provision>
+                </point>
+                <point id="art38-it1-pt4" metalex:type="container">
+                    <provision id="art38-it1-pt4-p1" metalex:type="block">4) ако руковалац услови издавање копије
+                        података уплатом накнаде која превазилази износ нужних трошкова израде
+                        копије; </provision>
+                </point>
+                <point id="art38-it1-pt5" metalex:type="container">
+                    <provision id="art38-it1-pt5-p1" metalex:type="block">5) ако руковалац, супротно закону,
+                        отежава или онемогућава остваривање права. </provision>
+                </point>
+            </item>
+            <item id="art38-it2" metalex:type="container">
+                <provision id="art38-it2-p1" metalex:type="block">Жалба се може изјавити у року од 15 дана од дана
+                    достављања одлуке којом је захтев одбијен или одбачен, односно по истеку
+                    прописаног рока за одлучивање и поступање. </provision>
+            </item>
+            <item id="art38-it3" metalex:type="container">
+                <provision id="art38-it3-p1" metalex:type="block">Уз жалбу се прилаже захтев са доказом о предаји
+                    руковаоцу и одлука која се оспорава. </provision>
+            </item>
+        </article>
+
+        <article id="art39" metalex:type="hcontainer">
+            <heading id="art39-h" metalex:type="block">Решавање Повереника по жалби</heading>
+            <index id="art39-i" metalex:type="block">Члан 39.</index>
+            <item id="art39-it1" metalex:type="container">
+                <provision id="art39-it1-p1" metalex:type="block"> Повереник доноси одлуку по жалби најкасније у
+                    року од 30 дана од дана подношења жалбе. Жалба се доставља руковаоцу ради
+                    одговора на жалбу. О наводима из одговора на жалбу може се изјаснити подносилац.
+                </provision>
+            </item>
+            <item id="art39-it2" metalex:type="container">
+                <provision id="art39-it2-p1" metalex:type="block">Повереник одбацује решењем неблаговремену или
+                    непотпуну жалбу, односно жалбу која је изјављена од неовлашћеног лица.
+                </provision>
+            </item>
+            <item id="art39-it3" metalex:type="container">
+                <provision id="art39-it3-p1" metalex:type="block">Када Повереник, поводом жалбе изјављене због
+                    недоношења одлуке по захтеву, утврди да је жалба основана, решењем ће наложити
+                    руковаоцу да у одређеном року поступи по захтеву. </provision>
+            </item>
+            <item id="art39-it4" metalex:type="container">
+                <provision id="art39-it4-p1" metalex:type="block">Ако руковалац након изјављене жалбе због
+                    непоступања по захтеву, а пре доношења одлуке по жалби, омогући остваривање
+                    права на увид, односно копију или по захтеву одлучи, Повереник ће закључком
+                    обуставити поступак по жалби. </provision>
+            </item>
+            <item id="art39-it5" metalex:type="container">
+                <provision id="art39-it5-p1" metalex:type="block">Поступак по жалби се обуставља и када подносилац
+                    одустане од жалбе. </provision>
+            </item>
+        </article>
+
+        <article id="art40" metalex:type="hcontainer">
+            <heading id="art40-h" metalex:type="block">Утврђивање чињеничног стања у поступку по жалби</heading>
+            <index id="art40-i" metalex:type="block">Члан 40.</index>
+            <item id="art40-it1" metalex:type="container">
+                <provision id="art40-it1-p1" metalex:type="block"> Повереник предузима радње за утврђивање
+                    чињеничног стања које су неопходне ради одлучивања по жалби. </provision>
+            </item>
+            <item id="art40-it2" metalex:type="container">
+                <provision id="art40-it2-p1" metalex:type="block">Поверенику, односно лицу кога он посебно овласти,
+                    ради утврђивања чињеничног стања, омогућиће се увид у податак, односно збирку
+                    података, изузев у случају из <simple-citation id="sc24" href="#art45-it2" type="inline" subtype="citationSimple">члана 45. став 2. овог закона</simple-citation>. </provision>
+            </item>
+        </article>
+
+        <article id="art41" metalex:type="hcontainer">
+            <heading id="art41-h" metalex:type="block">Обавезност и извршење решења</heading>
+            <index id="art41-i" metalex:type="block">Члан 41.</index>
+            <item id="art41-it1" metalex:type="container">
+                <provision id="art41-it1-p1" metalex:type="block"> Решење Повереника по жалби је обавезујуће,
+                    коначно и извршно. </provision>
+            </item>
+            <item id="art41-it2" metalex:type="container">
+                <provision id="art41-it1-p1" metalex:type="block">Влада у случају потребе обезбеђује извршење
+                    решења Повереника и може ближе да одреди начин извршења решења. </provision>
+            </item>
+        </article>
+
+        <article id="art42" metalex:type="hcontainer">
+            <heading id="art42-h" metalex:type="block">Правни лек против одлуке</heading>
+            <index id="art42-i" metalex:type="block">Члан 42.</index>
+            <item id="art42-it1" metalex:type="container">
+                <provision id="art42-it1-p1" metalex:type="block"> Против одлуке Повереника може се покренути
+                    управни спор. </provision>
+            </item>
+        </article>
+
+        <article id="art43" metalex:type="hcontainer">
+            <heading id="art43-h" metalex:type="block">Остале одредбе поступка</heading>
+            <index id="art43-i" metalex:type="block">Члан 43.</index>
+            <item id="art43-it1" metalex:type="container">
+                <provision id="art43-it1-p1" metalex:type="block"> На поступак одлучивања по жалби примењују се
+                    одредбе закона којим се уређује општи управни поступак, осим ако овим законом
+                    није друкчије одређено. </provision>
+            </item>
+        </article>
+    </section>
+
+
+
+    <section id="section5" metalex:type="hcontainer">
+        <index id="section5-i" metalex:type="block">V</index>
+        <heading id="section5-h" metalex:type="block">ПОВЕРЕНИК</heading>
+        <article id="art44" metalex:type="hcontainer">
+            <heading id="art44-h" metalex:type="block">Надлежност</heading>
+            <index id="art44-i" metalex:type="block">Члан 44.</index>
+            <item id="art44-it1" metalex:type="container">
+                <provision id="art44-it1-p1" metalex:type="block"> Повереник: </provision>
+                <point id="art44-it1-pt1" metalex:type="container">
+                    <provision id="art44-it1-pt1-p1" metalex:type="block">1) надзире спровођење заштите података;
+                    </provision>
+                </point>
+                <point id="art44-it1-pt2" metalex:type="container">
+                    <provision id="art44-it1-pt2-p1" metalex:type="block">2) одлучује по жалби у случају
+                        прописаним овим законом; </provision>
+                </point>
+                <point id="art44-it1-pt3" metalex:type="container">
+                    <provision id="art44-it1-pt3-p1" metalex:type="block">3) води Централни регистар;
+                    </provision>
+                </point>
+                <point id="art44-it1-pt4" metalex:type="container">
+                    <provision id="art44-it1-pt4-p1" metalex:type="block">4) надзире и дозвољава изношење
+                        података из Републике Србије; </provision>
+                </point>
+                <point id="art44-it1-pt5" metalex:type="container">
+                    <provision id="art44-it1-pt5-p1" metalex:type="block">5) указује на уочене злоупотребе
+                        приликом прикупљања података; </provision>
+                </point>
+                <point id="art44-it1-pt6" metalex:type="container">
+                    <provision id="art44-it1-pt6-p1" metalex:type="block">6) саставља листу држава и међународних
+                        организација које имају одговарајуће уређену заштиту података; </provision>
+                </point>
+                <point id="art44-it1-pt7" metalex:type="container">
+                    <provision id="art44-it1-pt7-p1" metalex:type="block">7) даје мишљење у вези са успостављањем
+                        нових збирки података, односно у случају увођења нове информационе
+                        технологије у обради података; </provision>
+                </point>
+                <point id="art44-it1-pt8" metalex:type="container">
+                    <provision id="art44-it1-pt8-p1" metalex:type="block">8) даје мишљење, у случају када постоји
+                        сумња да ли се неки скуп података сматра збирком података у смислу овог
+                        закона; </provision>
+                </point>
+                <point id="art44-it1-pt9" metalex:type="container">
+                    <provision id="art44-it1-pt9-p1" metalex:type="block">9) даје мишљење Влади у поступку
+                        доношења акта о начину архивирања и о мерама заштите нарочито осетљивих
+                        података; </provision>
+                </point>
+                <point id="art44-it1-pt10" metalex:type="container">
+                    <provision id="art44-it1-pt10-p1" metalex:type="block">10) прати примену мера за заштиту
+                        података и предлаже побољшање тих мера; </provision>
+                </point>
+                <point id="art44-it1-pt11" metalex:type="container">
+                    <provision id="art44-it1-pt11-p1" metalex:type="block">11) даје предлоге и препоруке за
+                        унапређење заштите података; </provision>
+                </point>
+                <point id="art44-it1-pt12" metalex:type="container">
+                    <provision id="art44-it1-pt12-p1" metalex:type="block">12) даје претходно мишљење да ли
+                        одређени начин обраде представља специфичан ризик за права и слободе
+                        грађанина; </provision>
+                </point>
+                <point id="art44-it1-pt13" metalex:type="container">
+                    <provision id="art44-it1-pt13-p1" metalex:type="block">13) прати уређење заштите података у
+                        другим земљама; </provision>
+                </point>
+                <point id="art44-it1-pt14" metalex:type="container">
+                    <provision id="art44-it1-pt14-p1" metalex:type="block">14) сарађује са органима надлежним за
+                        надзор над заштитом података у другим земљама; </provision>
+                </point>
+                <point id="art44-it1-pt15" metalex:type="container">
+                    <provision id="art44-it1-pt15-p1" metalex:type="block">15) одређује начин даљег поступања са
+                        подацима када је руковалац престао да постоји, осим ако је прописано
+                        друкчије; </provision>
+                </point>
+                <point id="art44-it1-pt16" metalex:type="container">
+                    <provision id="art44-it1-pt16-p1" metalex:type="block">16) обавља и друге послове из своје
+                        надлежности. </provision>
+                </point>
+            </item>
+            <item id="art44-it2" metalex:type="container">
+                <provision id="art44-it2-p1" metalex:type="block">Повереник може имати заменика за заштиту података
+                    о личности. </provision>
+            </item>
+            <item id="art44-it2" metalex:type="container">
+                <provision id="art44-it2-p1" metalex:type="block">Извештај који подноси Народној скупштини,
+                    Повереник доставља председнику Републике, Влади и Заштитнику грађана и на
+                    одговарајући начин ставља на увид јавности. </provision>
+            </item>
+        </article>
+
+        <article id="art45" metalex:type="hcontainer">
+            <heading id="art45-h" metalex:type="block">Право приступа и увида</heading>
+            <index id="art45-i" metalex:type="block">Члан 45.</index>
+            <item id="art45-it1" metalex:type="container">
+                <provision id="art45-it1-p1" metalex:type="block"> Повереник има право приступа и увида у: </provision>
+                <point id="art45-it1-pt1" metalex:type="container">
+                    <provision id="art45-it1-pt1-p1" metalex:type="block">1) податак и збирку података;
+                    </provision>
+                </point>
+                <point id="art45-it1-pt2" metalex:type="container">
+                    <provision id="art45-it1-pt2-p1" metalex:type="block">2) комплетну документацију која се
+                        односи на прикупљање података и друге радње обраде, као и на остваривање
+                        права лица из овог закона; </provision>
+                </point>
+                <point id="art45-it1-pt3" metalex:type="container">
+                    <provision id="art45-it1-pt3-p1" metalex:type="block">3) опште акте руковаоца; </provision>
+                </point>
+                <point id="art45-it1-pt4" metalex:type="container">
+                    <provision id="art45-it1-pt4-p1" metalex:type="block">4) просторије и опрему коју користи
+                        руковалац. </provision>
+                </point>
+            </item>
+            <item id="art45-it2" metalex:type="container">
+                <provision id="art45-it2-p1" metalex:type="block">Приступ и увид из <citation-range id="cr9" href="#art45-it1-pt1" upTo="#art45-it1-pt4" metalex:exclude="#art45-it1-pt3">става 1. тач. 1), 2) и 4) овог
+                    члана</citation-range> може се ограничити ако би се тиме озбиљно угрозио интерес националне или
+                    јавне безбедности, одбране земље или радње спречавања, откривања, истраге и
+                    гоњења за кривична дела, док трају разлози за ограничење, у складу са законом.
+                </provision>
+            </item>
+            <item id="art45-it3" metalex:type="container">
+                <provision id="art45-it3-p1" metalex:type="block">У случају да руковалац сматра да постоје разлози
+                    за ограничење из <simple-citation id="sc25" href="#art45-it2" type="inline" subtype="citationSimple">става 2. овог члана</simple-citation> дужан је да, у року од осам дана од дана
+                    достављања захтева Повереника, затражи мишљење председника Врховног касационог
+                    суда о постојању разлога за ограничење права приступа и увида Повереника.
+                </provision>
+            </item>
+            <item id="art45-it4" metalex:type="container">
+                <provision id="art45-it4-p1" metalex:type="block">Председник Врховног касационог суда дужан је да,
+                    у року од осам дана од дана достављања захтева руковаоца из <simple-citation id="sc26" href="#art45-it3" type="inline" subtype="citationSimple">става 3. овог члана</simple-citation>,
+                    достави мишљење руковаоцу. Руковалац је дужан да о мишљењу председника Врховног
+                    касационог суда обавести Повереника. </provision>
+            </item>
+        </article>
+    </section>
+
+
+
+    <section id="section6" metalex:type="hcontainer">
+        <index id="art46-i" metalex:type="block">VI</index>
+        <heading id="section6-h" metalex:type="block">ОБЕЗБЕЂЕЊЕ ПОДАТАКА</heading>
+        <article id="art46" metalex:type="hcontainer">
+            <heading id="art46-h" metalex:type="block">Обавеза чувања тајне</heading>
+            <index id="art-i" metalex:type="block">Члан 46.</index>
+            <item id="art46-it1" metalex:type="container">
+                <provision id="art46-it1-p1" metalex:type="block"> Повереник, заменик Повереника и запослени у
+                    стручној служби, дужни су да као тајну, у складу са законом и другим прописима
+                    којима се уређује тајност података, чувају све податке које сазнају у обављању
+                    својих дужности, осим ако је друкчије прописано. </provision>
+            </item>
+            <item id="art46-it2" metalex:type="container">
+                <provision id="art46-it2-p1" metalex:type="block">Обавеза из <simple-citation id="sc27" href="#art46-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation> траје и по
+                    престанку обављања дужности Повереника и заменика Повереника, односно по
+                    престанку радног односа у стручној служби. </provision>
+            </item>
+            <item id="art46-it3" metalex:type="container">
+                <provision id="art46-it3-p1" metalex:type="block">Руковалац је дужан да упозна обрађивача и лице
+                    које има увид у податке са мерама за заштиту тајности података. </provision>
+            </item>
+        </article>
+
+        <article id="art47" metalex:type="hcontainer">
+            <heading id="art47-h" metalex:type="block">Организационе и техничке мере</heading>
+            <index id="art47-i" metalex:type="block">Члан 47.</index>
+            <item id="art47-it1" metalex:type="container">
+                <provision id="art47-it1-p1" metalex:type="block"> Подаци морају бити одговарајуће заштићени од
+                    злоупотреба, уништења, губитка, неовлашћених промена или приступа. </provision>
+            </item>
+            <item id="art47-it2" metalex:type="container">
+                <provision id="art47-it2-p1" metalex:type="block">Руковалац и обрађивач дужни су да предузму
+                    техничке, кадровске и организационе мере заштите података, у складу са утврђеним
+                    стандардима и поступцима, а које су потребне да би се подаци заштитили од
+                    губитка, уништења, недопуштеног приступа, промене, објављивања и сваке друге
+                    злоупотребе, као и да утврде обавезу лица која су запослена на обради, да чувају
+                    тајност података. </provision>
+            </item>
+        </article>
+    </section>
+
+
+
+    <section id="section7" metalex:type="hcontainer">
+        <index id="section7-i" metalex:type="block">VII</index>
+        <heading id="section7-h" metalex:type="block">ЕВИДЕНЦИЈА</heading>
+        <article id="art48" metalex:type="hcontainer">
+            <heading id="art48-h" metalex:type="block">Евиденција о обради</heading>
+            <index id="art48-i" metalex:type="block">Члан 48.</index>
+            <item id="art48-it1" metalex:type="container">
+                <provision id="art48-it1-p1" metalex:type="block"> Руковалац образује и води евиденцију која
+                    садржи: </provision>
+                <point id="art48-it1-pt1" metalex:type="container">
+                    <provision id="art48-it1-pt1-p1" metalex:type="block">1) врсту података и назив збирке
+                        података; </provision>
+                </point>
+                <point id="art48-it1-pt2" metalex:type="container">
+                    <provision id="art48-it1-pt2-p1" metalex:type="block">2) врсту радње обраде; </provision>
+                </point>
+                <point id="art48-it1-pt3" metalex:type="container">
+                    <provision id="art48-it1-pt3-p1" metalex:type="block">3) назив, име, седиште и адресу
+                        руковаоца; </provision>
+                </point>
+                <point id="art48-it1-pt4" metalex:type="container">
+                    <provision id="art48-it1-pt4-p1" metalex:type="block">4) датум започињања обраде, односно
+                        успостављања збирке података; </provision>
+                </point>
+                <point id="art48-it1-pt5" metalex:type="container">
+                    <provision id="art48-it1-pt5-p1" metalex:type="block">5) сврху обраде; </provision>
+                </point>
+                <point id="art48-it1-pt6" metalex:type="container">
+                    <provision id="art48-it1-pt6-p1" metalex:type="block">6) правни основ обраде, односно
+                        успостављања збирке података; </provision>
+                </point>
+                <point id="art48-it1-pt7" metalex:type="container">
+                    <provision id="art48-it1-pt7-p1" metalex:type="block">7) категорију лица на које се подаци
+                        односе; </provision>
+                </point>
+                <point id="art48-it1-pt8" metalex:type="container">
+                    <provision id="art48-it1-pt8-p1" metalex:type="block">8) врсту и степен тајности података;
+                    </provision>
+                </point>
+                <point id="art48-it1-pt9" metalex:type="container">
+                    <provision id="art48-it1-pt9-p1" metalex:type="block">9) начин прикупљања и чувања података;
+                    </provision>
+                </point>
+                <point id="art48-it1-pt10" metalex:type="container">
+                    <provision id="art48-it1-pt10-p1" metalex:type="block">10) рок чувања и употребе података;
+                    </provision>
+                </point>
+                <point id="art48-it1-pt11" metalex:type="container">
+                    <provision id="art48-it1-pt11-p1" metalex:type="block">11) назив, име, седиште и адресу
+                        корисника; </provision>
+                </point>
+                <point id="art48-it1-pt12" metalex:type="container">
+                    <provision id="art48-it1-pt12-p1" metalex:type="block">12) ознаку уношења, односно изношења
+                        података из Републике Србије са називом државе, односно међународне
+                        организације и страног корисника, правни основ и сврху уношења, односно
+                        изношења података; </provision>
+                </point>
+                <point id="art48-it1-pt13" metalex:type="container">
+                    <provision id="art48-it1-pt13-p1" metalex:type="block">13) предузете мере заштите података;
+                    </provision>
+                </point>
+                <point id="art48-it1-pt14" metalex:type="container">
+                    <provision id="art48-it1-pt14-p1" metalex:type="block">14) захтев поводом обраде. </provision>
+                </point>
+            </item>
+            <item id="art48-it2" metalex:type="container">
+                <provision id="art48-it2-p1" metalex:type="block">Руковалац није дужан да образује и води
+                    евиденцију обраде: података који се обрађују искључиво у породичне и друге личне
+                    потребе у смислу одредбе <simple-citation id="sc28" href="#art5-it1-pt2" type="inline" subtype="citationSimple">члана 5. тачка 2) овог закона</simple-citation>, података који се
+                    обрађују ради вођења регистара чије је вођење законом прописано, података за
+                    збирку података коју чине само јавно објављени подаци, као ни података који се
+                    односе на лице чији идентитет није одређен а руковалац, обрађивач, односно
+                    корисник није овлашћен да идентитет одреди. </provision>
+            </item>
+            <item id="art48-it2" metalex:type="container">
+                <provision id="art48-it2-p1" metalex:type="block">Руковалац ажурира евиденцију када дође до промене
+                    у вези са основним подацима из <simple-citation id="sc29" href="#art48-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation> у року од 15 дана од дана
+                    настанка промене. </provision>
+            </item>
+            <item id="art48-it3" metalex:type="container">
+                <provision id="art48-it3-p1" metalex:type="block">Образац за вођење евиденције и начин вођења
+                    евиденције из <simple-citation id="sc30" href="#art48-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation> прописује Влада. </provision>
+            </item>
+        </article>
+
+        <article id="art49" metalex:type="hcontainer">
+            <heading id="art49-h" metalex:type="block">Обавештавање Повереника</heading>
+            <index id="art49-i" metalex:type="block">Члан 49.</index>
+            <item id="art49-it1" metalex:type="container">
+                <provision id="art49-it1-p1" metalex:type="block"> Руковалац је дужан да пре започињања обраде,
+                    односно успостављања збирке података достави Поверенику обавештење о намери
+                    успостављања збирке података заједно са подацима из <simple-citation id="sc31" href="#art48" type="inline" subtype="citationSimple">члана 48. овог закона</simple-citation>, као и
+                    о свакој даљој намераваној обради, пре предузимања обраде и то најкасније 15
+                    дана пре успостављања збирке података, односно обраде. </provision>
+            </item>
+            <item id="art49-it2" metalex:type="container">
+                <provision id="art49-it2-p1" metalex:type="block">Обавеза достављања обавештења из <simple-citation id="sc32" href="#art49-it1" type="inline" subtype="citationSimple">става 1. овог
+                    члана</simple-citation> не односи се на започињање обраде, односно успостављање збирке података у
+                    случају када је посебним прописом одређена сврха обраде, врста података који се
+                    обрађују, врсте корисника којима ће подаци бити доступни, као и време за које ће
+                    подаци бити архивирани. </provision>
+            </item>
+        </article>
+
+        <article id="art50" metalex:type="hcontainer">
+            <heading id="art50-h" metalex:type="block">Претходна провера</heading>
+            <index id="art50-i" metalex:type="block">Члан 50.</index>
+            <item id="art50-it1" metalex:type="container">
+                <provision id="art50-it1-p1" metalex:type="block"> Након пријема обавештења из <simple-citation id="sc33" href="#art49" type="inline" subtype="citationSimple">члана 49. овог
+                    закона</simple-citation>, пре успостављања збирке података, Повереник проверава радње обраде које
+                    би у значајној мери могле да доведу до повреде права лица. </provision>
+            </item>
+            <item id="art50-it2" metalex:type="container">
+                <provision id="art50-it2-p1" metalex:type="block">Начин провере из <simple-citation id="sc34" href="#art50-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation> уређује се
+                    актом Повереника. </provision>
+            </item>
+        </article>
+
+        <article id="art51" metalex:type="hcontainer">
+            <heading id="art51-h" metalex:type="block">Обавеза достављања</heading>
+            <index id="art51-i" metalex:type="block">Члан 51.</index>
+            <item id="art51-it1" metalex:type="container">
+                <provision id="art51-it1-p1" metalex:type="block">Руковалац доставља Поверенику евиденцију о збирци
+                    података, односно промене у евиденцији података најкасније у року од 15 дана од
+                    дана успостављања, односно промене. </provision>
+            </item>
+            <item id="art51-it2" metalex:type="container">
+                <provision id="art51-it2-p1" metalex:type="block">Обавештења из <simple-citation id="sc35" href="#art49-it1" type="inline" subtype="citationSimple">члана 49. став 1. овог закона</simple-citation> и
+                    евиденције из <simple-citation id="sc36" href="#art51-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation> уписују се у Централни регистар. </provision>
+            </item>
+        </article>
+
+        <article id="art52" metalex:type="hcontainer">
+            <heading id="art52-h" metalex:type="block">Централни регистар</heading>
+            <index id="art52-i" metalex:type="block">Члан 52.</index>
+            <item id="art52-it1" metalex:type="container">
+                <provision id="art52-it1-p1" metalex:type="block"> Повереник успоставља и води Централни регистар.
+                </provision>
+            </item>
+            <item id="art52-it2" metalex:type="container">
+                <provision id="art52-it2-p1" metalex:type="block">Централни регистар се састоји од регистра збирки
+                    података и каталога збирки података. </provision>
+            </item>
+            <item id="art52-it3" metalex:type="container">
+                <provision id="art52-it3-p1" metalex:type="block">Регистар збирки података садржи податке из члана
+                    <simple-citation id="sc37" href="#art51-it2" type="inline" subtype="citationSimple">51. став 2. овог закона</simple-citation>. </provision>
+            </item>
+            <item id="art52-it4" metalex:type="container">
+                <provision id="art52-it4-p1" metalex:type="block">Каталог збирки података садржи опис евидентираних
+                    збирки података. </provision>
+            </item>
+            <item id="art52-it5" metalex:type="container">
+                <provision id="art52-it5-p1" metalex:type="block">Централни регистар је јаван и обавезно се
+                    објављује путем интернета. </provision>
+            </item>
+            <item id="art52-it6" metalex:type="container">
+                <provision id="art52-it6-p1" metalex:type="block">Повереник једном годишње објављује попис збирки
+                    података у „Службеном гласнику Републике Србије”. </provision>
+            </item>
+            <item id="art52-it7" metalex:type="container">
+                <provision id="art52-it7-p1" metalex:type="block">Повереник ће ускратити право на увид у евиденцију
+                    о збирци података ако то захтева руковалац, под условом да је то неопходно за
+                    остваривање претежног интереса очувања националне или јавне безбедности, одбране
+                    земље, рада органа власти, финансијског интереса државе или ако је законом,
+                    другим прописом или актом заснованим на закону одређено да се евиденција о
+                    збирци података чува као тајна. </provision>
+            </item>
+        </article>
+    </section>
+
+
+
+    <section id="section8" metalex:type="hcontainer">
+        <index id="section8-i" metalex:type="block">VIII</index>
+        <heading id="section8" metalex:type="block">ИЗНОШЕЊЕ ПОДАТАКА ИЗ РЕПУБЛИКЕ СРБИЈЕ</heading>
+        <article id="art53" metalex:type="hcontainer">
+            <heading id="art53-h" metalex:type="block">Члан 53.</heading>
+            <index id="art53-i" metalex:type="block">Члан 53.</index>
+            <item id="art53-it1" metalex:type="container">
+                <provision id="art53-it1-p1" metalex:type="block">Подаци се могу износити из Републике Србије у
+                    државу чланицу Конвенције о заштити лица у односу на аутоматску обраду личних
+                    података Савета Европе. </provision>
+            </item>
+            <item id="art53-it2" metalex:type="container">
+                <provision id="art53-it2-p1" metalex:type="block">Подаци се могу износити из Републике Србије у
+                    државу која није чланица конвенције из <simple-citation id="sc38" href="#art53-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation>, односно међународну
+                    организацију, ако је у тој држави, односно међународној организацији, прописом,
+                    односно уговором о преносу података, обезбеђен степен заштите података у складу
+                    са конвенцијом. </provision>
+            </item>
+            <item id="art53-it3" metalex:type="container">
+                <provision id="art53-it3-p1" metalex:type="block">Приликом изношења података из <simple-citation id="sc39" href="#art53-it2" type="inline" subtype="citationSimple">става 2. овог
+                    члана</simple-citation>, Повереник утврђује да ли су испуњени услови и спроведене мере заштите
+                    података приликом њиховог изношења из Републике Србије и даје дозволу за
+                    изношење. </provision>
+            </item>
+        </article>
+    </section>
+
+
+
+    <section id="section9" metalex:type="hcontainer">
+        <index id="section9-i" metalex:type="block">IX</index>
+        <heading id="section9-h" metalex:type="block">НАДЗОР</heading>
+        <article id="art54" metalex:type="hcontainer">
+            <heading id="art54-h" metalex:type="block">Надлежност</heading>
+            <index id="art54-i" metalex:type="block">Члан 54.</index>
+            <item id="art54-it1" metalex:type="container">
+                <provision id="art54-it1-p1" metalex:type="block"> Надзор над спровођењем и извршавањем овог закона
+                    врши Повереник. </provision>
+            </item>
+            <item id="art54-it2" metalex:type="container">
+                <provision id="art54-it2-p1" metalex:type="block">Послове из <simple-citation id="sc40" href="#art54-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation> Повереник врши
+                    преко овлашћених лица. </provision>
+            </item>
+            <item id="art54-it3" metalex:type="container">
+                <provision id="art54-it3-p1" metalex:type="block">Овлашћено лице је дужно да надзор врши стручно и
+                    благовремено и да о извршеном надзору сачини записник. </provision>
+            </item>
+            <item id="art54-it4" metalex:type="container">
+                <provision id="art54-it4-p1" metalex:type="block">У вршењу надзора овлашћено лице поступа на основу
+                    сазнања до којих је дошао по службеној дужности, од стране подносиоца жалбе или
+                    трећег лица. </provision>
+            </item>
+            <item id="art54-it5" metalex:type="container">
+                <provision id="art54-it5-p1" metalex:type="block">У вршењу надзора овлашћено лице је дужно да
+                    покаже легитимацију. Образац легитимације прописује Повереник. </provision>
+            </item>
+        </article>
+
+        <article id="art55" metalex:type="hcontainer">
+            <heading id="art55-h" metalex:type="block">Омогућавање вршења надзора</heading>
+            <index id="art55-i" metalex:type="block">Члан 55.</index>
+            <item id="art55-it1" metalex:type="container">
+                <provision id="art55-it1-p1" metalex:type="block"> Лица којима су овим законом утврђене обавезе у
+                    вези са заштитом података, дужна су да овлашћеном лицу омогуће несметано вршење
+                    надзора и ставе му на увид и располагање потребну документацију. </provision>
+            </item>
+        </article>
+
+        <article id="art56" metalex:type="hcontainer">
+            <heading id="art56-h" metalex:type="block">Овлашћења Повереника у надзору</heading>
+            <index id="art56-i" metalex:type="block">Члан 56.</index>
+            <item id="art56-it1" metalex:type="container">
+                <provision id="art56-it1-p1" metalex:type="block"> Ако се приликом обављања надзора утврди да су
+                    повређене одредбе закона којима се уређује обрада, Повереник ће упозорити
+                    руковаоца на неправилности у обради. На основу налаза овлашћеног лица, Повереник
+                    може: </provision>
+                <point id="art56-it1-pt1" metalex:type="container">
+                    <provision id="art56-it1-pt1-p1" metalex:type="block">1) наредити да се неправилности отклоне
+                        у одређеном року; </provision>
+                </point>
+                <point id="art56-it1-pt2" metalex:type="container">
+                    <provision id="art56-it1-pt2-p1" metalex:type="block">2) привремено забранити обраду која се
+                        обавља супротно одредбама овог закона; </provision>
+                </point>
+                <point id="art56-it1-pt2" metalex:type="container">
+                    <provision id="art56-it1-pt2-p1" metalex:type="block">3) наредити брисање података
+                        прикупљених без правног основа. </provision>
+                </point>
+            </item>
+            <item id="art56-it2" metalex:type="container">
+                <provision id="art56-it2-p1" metalex:type="block">Против акта из <simple-citation id="sc41" href="#art56-it2" type="inline" subtype="citationSimple">става 2. овог члана</simple-citation> жалба није
+                    дозвољена, али се може покренути управни спор. </provision>
+            </item>
+            <item id="art56-it3" metalex:type="container">
+                <provision id="art56-it3-p1" metalex:type="block">Спровођење мера из <simple-citation id="sc42" href="#art56-it2" type="inline" subtype="citationSimple">става 2. овог члана</simple-citation> уређује се
+                    актом Повереника. </provision>
+            </item>
+            <item id="art56-it4" metalex:type="container">
+                <provision id="art56-it4-p1" metalex:type="block">Повереник је дужан да поднесе прекршајну пријаву
+                    због повреда одредаба овог закона. </provision>
+            </item>
+        </article>
+    </section>
+
+
+
+    <section id="section10" metalex:type="hcontainer">
+        <index id="section10-i" metalex:type="block">X</index>
+        <heading id="section10-h" metalex:type="block">КАЗНЕНЕ ОДРЕДБЕ</heading>
+        <article id="art57" metalex:type="hcontainer">
+            <heading id="art57-h" metalex:type="block">Члан 57.</heading>
+            <index id="art57-i" metalex:type="block">Члан 57.</index>
+            <item id="art57-it1" metalex:type="container">
+                <provision id="art57-it1-p1" metalex:type="block"> Новчаном казном од 50.000 до 1.000.000 динара
+                    казниће се за прекршај руковалац, обрађивач или корисник који има својство
+                    правног лица ако: </provision>
+                <point id="art57-it1-pt1" metalex:type="container">
+                    <provision id="art57-it1-pt1-p1" metalex:type="block">1) обрађује податке без пристанка
+                        супротно условима из <simple-citation id="sc43" href="#art12" type="inline" subtype="citationSimple">члана 12. овог закона</simple-citation>; </provision>
+                </point>
+                <point id="art57-it1-pt2" metalex:type="container">
+                    <provision id="art57-it1-pt2-p1" metalex:type="block">2) обрађује податке супротно условима
+                        из <simple-citation id="sc44" href="#art13" type="inline" subtype="citationSimple">члана 13. овог закона</simple-citation>; </provision>
+                </point>
+                <point id="art57-it1-pt3" metalex:type="container">
+                    <provision id="art57-it1-pt3-p1" metalex:type="block">3) прикупља податке од другог лица
+                        супротно условима из <simple-citation id="sc45" href="#art14-it2>" type="inline" subtype="citationSimple">члана 14. став 2. овог закона</simple-citation>; </provision>
+                </point>
+                <point id="art57-it1-pt4" metalex:type="container">
+                    <provision id="art57-it1-pt4-p1" metalex:type="block">4) пре прикупљања података не упозна
+                        лице на које се подаци односе, односно друго лице о условима из <simple-citation id="sc46" href="#art15-it1" type="inline" subtype="citationSimple">члана 15.
+                        став 1. овог закона</simple-citation>; </provision>
+                </point>
+                <point id="art57-it1-pt5" metalex:type="container">
+                    <provision id="art57-it1-pt5-p1" metalex:type="block">5) обрађује нарочито осетљиве податке
+                        супротно <citation-range id="cr10" href="#art16" upTo="#art18">чл. 16. до 18. овог закона</citation-range> ; </provision>
+                </point>
+                <point id="art57-it1-pt6" metalex:type="container">
+                    <provision id="art57-it1-pt6-p1" metalex:type="block">6) не учини доступним све податке у
+                        стању у каквом се налазе супротно <simple-citation id="sc47" href="#art27-it2" type="inline" subtype="citationSimple">члану 27. став 2. овог закона</simple-citation>;
+                    </provision>
+                </point>
+                <point id="art57-it1-pt7" metalex:type="container">
+                    <provision id="art57-it1-pt7-p1" metalex:type="block">7) не изда копију податка у облику у
+                        којем се информација налази супротно <simple-citation id="sc48" href="#art28-it1" type="inline" subtype="citationSimple">члану 28. став 1. овог закона</simple-citation>;
+                    </provision>
+                </point>
+                <point id="art57-it1-pt8" metalex:type="container">
+                    <provision id="art57-it1-pt8-p1" metalex:type="block">8) не обрише податке из збирке података
+                        супротно <simple-citation id="sc49" href="#art36" type="inline" subtype="citationSimple">члану 36. овог закона</simple-citation>; </provision>
+                </point>
+                <point id="art57-it1-pt9" metalex:type="container">
+                    <provision id="art57-it1-pt9-p1" metalex:type="block">9) не изврши решење Повереника по жалби
+                        (<simple-citation id="sc50" href="#art41-it1" type="inline" subtype="citationSimple">члан 41. став 1. овог закона</simple-citation>); </provision>
+                </point>
+                <point id="art57-it1-pt10" metalex:type="container">
+                    <provision id="art57-it1-pt10-p1" metalex:type="block">10) поступи супротно обавези чувања
+                        тајне из <citation-range id="cr11" href="#art46-it1" upTo="#art46-it2">члана 46. ст. 1. и 2. овог закона</citation-range>; </provision>
+                </point>
+                <point id="art57-it1-pt11" metalex:type="container">
+                    <provision id="art57-it1-pt11-p1" metalex:type="block">11) поступи супротно обавези
+                        предузимања мера из <simple-citation id="sc51" href="#art47-it2" type="inline" subtype="citationSimple">члана 47. став 2. овог закона</simple-citation>; </provision>
+                </point>
+                <point id="art57-it1-pt12" metalex:type="container">
+                    <provision id="art57-it1-pt12-p1" metalex:type="block">12) не образује евиденцију, односно не
+                        ажурира евиденцију супротно члану 48. <simple-citation id="sc52" href="#art48-it1">ст. 1.</simple-citation> и <simple-citation id="sc53" href="#art48-it3" type="inline" subtype="citationSimple">3.</simple-citation> овог закона; </provision>
+                </point>
+                <point id="art57-it1-pt13" metalex:type="container">
+                    <provision id="art57-it1-pt13-p1" metalex:type="block">13) не обавести Повереника о намери
+                        успостављања збирке података у прописаном року супротно <simple-citation id="sc54" href="#art49-it1" type="inline" subtype="citationSimple">члану 49. став 1.
+                        овог закона</simple-citation>; </provision>
+                </point>
+                <point id="art57-it1-pt14" metalex:type="container">
+                    <provision id="art57-it1-pt14-p1" metalex:type="block">14) не достави Поверенику евиденцију,
+                        односно промене у збирци података у прописаном року (<simple-citation id="sc55" href="#art51-it1" type="inline" subtype="citationSimple">члан 51. став 1. овог
+                        закона</simple-citation>); </provision>
+                </point>
+                <point id="art57-it1-pt15" metalex:type="container">
+                    <provision id="art57-it1-pt15-p1" metalex:type="block">15) износи податке из Републике Србије
+                        супротно <simple-citation id="sc56" href="#art53" type="inline" subtype="citationSimple">члану 53. овог закона</simple-citation>; </provision>
+                </point>
+                <point id="art57-it1-pt16" metalex:type="container">
+                    <provision id="art57-it1-pt16-p1" metalex:type="block">16) не омогући овлашћеном лицу
+                        несметано вршење надзора и не стави му на увид и располагање потребну
+                        документацију (<simple-citation id="sc57" href="#art55" type="inline" subtype="citationSimple">члан 55. овог закона</simple-citation>); </provision>
+                </point>
+                <point id="art57-it1-pt17" metalex:type="container">
+                    <provision id="art57-it1-pt17-p1" metalex:type="block">17) не поступи по налозима Повереника
+                        (<simple-citation id="sc58" href="#art56-it2" type="inline" subtype="citationSimple">члан 56. став 2. овог закона</simple-citation>). </provision>
+                </point>
+            </item>
+            <item id="art57-it2" metalex:type="container">
+                <provision id="art57-it2-p1" metalex:type="block">За прекршај из <simple-citation id="sc59" href="#art57-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation> казниће се
+                    предузетник новчаном казном од 20.000 до 500.000 динара. </provision>
+            </item>
+            <item id="art57-it3" metalex:type="container">
+                <provision id="art57-it3-p1" metalex:type="block">За прекршај из <simple-citation id="sc60" href="#art57-it1" type="inline" subtype="citationSimple">става 1. овог члана</simple-citation> казниће се
+                    физичко лице, односно одговорно лице у правном лицу, државном органу, односно
+                    органу територијалне аутономије и јединице локалне самоуправе новчаном казном од
+                    5.000 до 50.000 динара. </provision>
+            </item>
+        </article>
+    </section>
+
+
+
+    <section id="section11" metalex:type="hcontainer">
+        <index id="section11-i" metalex:type="block">XI</index>
+        <heading id="section11-h" metalex:type="block">ПРЕЛАЗНЕ И ЗАВРШНЕ ОДРЕДБЕ</heading>
+        <article id="art58" metalex:type="hcontainer">
+            <heading id="art58-h" metalex:type="block">Члан 58.</heading>
+            <index id="art58-i" metalex:type="block">Члан 58.</index>
+            <item id="art58-it1" metalex:type="container">
+                <provision id="art58-it1-p1" metalex:type="block"> На седиште, избор, престанак мандата, поступак
+                    разрешења, положај Повереника, заменика Повереника, стручну службу, финансирање
+                    и подношење извештаја примењују се одредбе <simple-citation id="sc61" href="TODO" type="inline" subtype="citationSimple">Закона о слободном приступу
+                    информацијама од јавног значаја („Службени гласник РС”, бр. 120/04 и 54/07)</simple-citation>.
+                </provision>
+            </item>
+        </article>
+
+        <article id="art59" metalex:type="hcontainer">
+            <heading id="art59-h" metalex:type="block">Члан 59.</heading>
+            <index id="art59-i" metalex:type="block">Члан 59.</index>
+            <item id="art59-it1" metalex:type="container">
+                <provision id="art59-it1-p1" metalex:type="block"> Повереник за информације од јавног значаја,
+                    установљен <simple-citation id="sc62" href="TODO" type="inline" subtype="citationSimple">Законом о слободном приступу информацијама од јавног значаја
+                    („Службени гласник РС”, бр. 120/04 и 54/07)</simple-citation> наставља са радом под називом
+                    Повереник за информације од јавног значаја и заштиту података о личности.
+                </provision>
+            </item>
+        </article>
+
+        <article id="art60" metalex:type="hcontainer">
+            <heading id="art60-h" metalex:type="block">Члан 60.</heading>
+            <index id="art60-i" metalex:type="block">Члан 60.</index>
+            <item id="art60-it1" metalex:type="container">
+                <provision id="art60-it1-p1" metalex:type="block"> Подзаконски акти на основу овог закона биће
+                    донети у року од шест месеци од дана ступања на снагу овог закона. </provision>
+            </item>
+        </article>
+
+        <article id="art61" metalex:type="hcontainer">
+            <heading id="art61-h" metalex:type="block">Члан 61.</heading>
+            <index id="art61-i" metalex:type="block">Члан 61.</index>
+            <item id="art61-it1" metalex:type="container">
+                <provision id="art-it1-p1" metalex:type="block"> Збирке података и евиденције успостављене до
+                    ступања на снагу овог закона ускладиће се са његовим одредбама у року од 12
+                    месеци од дана ступања на снагу овог закона. </provision>
+            </item>
+            <item id="art61-it3" metalex:type="container">
+                <provision id="art61-it1-p1" metalex:type="block">Руковaоци података дужни су да евиденције из
+                    <simple-citation id="sc63" href="#art48" type="inline" subtype="citationSimple">члана 48. овог закона</simple-citation> доставе Поверенику, у року од 12 месеци од дана ступања на
+                    снагу овог закона. </provision>
+            </item>
+        </article>
+
+        <article id="art62" metalex:type="hcontainer">
+            <heading id="art62-h" metalex:type="block">Члан 62.</heading>
+            <index id="art62-i" metalex:type="block">Члан 62.</index>
+            <item id="art62-it1" metalex:type="container">
+                <provision id="art62-it1-p1" metalex:type="block">Даном почетка примене овог закона престаје да
+                    важи <simple-citation id="sc64" href="TODO" type="inline" subtype="citationSimple">Закон о заштити података о личности („Службени лист СРЈ”, бр. 24/98 и
+                    26/98-исправка)</simple-citation>. </provision>
+            </item>
+        </article>
+
+        <article id="art63" metalex:type="hcontainer">
+            <heading id="art63-h" metalex:type="block">Члан 63.</heading>
+            <index id="art63-i" metalex:type="block">Члан 63.</index>
+            <item id="art63-it1" metalex:type="container">
+                <provision id="art63-it1-p1" metalex:type="block"> Овај закон ступа на снагу осмог дана од дана
+                    објављивања у „Службеном гласнику Републике Србије”, а примењиваће се од <date id="d1" date="2009-01-01" type="inline" subtype="date"></date>1.
+                    јануара 2009. године. </provision>
+            </item>
+        </article>
+    </section>
+
+    <!-- Attachments don't have to be parts of main component -->
+    <!-- 
+    <attachments id="attachments">
+        <attachment id="att1"
+            src="http://informatika.ftn.uns.ac.rs/rs/odluka/2008-03-18/1/sr@2008-03-18/attachment1.xml"
+            type="inline" subtype="inclusion">Attachment 1</attachment>
+        
+        <attachment id="att2"
+            src="http://informatika.ftn.uns.ac.rs/rs/odluka/2008-03-18/1/sr@2008-03-18/attachment2.xml"
+            type="inline" subtype="inclusion">Attachment 2</attachment>
+        
+        <attachment id="att3"
+            src="http://informatika.ftn.uns.ac.rs/rs/odluka/2008-03-18/1/sr@2008-03-18/attachment3.xml"
+            type="inline" subtype="inclusion">Attachment 3</attachment>
+    </attachments>
+    -->
+</regulation>
